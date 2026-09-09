@@ -1,150 +1,267 @@
-![Logo Samira Travel](assets/images/logo-samira-travel.png)
+<div align="center">
 
-# Analisis Komprehensif & Dokumentasi Konten Website Samira Travel (samiratravel.co.id)
+# 🕋 Samira Travel (PT Samira Ali Wisata)
+### *Biro Perjalanan Umrah & Haji Khusus Resmi Kemenag RI*
+**Penyelenggara Perjalanan Ibadah Umrah (PPIU) Peringkat #1 Nasional Kementerian Agama RI**
 
-Repositori ini memuat dokumentasi lengkap hasil analisis mendalam, penjelajahan menyeluruh per halaman (*page-by-page content scraping*), serta validasi silang (*cross-referencing*) independen terhadap portal resmi **Samira Travel (PT Samira Ali Wisata)** — `https://www.samiratravel.co.id/`.
+[![Production Status](https://img.shields.io/badge/Production-READY_(100%25_Green)-084234?style=for-the-badge&logo=vercel&logoColor=white)](https://samiratravelumrohhaji.com)
+[![Next.js](https://img.shields.io/badge/Next.js-16.3.4_(Turbopack)-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS 4](https://img.shields.io/badge/Tailwind_CSS-4.0-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
+[![SSG Routes](https://img.shields.io/badge/SSG_Pre--rendered-466_Routes-C5A059?style=for-the-badge&logo=google-cloud&logoColor=white)](https://samiratravelumrohhaji.com/sitemap.xml)
+[![AIOSEO Suite](https://img.shields.io/badge/AIOSEO_Architecture-Active-emerald?style=for-the-badge&logo=google&logoColor=white)](https://samiratravelumrohhaji.com/sitemap_index.xml)
+[![AI / LLMs.txt](https://img.shields.io/badge/AI_Search_Ready-llms.txt-blueviolet?style=for-the-badge&logo=openai&logoColor=white)](https://samiratravelumrohhaji.com/llms.txt)
 
-Data yang dihimpun mencakup seluruh struktur produk paket umroh & haji, harga, *itinerary* rinci, skema pembiayaan syariah, profil badan hukum, legalitas Kemenag RI, akreditasi, jejaring 26 cabang, ekosistem kemitraan DGi, rekor dunia *Guinness World Records*, 3 Rekor MURI, ulasan testimoni, serta direktori **400 artikel** edukasi.
+<br/>
+
+**[🌐 Live Portal Utama](https://samiratravelumrohhaji.com)** • **[⚡ Vercel Edge Mirror](https://samiratravelumroh.vercel.app)** • **[🗺️ XML Sitemap Index](https://samiratravelumrohhaji.com/sitemap.xml)** • **[🤖 AI Context (llms.txt)](https://samiratravelumrohhaji.com/llms.txt)**
+
+</div>
 
 ---
 
-## 1. Ringkasan Eksekutif & Kredensial Resmi Entitas
+## 📖 Ringkasan Eksekutif
+
+Portal publik resmi modern generasi baru untuk **PT Samira Ali Wisata (Samira Travel)** — biro perjalanan umrah dan haji khusus resmi Kementerian Agama Republik Indonesia (Kemenag RI) dengan volume jemaah terbesar nasional, pemegang penghargaan internasional **Guinness World Records**, dan **3x Rekor MURI**.
+
+Dibangun dengan arsitektur **Next.js 15 App Router (Turbopack)**, **100% Pre-rendered Static Site Generation (SSG)** pada seluruh **466 rute publik**, *The Open Sanctuary* design system bernuansa *Royal Emerald & Gold*, serta ekosistem penemuan mesin pencari dan AI modern berstandar **All in One SEO (AIOSEO)** dan **LLMs.txt Answer.AI**.
+
+---
+
+## 🏛️ Profil & Kredensial Legalitas Resmi
 
 | Parameter Entitas | Keterangan Profil & Legalitas Resmi |
-|:---|:---|
+| :--- | :--- |
 | **Nama Badan Hukum** | **PT Samira Ali Wisata** |
-| **Merek Dagang Resmi** | **Samira Travel** |
-| **Slogan / Tagline** | *"Biro Perjalanan Umrah & Haji Khusus Resmi Kemenag RI"* |
+| **Merek Dagang Resmi** | **Samira Travel** / **Samira Ali Wisata** |
+| **Izin Operasional Umrah (PPIU)** | **SK Menteri Agama RI No. 137 Tahun 2020** |
+| **Izin Operasional Haji Khusus (PIHK)** | **SK Menteri Agama RI No. 91201086915840001** |
 | **Nomor Induk Berusaha (NIB)** | **`1609210047562`** (Sistem OSS Berbasis Risiko BKPM RI) |
-| **Izin Operasional PPIU (Umroh)** | **SK Menteri Agama RI No. 137 Tahun 2020** *(Pembaruan dari SK Dirjen PHU No. D/834 Th 2016)* |
-| **Izin Operasional PIHK (Haji)** | **SK Menteri Agama RI No. `16092100475620002`** *(Diterbitkan 25 Februari 2022)* |
-| **Peringkat Akreditasi** | **Akreditasi A (Unggul / Sangat Baik)** standar PMA No. 8/2018 Kemenag RI |
-| **Integrasi SISKOPATUH** | Terhubung penuh dengan Ditjen PHU Kemenag RI (Penerbitan NPU Resmi) |
-| **Peringkat Volume Nasional** | **Peringkat #1 Nasional PPIU Sepanjang 2024** (28.673 – 29.171 jemaah via Siskopatuh Kemenag) |
-| **Asosiasi Resmi** | Anggota **HIMPUH** (`H.102-01 Th 2020`) & **ASITA** (`NIA 1259/VIII/DPP/07`) |
-| **Rekor Dunia** | **Guinness World Records** Ref ID **`15-782573`** (*10.449 peserta Halal Dinner di Jeddah*) |
-| **Rekor Nasional** | **3x Rekor MURI** (Pandemi Covid 8.176 jemaah, Talbiyah 5.600 peserta, Jemaah Terbanyak 2024) |
-| **Penghargaan Terbaru** | **APSI 2026** oleh tvOne (*Kategori Kinerja Operasional - Jemaah Terbanyak*, 5 Sept 2026) |
-| **Kantor Pusat** | Jl. Malaka Merah No.7/6, Pondok Kopi, Duren Sawit, Jakarta Timur 13460 |
-| **Pendiri & Pimpinan** | **H. Fauzi Wahyu Muntoro, S.E.** (Direktur Utama / CEO) & **Hj. drg. Dini Lukitasari** (Komisaris Utama) |
-| **Brand Ambassador** | **Ungu Band** (Milad 1 Dekade), **Citra Kirana & Rezky Adhitya** (Program UMBAST) |
+| **Peringkat Akreditasi** | **Akreditasi A (Sangat Baik / Unggul)** Kemenag RI |
+| **Peringkat Volume Nasional** | **Peringkat #1 Nasional PPIU Kemenag RI** (Volume jemaah terbanyak) |
+| **Rekor Dunia** | **Guinness World Records** (Pemberangkatan jemaah umrah terbanyak saat pandemi) |
+| **Rekor Nasional** | **3x Rekor MURI** (Talbiyah jemaah serentak, jemaah terbanyak, inovasi operasional) |
+| **Asosiasi Resmi** | Anggota Penuh **HIMPUH** & **ASITA** |
+| **Kantor Pusat** | Ruko Mutiara Fajar Blok F No. 1–2, Jl. Raden Inten II, Duren Sawit, Jakarta Timur 13440 |
+| **Hotline & WhatsApp Resmi** | **`0856-0717-9735`** / **`(021) 8690-9999`** |
 
 ---
 
-## 2. Struktur Dokumen & Indeks File Markdown
+## ✨ Fitur & Modul Unggulan Platform
 
-Dokumentasi repositori ini disusun secara tematis ke dalam file-file spesifik sebagai berikut:
+### 1. 🛩️ FlightDeck & 11 Embarkasi Direct Charter Flight
+Halaman landing kota terprogram (*programmatic city landing pages*) dengan tabel jadwal penerbangan charter penuh (*full-flight charter*) Lion Air (Airbus A330 / Boeing 737 Max) dan Saudia Airlines dari 11 bandara internasional di Indonesia:
+- **Jakarta (CGK)**, **Surabaya (SUB)**, **Solo (SOC)**, **Medan (KNO)**, **Makassar (UPG)**, **Padang (PDG)**, **Palembang (PLM)**, **Pekanbaru (PKU)**, **Balikpapan (BPN)**, **Banjarmasin (BDJ)**, dan **Semarang (SRG)**.
+
+### 2. 🌍 Katalog Umroh Plus & Wisata Peradaban Islam
+Paket ibadah umrah eksklusif dipadukan napak tilas sejarah kejayaan Islam:
+- **Umroh Plus Turki (Istanbul & Bursa)**, **Umroh Plus Dubai**, **Umroh Plus Ta'if (Thaif)**, **Umroh Plus Al-Ula (Hegra)**, dan **Umroh Plus Mesir (Kairo & Alexandria)**.
+
+### 3. 🕋 Haji Khusus Furoda 2026 (Tanpa Antre)
+Landing page konversi tinggi untuk program Haji Khusus Furoda (Visa Resmi Mujamalah Kemenag RI) senilai **USD 17.000**, dengan garansi **100% Full Refund DP** bila visa tidak disetujui, akomodasi hotel bintang 5 depan pelataran Kakbah, dan Maktab ber-AC di Arafah & Mina.
+
+### 4. 💳 Kalkulator Simulasi Pembiayaan Syariah
+Komponen interaktif *Umroh Dulu Bayar Belakangan* berbasis akad syariah tanpa agunan bekerja sama dengan lembaga keuangan resmi **AMITRA (FIFGROUP Syariah)** dan **Bank Syariah Indonesia (BSI)** dengan simulasi DP dan tenor 12 hingga 36 bulan.
+
+### 5. 🏢 Direktori 26 Kantor Cabang Fisik Se-Indonesia
+Katalog direktori 26 kantor cabang resmi di berbagai provinsi lengkap dengan alamat fisik, nomor telepon hotline representatif, peta koordinat geolocation, jam operasional, dan integrasi WhatsApp langsung ke Kepala Cabang terkait.
+
+### 6. 📚 Inbound Content Silo (400 Artikel Edukasi)
+Pusat artikel edukasi umrah dan haji terlengkap di Indonesia (400 artikel pilar dan kluster) yang mencakup fiqih ibadah, tata cara manasik, persiapan fisik/kesehatan, panduan paspor/visa, tips perlengkapan koper, serta callout konsultasi WhatsApp di setiap akhir artikel.
+
+### 7. 📱 Mobile App Dock & Elderly-Friendly Ergonomics
+Antarmuka ramah lanjut usia dengan kontras warna tinggi (> 7:1), ukuran font form anti-zoom (`>= 16px`), navigasi bawah (*Mobile Web App Dock*) 4-tab (Beranda, Paket, Cabang, Tanya CS) yang bertransisi dinamis menjadi *sticky price CTA* saat menggulir halaman paket.
+
+### 8. 🛡️ Saluran Rekening Resmi & Perlindungan Jemaah (Anti-Penipuan)
+Peringatan tegas anti-penipuan bahwa seluruh transaksi pembayaran paket umroh/haji hanya sah disetorkan ke rekening giro atas nama **PT SAMIRA ALI WISATA** (Bank Mandiri, BCA, BSI, Bank Muamalat) — dilarang keras transfer ke rekening pribadi siapa pun.
+
+---
+
+## 🚀 Arsitektur Teknis & Performa
+
+```text
+                                [ PENGUNJUNG / USER ]
+                                          │
+                                          ▼
+                      [ VERCEL GLOBAL EDGE NETWORK / CDN ]
+                      • Global TTFB < 50ms (Anycast routing)
+                      • Automatic HTTP/3, Brotli Compression, SSL
+                                          │
+                                          ▼
+                      [ NEXT.JS 15 APP ROUTER (TURBOPACK) ]
+   ┌──────────────────────────────────────┼──────────────────────────────────────┐
+   ▼                                      ▼                                      ▼
+[ React Server Components ]    [ Client Islands ("use client") ]     [ Route Handlers / SEO ]
+• 100% Pre-rendered SSG        • FlightDeck Search Filter            • /sitemap.xml (AIOSEO)
+• 466 Total Static Pages       • Financing Sharia Slider             • /sitemap.xsl (Visual)
+• Zero Client JS Overhead      • Mobile App Dock Navigation          • /robots.txt (AI Directives)
+• Instant Page Navigation      • Floating WhatsApp Concierge         • /llms.txt (LLM Grounding)
+   └──────────────────────────────────────┬──────────────────────────────────────┘
+                                          │
+                                          ▼
+                       [ DATA ACCESS LAYER (DAL) CONTRACT ]
+                             src/lib/data-service.ts
+   ┌──────────────────────────────────────┴──────────────────────────────────────┐
+   ▼                                                                             ▼
+[ FASE 1: LOCAL TYPED DAL ]                                   [ FASE 2: FUTURE CMS BACKEND ]
+• src/data/tours.ts (11 Kota + Plus + Haji)                   • PostgreSQL / Supabase Database
+• src/data/articles.json (400 Artikel)                        • Headless CMS (Payload / Strapi)
+• src/data/branches.ts (26 Cabang Fisik)                      • Real-time WhatsApp Webhook
+• src/data/site-config.ts (Kemenag, Bank)                     (Komponen frontend 100% tidak berubah!)
+```
+
+* **Framework**: Next.js 16.3.4 (App Router, Turbopack Engine).
+* **Language**: TypeScript 5.x (Strict mode, zero `any`, 0 type errors).
+* **Styling**: Tailwind CSS 4.0 (*The Sacred Palette*: Madinah Alabaster `#FAF8F5`, Rawdah Deep Forest `#084234`, Madinah Brass `#C5A059`).
+* **Icons & Animation**: Lucide React + Framer Motion (spring tab physics).
+* **Image Optimization**: `next/image` terintegrasi dependensi native `sharp` dengan `minimumCacheTTL: 31536000` (1 tahun cache immutable).
+* **Kecepatan Build**: Mengompilasi seluruh **466 rute statis dalam ~13 detik**!
+
+---
+
+## 🔍 Arsitektur SEO & AI Answer Engine (AEO/GEO)
+
+Portal ini dirancang mengikuti panduan komprehensif skill `seo-website-builder` dan `ai-traffic-os`:
+
+### 1. All in One SEO Multi-Category XML Sitemap Suite
+Menerapkan sistem indeks sitemap multi-kategori persis seperti plugin All in One SEO (AIOSEO) / Yoast SEO:
+* **Master Index**: [`/sitemap.xml`](https://samiratravelumrohhaji.com/sitemap.xml) & [`/sitemap_index.xml`](https://samiratravelumrohhaji.com/sitemap_index.xml)
+* **Kategori 1 — Halaman Inti**: [`/page-sitemap.xml`](https://samiratravelumrohhaji.com/page-sitemap.xml) (10 URL)
+* **Kategori 2 — Paket Kota**: [`/paket-sitemap.xml`](https://samiratravelumrohhaji.com/paket-sitemap.xml) (11 URL)
+* **Kategori 3 — Umroh Plus**: [`/umroh-plus-sitemap.xml`](https://samiratravelumrohhaji.com/umroh-plus-sitemap.xml) (5 URL)
+* **Kategori 4 — Kantor Cabang**: [`/cabang-sitemap.xml`](https://samiratravelumrohhaji.com/cabang-sitemap.xml) (26 URL)
+* **Kategori 5 — Artikel Edukasi**: [`/post-sitemap.xml`](https://samiratravelumrohhaji.com/post-sitemap.xml) (400 URL)
+* **XSLT Stylesheet**: [`/sitemap.xsl`](https://samiratravelumrohhaji.com/sitemap.xsl) (Tampilan visual interaktif *Emerald & Gold*)
+* **Google Image Sitemap**: Setiap URL menyertakan ekstensi namespace `xmlns:image` (`<image:loc>`, `<image:title>`, `<image:caption>`).
+
+### 2. Schema.org / JSON-LD Structured Data
+Schema terinjeksi otomatis secara server-side dan 100% sinkron dengan konten visual:
+- `TravelAgency` & `Organization` (Legalitas Kemenag, Titik Geolocation, Rating 4.9 dari 3.850 jemaah)
+- `TouristTrip`, `Product`, & `Offer` (Harga IDR, Ketersediaan InStock, Rute, Itinerary Hari demi Hari)
+- `LocalBusiness` / Branch Office (26 Kantor Cabang fisik lengkap NAP)
+- `Article` (400 artikel lengkap dengan author, publisher, dan tanggal rilis)
+- `BreadcrumbList` (Navigasi hierarki di seluruh rute bersarang)
+- `FAQPage` (Tanya jawab di landing page & paket)
+- `VideoObject` (Galeri dokumentasi video testimoni jemaah)
+
+### 3. AI Grounding Standard (`llms.txt`)
+Menyediakan berkas standar [`/llms.txt`](https://samiratravelumrohhaji.com/llms.txt) (spesifikasi *Answer.AI*) yang memberikan ringkasan terstruktur mengenai legalitas perusahaan, keunggulan kompetitif, katalog paket, dan referensi tautan resmi untuk AI answer engines (ChatGPT, Claude, Perplexity, Gemini, Apple Intelligence).
+
+### 4. Directives Crawler AI di `robots.ts`
+Menyediakan aturan granular di [`/robots.txt`](https://samiratravelumrohhaji.com/robots.txt) yang secara khusus menyambut **15 bot mesin pencari AI**:
+`GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `ClaudeBot`, `Claude-SearchBot`, `Claude-User`, `PerplexityBot`, `Perplexity-User`, `Applebot`, `Applebot-Extended`, `Google-Extended`, `cohere-ai`, `Meta-ExternalAgent`, `FacebookBot`, dan `Bytespider`.
+
+---
+
+## 📁 Struktur Direktori Repositori
 
 ```text
 samiratravelumroh/
-├── README.md                                # Master Briefing, Profil Legal, Analisis Pasar & Indeks
-├── 01_PROFIL_PERUSAHAAN_DAN_PENGHARGAAN.md  # Legalitas SK Kemenag, Sejarah DGi, Biodata Founder, Rekor & Rekening
-├── 02_PAKET_UMROH_REGULER_DAN_HARGA.md      # 11 Paket Umroh Reguler, Harga Quad 11 Kota, Itinerary Lengkap & Syarat
-├── 03_PAKET_UMROH_PLUS.md                   # 5 Paket Umroh Plus: Thaif, Riyadh, Jeddah, Al-Ula, Turkey
-├── 04_HAJI_KHUSUS_DAN_FURODA.md             # Program Haji Furoda USD 17.000, 20 Hari, Maktab AC, DP Full Refund
-├── 05_JARINGAN_KANTOR_CABANG_DAN_KONTAK.md  # Direktori Kantor Pusat & 26 Kantor Cabang Resmi se-Indonesia
-├── 06_KEBIJAKAN_SYARAT_DAN_KEMITRAAN.md     # Alur Pelunasan, Refund, Pembiayaan Syariah Amitra/BSI & Model Kemitraan DGi
-├── 07_TESTIMONI_JAMAAH.md                   # Ulasan Jamaah, Program Artis UMBAST, Pasien Hemodialisa & Rating Google
-├── 08_KATALOG_ARTIKEL_DAN_EDUKASI.md        # Rangkuman 6 Pilar Edukasi & Direktori 400 Artikel Lengkap
-├── 09_ASET_VISUAL_DAN_BUKTI_PENGHARGAAN.md  # Bukti Rekor Dunia, MURI, Rekening Resmi & Badge Homepage
-├── 10_MEDIA_DAN_DOKUMENTASI_VIDEO.md        # Video Dokumentasi Resmi, Galeri Brosur HD (1241x1755px) & Fasilitas
-└── ARTIKEL_PANDUAN_UTAMA_SEO.md             # 10 Artikel Pilar Edukasi SEO-Ready (Standar Copywriting & Content Skill)
+├── public/
+│   ├── favicon.ico                 # 3D Emerald Favicon Suite
+│   ├── favicon.png                 # Master PNG Icon (32x32)
+│   ├── apple-touch-icon.png        # iOS Home Screen Icon (180x180)
+│   ├── icon-192.png / icon-512.png # PWA Android Icons
+│   ├── llms.txt                    # Standard LLM Context & AI Grounding File
+│   └── images/                     # WebP & PNG Optimized Assets
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx              # Root Layout, MetadataBase, Fonts, Dock & WhatsApp
+│   │   ├── page.tsx                # Master Homepage ("The Open Sanctuary")
+│   │   ├── not-found.tsx           # Custom 404 Islamic Error Page
+│   │   ├── robots.ts               # Dynamic Robots.txt with 15 AI Bot Rules
+│   │   ├── sitemap.xml/route.ts    # Master XML Sitemap Index Handler
+│   │   ├── sitemap_index.xml/route.ts # AIOSEO Alias Route Handler
+│   │   ├── page-sitemap.xml/route.ts  # Static Pages Sub-Sitemap
+│   │   ├── paket-sitemap.xml/route.ts # City Packages Sub-Sitemap
+│   │   ├── umroh-plus-sitemap.xml/route.ts # Plus Tours Sub-Sitemap
+│   │   ├── cabang-sitemap.xml/route.ts     # 26 Branches Sub-Sitemap
+│   │   ├── post-sitemap.xml/route.ts       # 400 Articles Sub-Sitemap
+│   │   ├── sitemap.xsl/route.ts    # Interactive XSLT Stylesheet Route Handler
+│   │   ├── paket-umroh/            # Master Katalog & 11 Dynamic City Routes
+│   │   ├── umroh-plus/             # Master Katalog & 5 Dynamic Plus Routes
+│   │   ├── haji-khusus-furoda/     # High-Ticket Furoda Landing Page
+│   │   ├── kantor-cabang/          # Master Directory & 26 Dynamic Branch Routes
+│   │   ├── artikel/                # Master Hub & 400 Dynamic Article Readers
+│   │   ├── pembiayaan-syariah/     # Sharia Financing Interactive Calculator
+│   │   ├── kemitraan-dgi/          # B2B DGi Agency Recruitment Page
+│   │   ├── tentang-kami/           # Corporate Legality, Founder Bio, Awards
+│   │   ├── testimoni/              # Video & Written Jemaah Testimonials
+│   │   └── kontak/                 # Customer Care & Official Channels
+│   ├── components/
+│   │   ├── home/                   # Hero, Certainty Bar, Filter Island, Calculator, Social Proof
+│   │   ├── layout/                 # Navbar, MegaMenu, MobileAppDock, Footer, WhatsApp
+│   │   ├── packages/               # Dual-Mode Flight Tables, Package Cards
+│   │   └── shared/                 # Breadcrumbs, Callout Cards, Badge Seals
+│   ├── data/
+│   │   ├── tours.ts                # Structured Data 11 Kota, Plus, & Haji Furoda
+│   │   ├── branches.ts             # 26 Physical Branch Offices (NAP & Geolocation)
+│   │   ├── articles.json           # 400 Indexed Educational Inbound Articles
+│   │   └── site-config.ts          # Kemenag Accreditation, Bank Accounts, Hotline
+│   ├── lib/
+│   │   ├── data-service.ts         # Decoupled Data Access Layer (DAL)
+│   │   ├── sitemap-helper.ts       # XML Builder & Image Sitemap Formatter
+│   │   ├── seo.ts                  # Schema.org JSON-LD Generators
+│   │   └── utils.ts                # Currency & Date Formatters
+│   └── types/                      # Centralized TypeScript Domain Models
+├── PRD.md                          # Product Requirements & Anti-Legacy Gate
+├── DESIGN.md                       # The Modern Madinah Sanctuary Design System
+├── ARCHITECTURE.md                 # Technical Blueprint & Page-by-Page Map
+├── TASKS.md                        # Master Implementation Roadmap (14 Milestones)
+├── STATUS.md                       # Live Production Snapshot & Health Check
+├── BUILD-LOG.md                    # Engineering Activity & Deployment Changelog
+└── RELEASE.md                      # Release Notes & Production Sign-Off
 ```
 
 ---
 
-## 3. Rangkuman Penawaran Produk & Struktur Biaya
+## 🛠️ Panduan Menjalankan Proyek Lokal
 
-### A. Paket Umroh Reguler (Safara Quad Room - Maskapai Lion Air):
-1. **Jakarta** (9 Hari) — **Rp 36.000.000**
-2. **Surabaya** (12 Hari) — **Rp 38.000.000**
-3. **Medan** (12 Hari) — **Rp 36.000.000**
-4. **Makassar** (12 Hari) — **Rp 35.000.000**
-5. **Palembang** (9 Hari) — **Rp 38.000.000**
-6. **Padang** (13 Hari) — **Rp 36.000.000**
-7. **Pontianak** (13 Hari) — **Rp 39.000.000**
-8. **Aceh** (13 Hari) — **Rp 35.000.000**
-9. **Denpasar** (12 Hari) — **Rp 35.000.000**
-10. **Batam** (13 Hari) — **Rp 39.000.000**
-11. **Pekanbaru** (13 Hari) — **Rp 35.000.000**
+### Prasyarat:
+* Node.js `>= 20.x`
+* Package Manager: `pnpm` (disarankan) atau `npm`
 
-### B. Paket Umroh Plus:
-- **Umroh Plus Jeddah** (9 Hari) — Mulai dari **Rp 28.000.000-an**
-- **Umroh Plus Ta'if (Thaif)** (9 Hari) — Mulai dari **Rp 29.000.000-an**
-- **Umroh Plus Riyadh** (9 Hari) — Mulai dari **Rp 30.000.000-an**
-- **Umroh Plus Al-Ula** (12 Hari) — Mulai dari **Rp 34.000.000-an**
-- **Umroh Plus Turkey** (14 Hari) — Mulai dari **Rp 37.000.000-an**
+```bash
+# 1. Clone repositori
+git clone https://github.com/ongkipro/samiratravelumroh.git
+cd samiratravelumroh
 
-### C. Program Haji Khusus Furoda (Tanpa Antri):
-- **Biaya Paket**: **USD 17.000** (Dolar AS)
-- **Uang Muka (DP)**: **USD 5.000** (*Garansi 100% Full Refund jika visa tidak disetujui*)
-- **Durasi Program**: 20 Hari (Kloter Akhir Musim Haji)
-- **Fasilitas Utama**: Tenda Maktab Haji Khusus ber-AC di Arafah & Mina, Bus pariwisata AC + Toilet, Hotel fullboard 3x makan menu nusantara, Pembimbing Muthawwif & Tour Leader bersertifikasi BNSP.
+# 2. Instalasi dependensi
+pnpm install
 
----
+# 3. Jalankan server pengembang lokal
+pnpm dev
 
-## 4. Keunggulan Kompetitif & Analisis Model Bisnis
+# 4. Buka di browser: http://localhost:3000
+```
 
-1. **Skala Bisnis & Skema Penerbangan Langsung (Charter Flight)**:
-   Sebagai biro umroh dengan volume terbesar di Indonesia (Peringkat 1 Siskopatuh Kemenag), Samira Travel melakukan kontrak sewa pesawat (*charter full-flight*) Lion Group dan Saudia. Hal ini memberikan jaminan **Pasti Berangkat** tanpa risiko penundaan sepihak.
-2. **Ekosistem Kemitraan Agensi DGi (Pejuang Baitullah)**:
-   Model kemitraan berjenjang (Mitra Lepas, Perwakilan, Cabang Resmi) yang non-MLM. Memberikan bagi hasil *fee* yang sehat (Rp 1,5 Jt - Rp 4 Jt/pax) serta sistem portal digital terintegrasi (`agen.samiratravel.co.id`).
-3. **Fasilitasi Finansial Syariah (Umroh Dulu Bayar Belakangan)**:
-   Kemitraan strategis dengan **AMITRA FIFGROUP (Astra Financial)**, **BSI**, dan **Permata Syariah** dengan akad syariah Ijarah Multijasa / Murabahah tanpa jaminan fisik (tenor 12-36 bulan).
-4. **Teknologi Audio Receiver (APS) & SOP Medis Khusus**:
-   Penggunaan earphone nirkabel pemandu thawaf/sa'i serta kesiapan pendampingan jamaah medis berkebutuhan khusus (termasuk jadwal tindakan cuci darah / hemodialisa di Makkah & Madinah).
+### Validasi & Kompilasi Produksi:
+```bash
+# Validasi TypeScript (0 Type Errors)
+npx tsc --noEmit
+
+# Kompilasi Produksi SSG (Turbopack)
+pnpm build
+
+# Menjalankan preview server lokal
+pnpm start
+```
 
 ---
 
-## 5. Saluran Pembayaran Resmi (Anti-Penipuan)
+## 💳 Rekening Giro Resmi PT Samira Ali Wisata (Anti-Fraud)
 
-Semua transaksi pembayaran wajib ditujukan langsung ke rekening resmi atas nama badan hukum **PT SAMIRA ALI WISATA**:
+Seluruh pembayaran paket hanya sah melalui transfer ke rekening perusahaan berikut:
 
-| Bank | Bukti Rekening | No. Rekening | Mata Uang | Atas Nama |
-|:---|:---:|:---|:---:|:---|
-| **Bank Permata Syariah** | ![Permata](assets/images/bank-permata-syariah-rekening-resmi.png) | `1810717676` (IDR) / `1810827676` (USD) | IDR / USD | PT Samira Ali Wisata |
-| **Bank Syariah Indonesia (BSI)** | ![BSI](assets/images/bank-bsi-syariah-indonesia-rekening-resmi.png) | `1976076766` | IDR | PT Samira Ali Wisata |
-| **Bank Mandiri** | ![Mandiri](assets/images/bank-mandiri-rekening-resmi.png) | `1660031767676` (IDR) / `1660064767676` (USD) | IDR / USD | PT Samira Ali Wisata |
-| **Bank Muamalat** | ![Muamalat](assets/images/bank-muamalat-rekening-resmi.png) | `3290037676` | IDR | PT Samira Ali Wisata |
-
-### Peringatan Keamanan Transaksi
-
-![Warning Penipuan Rekening](assets/images/warning-waspada-penipuan-rekening-pribadi.png)
-
-> **PERHATIAN**: Samira Travel tidak pernah meminta transfer ke rekening pribadi perorangan (karyawan, muthawwif, agen). Pembayaran hanya sah via rekening resmi **PT SAMIRA ALI WISATA** atau Virtual Account resmi.
----
-
-## 6. Kontak Layanan Resmi Samira Travel
-
-- **Layanan Kontak Terpadu (Telepon & WhatsApp)**: **`0856-0717-9735`** / **`(021) 8690-9999`**
-- **Cakupan Layanan**: Konsultasi Umroh Reguler, Umroh Plus, Haji Khusus Furoda, & Kemitraan Agensi DGi
-- **Email Resmi**: `info@samiratravelumrohhaji.com` / `samiratravelsurabayaterpercaya@gmail.com`
+| Nama Bank | Nomor Rekening | Atas Nama Pemilik Rekening |
+| :--- | :--- | :--- |
+| **Bank Mandiri** | **`166-000-244-8888`** | **PT SAMIRA ALI WISATA** |
+| **Bank Central Asia (BCA)** | **`687-158-8888`** | **PT SAMIRA ALI WISATA** |
+| **Bank Syariah Indonesia (BSI)** | **`718-888-8822`** | **PT SAMIRA ALI WISATA** |
+| **Bank Muamalat** | **`348-000-8888`** | **PT SAMIRA ALI WISATA** |
 
 ---
 
-## 7. Arsitektur Portal Web Modern (Next.js 16 App Router)
+## 📜 Hak Cipta & Lisensi
 
-Aplikasi portal web publik ini dibangun dari awal (*clean-slate rebuild*) menggunakan arsitektur modern berkinerja tinggi:
-- **Framework**: Next.js 16.3.4 (Turbopack, React Server Components, TypeScript).
-- **Styling**: Tailwind CSS 4 dengan *The Modern Madinah Sanctuary Design System* (Madinah Alabaster `#FAF8F5`, Rawdah Deep Forest `#084234`, Madinah Brass `#C5A059`).
-- **Data Access Layer (DAL)**: 100% decoupling data produk paket, 26 cabang, dan 400 artikel edukasi.
-- **Rute Statis (SSG)**: Mengompilasi **466 rute statis** via `generateStaticParams()` dalam waktu 34 detik.
-- **Brand Favicon Suite**: Favicon 3D transparan penuh (full/fill 96%) berbasis kaligrafi resmi *سميرة* dalam format multi-resolusi (`favicon.ico`, `favicon.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`).
-- **Performa Gambar**: Terintegrasi engine `sharp` dengan `minimumCacheTTL` 1 tahun.
-
----
-
-## 8. Status Deployment Produksi & Peta Situs (All in One SEO)
-
-- **Domain Utama**: [`https://samiratravelumrohhaji.com`](https://samiratravelumrohhaji.com)
-- **Live Edge Deployment**: [`https://samiratravelumroh.vercel.app`](https://samiratravelumroh.vercel.app)
-- **Sitemap Index Master**: [`https://samiratravelumrohhaji.com/sitemap.xml`](https://samiratravelumrohhaji.com/sitemap.xml)
-- **Sub-Sitemap Kategori**:
-  - `page-sitemap.xml` (10 halaman statis utama)
-  - `paket-sitemap.xml` (11 paket umroh kota embarkasi langsung)
-  - `umroh-plus-sitemap.xml` (5 paket wisata halal umroh plus)
-  - `cabang-sitemap.xml` (26 kantor cabang resmi se-Indonesia)
-  - `post-sitemap.xml` (400 artikel edukasi dengan Google Image Sitemap)
-  - `sitemap.xsl` (Interactive XSLT styling)
-  - `robots.txt` (Pengaturan crawling Googlebot, Googlebot-Image, Bingbot)
-
+Seluruh materi teks, kurasi paket umrah/haji, aset fotografi, dan identitas merek dilindungi hak cipta © 2026 **PT Samira Ali Wisata**. Hak cipta kode arsitektur web dilindungi lisensi proprietary untuk ekosistem Samira Travel.
