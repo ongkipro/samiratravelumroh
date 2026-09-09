@@ -90,7 +90,7 @@ Samira Travel berakar dari gerakan syiar kemitraan dakwah dan kewirausahaan yang
 
 ![Guinness World Records](assets/images/guinness-world-records-halal-dinner-jeddah.png)
 
-- **Judul Rekor Resmi**: ***"Largest attendance of an outdoor halal dinner event"***
+- **Judul Rekor Resmi**: "Largest attendance of an outdoor halal dinner event"
 - **Nomor Referensi Pangkalan Data GWR**: **`15-782573`**
 - **Tautan Verifikasi Resmi**: `https://www.guinnessworldrecords.com/world-records/782573-largest-attendance-of-an-outdoor-halal-dinner-event`
 - **Entitas Pemegang Rekor**: PT Samira Ali Wisata (Indonesia)
