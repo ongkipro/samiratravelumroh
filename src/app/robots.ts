@@ -13,6 +13,41 @@ export default function robots(): MetadataRoute.Robots {
           "/_next/image",
           "/images/",
           "/sitemap.xsl",
+          "/llms.txt",
+        ],
+        disallow: [
+          "/api/",
+          "/_next/",
+          "/admin/",
+          "/private/",
+          "/*.json$",
+        ],
+      },
+      {
+        // Dedicated directives for AI search engines, answer engines & LLM crawlers
+        userAgent: [
+          "GPTBot",
+          "OAI-SearchBot",
+          "ChatGPT-User",
+          "ClaudeBot",
+          "Claude-SearchBot",
+          "Claude-User",
+          "PerplexityBot",
+          "Perplexity-User",
+          "Applebot",
+          "Applebot-Extended",
+          "Google-Extended",
+          "cohere-ai",
+          "Meta-ExternalAgent",
+          "FacebookBot",
+          "Bytespider",
+        ],
+        allow: [
+          "/",
+          "/_next/static/",
+          "/_next/image",
+          "/images/",
+          "/llms.txt",
         ],
         disallow: [
           "/api/",
@@ -29,6 +64,7 @@ export default function robots(): MetadataRoute.Robots {
           "/_next/static/",
           "/_next/image",
           "/images/",
+          "/llms.txt",
         ],
         disallow: [
           "/api/",
@@ -53,6 +89,7 @@ export default function robots(): MetadataRoute.Robots {
           "/_next/static/",
           "/_next/image",
           "/images/",
+          "/llms.txt",
         ],
         disallow: [
           "/api/",

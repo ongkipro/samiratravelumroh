@@ -55,6 +55,15 @@ Catatan eksekusi teknis, riwayat build, perbaikan bug, dan deployment produksi k
 
 ---
 
+## [2026-09-09 16:55:00 +07:00] — AI Search Engine & LLM Readiness (llms.txt + robots.ts AI Directives)
+
+- **Implementasi**:
+  1. Pembuatan file standar `public/llms.txt` yang memuat ringkasan identitas legalitas perusahaan, keunggulan kompetitif, katalog rute, daftar 11 kota embarkasi, dan referensi indeks sitemap untuk AI answer engines (ChatGPT, Claude, Perplexity, Gemini, Apple Intelligence).
+  2. Optimasi `src/app/robots.ts` dengan menyertakan aturan akses terperinci untuk crawler AI: `GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `ClaudeBot`, `Claude-SearchBot`, `Claude-User`, `PerplexityBot`, `Perplexity-User`, `Applebot`, `Applebot-Extended`, `Google-Extended`, `cohere-ai`, `Meta-ExternalAgent`, `FacebookBot`, dan `Bytespider`.
+  3. Memastikan jalur publik dan `/llms.txt` terbuka untuk sitasi AI search engine dengan tetap memproteksi endpoint privat/API.
+
+---
+
 ## [2026-09-09 14:31:00 +07:00] — Official Contact Channels, Footer, and Site Config Sync
 
 - **Commit**: `df361dd` (`feat(content): update contact channels, article reader layout, and documentation`)
