@@ -113,16 +113,28 @@ Untuk mengangkat kualitas web agar benar-benar setara portal umrah luxury kekini
 
 ---
 
-## 6. Motion & Interaktivitas Halus (The Sanctuary Motion)
+## 6. Motion & Arsitektur Animasi React ("The Sanctuary Motion")
 
-1. **Subtle Load-In Cascade**:
-   - Elemen muncul dengan jeda halus (stagger `0.05s`), transisi `opacity` dan `translateY(8px) -> translateY(0)` selama `300ms` kurva `cubic-bezier(0.16, 1, 0.3, 1)`.
-2. **Hover Card Lift**:
-   - Hover pada kartu paket mengangkat bayangan halus (`shadow-md -> shadow-xl`) dan transform gambar `scale-102` tanpa menggeser layout (*no layout shift*).
-3. **Smooth Tab Switching**:
-   - Pergantian kategori paket atau rute kota menggunakan penanda pil aktif yang bergerak mulus.
-4. **Mobile Touch Feedback**:
-   - Efek taktil `:active:scale-[0.98]` pada setiap tombol aksi utama untuk sensasi responsif seperti aplikasi native.
+Prinsip animasi: **Bersahaja, tenang, 60fps GPU-accelerated, dan zero-layout-shift (CLS = 0.00)**. Memberikan sensasi aplikasi native modern tanpa membebani jemaah lansia atau merusak metrik Core Web Vitals (INP < 100ms, LCP < 1.4s).
+
+### 6.1. The Hybrid Motion Stack
+- **Layer 1: Pure CSS Hardware Keyframes & Transitions (0 KB JS Overhead)**:
+  - Dijalankan langsung di thread GPU compositor.
+  - Digunakan untuk: background `CanopyPattern`, `RaudhahSheen` light sweep, card hover elevation (`translateY(-2px)`), dan tombol tap feedback (`:active:scale-[0.98]`).
+- **Layer 2: Framer Motion (Khusus Interactive Client Islands)**:
+  - Digunakan selektif pada komponen pulau interaktif:
+    1. **Spring Tab Indicator (`layoutId="activeFilter"`)**: Transisi pegas elastis halus (`stiffness: 400, damping: 35`) saat jemaah berpindah kategori paket atau kota embarkasi.
+    2. **Adaptive Morphing Mobile Dock**: Transisi `AnimatePresence` masuk/keluar saat dock 4-tab bertransformasi menjadi Sticky Price Bar saat scroll melewati 380px.
+    3. **Rolling Number Counter**: Angka estimasi angsuran bulanan pada kalkulator pembiayaan syariah bergulir halus saat slider DP/tenor digeser.
+    4. **Subtle Load-In Cascade**: Jeda kemunculan kartu (`staggerChildren: 0.05s`, `y: 8px -> 0px`, `duration: 0.3s`) kurva `cubic-bezier(0.16, 1, 0.3, 1)`.
+
+### 6.2. Aturan Emas Motion & Aksesibilitas
+1. **Haram Scroll-Jacking**: Dilarang memanipulasi scroll alami mouse jemaah.
+2. **Haram Animasi 3D Putar/Tumbling**: Gerakan visual dilarang melebihi translasi 2D sederhana.
+3. **Kepatuhan `prefers-reduced-motion`**:
+   Bagi jemaah yang mengaktifkan opsi hemat gerakan pada OS, seluruh durasi animasi otomatis disetel ke `0.01ms` (instan).
+4. **Garansi CLS = 0.00**:
+   Seluruh wadah animasi dinamis wajib memiliki `min-height` atau rasio aspek terkunci agar tidak memicu pergeseran layout.
 
 ---
 

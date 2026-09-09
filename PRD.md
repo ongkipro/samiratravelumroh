@@ -162,6 +162,33 @@ Untuk memastikan tidak ada AI agent atau developer yang terpicu mengulang desain
 7. **Haram Tabel Horizontal di Layar Mobile**:
    * Dilarang menyajikan tabel yang mengharuskan scroll ke samping di layar HP. Wajib otomatis bermutasi menjadi kartu vertikal *Boarding Pass*.
 
+### 4.5. Matriks Penerapan Sistem UI/UX & Mobile App Dock Lintas Halaman (456 URLs)
+Untuk menjamin konsistensi visual dan pengalaman pengguna di seluruh 456 rute, aturan berikut berlaku mutlak:
+
+| Kelompok Halaman (Total Rute) | Top Header (56px) | Hero Section (16:9 Widescreen) | Body Content Architecture | Mobile App Dock Behavior | Footer Otoritas |
+|:---|:---:|:---|:---|:---|:---:|
+| **Homepage**<br>(1 Halaman — `/`) | Fixed Glassmorphic | Ka'bah Dawn Panorama + Command Strip 11 Kota | Asymmetric Split, Certainty Bar 4 Pilar, Kurasi Paket, Rekor MURI Frameless | 4-Tab Normal Dock (Beranda, Paket, Cabang, CS) | Full Authority + 4 Rekening Bank Resmi |
+| **Katalog Paket Umroh**<br>(1 Halaman — `/paket-umroh`) | Fixed Glassmorphic | Banner Payung Nabawi Fajar | Filter Kategori Tab + Kartu Paket 16:9 Grid 1 Kolom Mobile | 4-Tab Normal Dock | Full Authority |
+| **11 Programmatic Kota**<br>(11 Rute — `/paket-umroh/[city]`) | Fixed Glassmorphic | Brosur/Pesawat Embarkasi Kota | **Dual-Mode Boarding Pass Cards** + Brosur A4 Unduh + Info Kantor Cabang Lokal | **Contextual Morphing**: Otomatis berubah jadi Sticky Price & WA CTA saat scroll > 380px | Full Authority + Hotline Cabang Terkait |
+| **Katalog Umroh Plus**<br>(1 Halaman — `/umroh-plus`) | Fixed Glassmorphic | Panorama Peradaban Islam | Galeri Destinasi Terkurasi dengan Tag Harga Jernih | 4-Tab Normal Dock | Full Authority |
+| **5 Detail Umroh Plus**<br>(5 Rute — `/umroh-plus/[slug]`) | Fixed Glassmorphic | Foto Lanskap Destinasi 16:9 (Taif, Al-Ula, Turki, dll) | Itinerary Hari per Hari, Fasilitas Hotel, Keistimewaan Sejarah | **Contextual Morphing**: Sticky Price & WA Booking saat scroll > 380px | Full Authority |
+| **Haji Khusus Furoda**<br>(1 Halaman — `/haji-khusus-furoda`) | Fixed Glassmorphic | Midnight Rawdah + Brass Gold Banner | Fasilitas Bintang 5, Tenda AC Maktab, Garansi DP Full Refund, Syarat Visa | **Contextual Morphing**: Sticky "Konsultasi Haji Furoda USD 17k" | Full Authority |
+| **Pembiayaan Syariah**<br>(1 Halaman — `/pembiayaan-syariah`) | Fixed Glassmorphic | Ilustrasi Kerjasama AMITRA/BSI | Slider DP & Tenor Interaktif + Rolling Number Counter Angsuran | 4-Tab Normal Dock | Full Authority + Syarat Bank |
+| **Direktori 26 Cabang**<br>(1 Halaman — `/kantor-cabang`) | Fixed Glassmorphic | Peta Jaringan Cabang Nasional | Tab 5 Kepulauan + Kartu Cabang Kontak Fisik & Google Maps | Tab '26 Cabang' Aktif di Dock | Full Authority |
+| **26 Detail Cabang Lokal**<br>(26 Rute — `/kantor-cabang/[slug]`) | Fixed Glassmorphic | Foto Kantor Cabang / Gedung | Alamat Lengkap, Jam Buka, Peta Rute, Tim Muthawwif Lokal | **Contextual Morphing**: Sticky "WhatsApp Kepala Cabang [Kota]" | Full Authority |
+| **Kemitraan DGi**<br>(1 Halaman — `/kemitraan-dgi`) | Fixed Glassmorphic | Dokumentasi Gathering Mitra | Skema Komisi Syiar Non-MLM, Reward Umroh Gratis, Starter Kit | 4-Tab Normal Dock | Full Authority |
+| **Tentang Kami & Testimoni**<br>(2 Halaman) | Fixed Glassmorphic | Foto Manasik Akbar / Video Dokumenter | Piagam Guinness & MURI 16:9, Kisah Medis Cuci Darah, Testimoni Artis | 4-Tab Normal Dock | Full Authority |
+| **Inbound 400 Artikel**<br>(401 Rute — `/artikel` & `[slug]`) | Fixed Glassmorphic | Minimalist Reading Header (No Big Image) | **Editorial Clean Reading**, In-Article WhatsApp Callout Box, Artikel Terkait | 4-Tab Normal Dock | Full Authority |
+
+### 4.6. Sistem Konversi WhatsApp Kontekstual & Geo-Routing 26 Cabang
+Setiap klik menuju WhatsApp menghasilkan pesan pembuka yang ramah, sopan, dan terisi data otomatis (*pre-filled*):
+1. **Format Pesan Paket Umroh**:
+   `"Assalamu'alaikum CS Samira Travel, saya ingin konsultasi Paket Umroh [Nama Paket] keberangkatan dari [Kota] untuk [Jumlah Pax] orang. Mohon info ketersediaan seat & rincian hotelnya."`
+2. **Format Pesan Haji Furoda**:
+   `"Assalamu'alaikum, saya ingin konsultasi pendaftaran Haji Furoda 2026 (Tanpa Antre) USD 17.000 garansi DP Full Refund."`
+3. **Format Pesan Cabang Daerah**:
+   Pesan langsung terarah ke nomor WhatsApp Kepala Cabang Kota terkait (`branches.ts`), dengan fallback ke hotline pusat `085607179735` jika nomor daerah tidak terpasang.
+
 ---
 
 ## 5. Matriks Katalog Aset Gambar & Pedoman Implementasi AI (Image Asset Matrix)
