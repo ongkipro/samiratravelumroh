@@ -96,5 +96,4 @@ Samira Travel menyelenggarakan bimbingan ibadah haji komprehensif yang mengedepa
 
 Untuk konsultasi kuota visa haji mujamalah, alokasi maktab, dan pendaftaran haji tanpa antri:
 - **Layanan Kontak Terpadu (Telepon & WhatsApp)**: **`0856-0717-9735`**
-- **Tautan WhatsApp Langsung**: [https://wa.me/6285607179735](https://wa.me/6285607179735)
 - **Email Resmi**: `samiratravelsurabayaterpercaya@gmail.com`

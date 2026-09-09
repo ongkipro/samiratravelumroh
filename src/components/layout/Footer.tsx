@@ -111,16 +111,20 @@ export function Footer() {
               <div className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#C5A059] shrink-0" />
                 <span className="text-slate-200">
-                  Hotline / WA:{" "}
+                  Hotline:{" "}
                   <a href="tel:085607179735" className="hover:underline font-bold text-[#E6CA65]">
                     0856-0717-9735
+                  </a>{" "}
+                  /{" "}
+                  <a href="tel:02186909999" className="hover:underline font-medium text-slate-300">
+                    (021) 8690-9999
                   </a>
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#C5A059] shrink-0" />
-                <a href="mailto:samiratravelsurabayaterpercaya@gmail.com" className="text-slate-200 hover:text-white transition-colors text-xs sm:text-[13px] break-all">
-                  samiratravelsurabayaterpercaya@gmail.com
+                <a href="mailto:info@samiratravelumrohhaji.com" className="text-slate-200 hover:text-white transition-colors text-xs sm:text-[13px] break-all">
+                  info@samiratravelumrohhaji.com
                 </a>
               </div>
             </div>
@@ -152,12 +156,12 @@ export function Footer() {
                   <YouTubeIcon className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://www.samiratravel.co.id"
+                  href="https://samiratravelumrohhaji.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Portal Website Resmi Samira Travel"
                   className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#C5A059]/30 border border-white/15 hover:border-[#C5A059]/60 flex items-center justify-center text-slate-100 hover:text-white transition-all shadow-sm"
-                  title="Website Resmi: samiratravel.co.id"
+                  title="Website Resmi: samiratravelumrohhaji.com"
                 >
                   <Globe className="w-4 h-4" />
                 </a>

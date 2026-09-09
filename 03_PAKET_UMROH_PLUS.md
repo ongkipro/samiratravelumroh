@@ -124,5 +124,4 @@ Dokumen ini memuat informasi lengkap mengenai varian **Paket Umroh Plus** dari S
 
 Untuk konsultasi jadwal keberangkatan, ketersediaan kursi, dan pendaftaran:
 - **Layanan Kontak Terpadu (Telepon & WhatsApp)**: **`0856-0717-9735`**
-- **Tautan WhatsApp Langsung**: [https://wa.me/6285607179735](https://wa.me/6285607179735)
 - **Email Resmi**: `samiratravelsurabayaterpercaya@gmail.com`

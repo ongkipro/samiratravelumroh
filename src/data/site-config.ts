@@ -14,10 +14,10 @@ export const siteConfig: SiteConfig = {
     city: "Jakarta Timur",
     province: "DKI Jakarta",
     postalCode: "13460",
-    phoneHotline: ["0856-0717-9735"],
+    phoneHotline: ["0856-0717-9735", "(021) 8690-9999"],
     whatsappHotline: "6285607179735",
-    hajiHotline: ["0856-0717-9735"],
-    email: ["samiratravelsurabayaterpercaya@gmail.com"],
+    hajiHotline: ["0856-0717-9735", "(021) 8690-9999"],
+    email: ["info@samiratravelumrohhaji.com", "samiratravelsurabayaterpercaya@gmail.com"],
   },
   bankAccounts: [
     {

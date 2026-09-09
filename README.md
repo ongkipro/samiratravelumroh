@@ -117,6 +117,5 @@ Semua transaksi pembayaran wajib ditujukan langsung ke rekening resmi atas nama 
 ## 6. Kontak Layanan Resmi Samira Travel
 
 - **Layanan Kontak Terpadu (Telepon & WhatsApp)**: **`0856-0717-9735`**
-- **Tautan WhatsApp Langsung**: [https://wa.me/6285607179735](https://wa.me/6285607179735)
 - **Cakupan Layanan**: Konsultasi Umroh Reguler, Umroh Plus, Haji Khusus Furoda, & Kemitraan Agensi DGi
 - **Email Resmi**: `samiratravelsurabayaterpercaya@gmail.com`

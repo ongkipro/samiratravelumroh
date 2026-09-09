@@ -94,4 +94,3 @@ Samira Travel membuka peluang kewirausahaan keagenan melalui payung bisnis **PT 
 
 Bagi masyarakat yang berminat mendaftar sebagai agen perwakilan atau mendirikan kantor cabang di daerah:
 - **Layanan Kontak Terpadu (Telepon & WhatsApp)**: **`0856-0717-9735`**
-- **Tautan WhatsApp Langsung**: [https://wa.me/6285607179735](https://wa.me/6285607179735)

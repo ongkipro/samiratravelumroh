@@ -131,11 +131,12 @@ function parseMarkdownBlocks(rawContent: string): ParsedBlock[] {
     }
 
     // Contact Consultation Section
-    if (
-      line.toLowerCase().includes("0856-0717-9735") || 
-      line.toLowerCase().includes("samiratravelsurabayaterpercaya@gmail.com") ||
-      (line.toLowerCase().includes("konsultasi") && (line.includes("0856") || line.toLowerCase().includes("whatsapp")))
-    ) {
+    const isContactSection =
+      line.includes("0856-0717-9735") ||
+      line.includes("samiratravelsurabayaterpercaya") ||
+      (line.toLowerCase().includes("konsultasi") &&
+        lines.slice(i, i + 5).some((l) => l.includes("0856") || l.toLowerCase().includes("whatsapp")));
+    if (isContactSection) {
       const contactLines: string[] = [];
       while (i < lines.length && lines[i].trim()) {
         contactLines.push(lines[i].trim());
@@ -521,7 +522,14 @@ export default async function ArticleDetailPage({ params }: Props) {
                         <div className="text-xs sm:text-sm text-slate-700 my-4 space-y-1.5">
                           {block.lines.map((l, lIdx) => {
                             const cleanLine = l.replace(/^[-*]\s*/, "");
-                            if (cleanLine.includes("0856-0717-9735") || cleanLine.includes("samiratravelsurabayaterpercaya")) {
+                            const lower = cleanLine.toLowerCase();
+                            if (
+                              cleanLine.includes("0856-0717-9735") || 
+                              cleanLine.includes("samiratravelsurabayaterpercaya") ||
+                              cleanLine.includes("wa.me") ||
+                              lower.includes("tautan whatsapp") ||
+                              lower.includes("chat whatsapp")
+                            ) {
                               return null;
                             }
                             return (

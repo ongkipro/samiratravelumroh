@@ -11,7 +11,6 @@ Dokumen ini memuat daftar direktori lengkap **Kantor Pusat dan 26 Kantor Cabang 
   Jl. Malaka Merah No.7/6, Pondok Kopi, Kec. Duren Sawit, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13460
 - **Layanan Kontak Terpadu (Hotline Telepon & WhatsApp)**:
   - **Nomor Tunggal**: **`0856-0717-9735`** (Telepon & WhatsApp)
-  - **Tautan WhatsApp Langsung**: [https://wa.me/6285607179735](https://wa.me/6285607179735)
   - **Layanan**: Informasi Paket Umroh Reguler, Umroh Plus, Haji Khusus Furoda, Pendaftaran Jamaah, & Kemitraan Pejuang Baitullah DGi
 - **Email Resmi**: `samiratravelsurabayaterpercaya@gmail.com`
 - **Website Resmi**: `https://www.samiratravel.co.id`

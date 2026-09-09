@@ -280,5 +280,4 @@ Setiap jamaah mendapatkan 1 set lengkap perlengkapan ibadah berkualitas tinggi:
 
 Untuk konsultasi pemilihan kota keberangkatan, jadwal penerbangan, ketersediaan kursi pesawat, dan pendaftaran resmi:
 - **Layanan Kontak Terpadu (Telepon & WhatsApp)**: **`0856-0717-9735`**
-- **Tautan WhatsApp Langsung**: [https://wa.me/6285607179735](https://wa.me/6285607179735)
 - **Email Resmi**: `samiratravelsurabayaterpercaya@gmail.com`
