@@ -81,6 +81,15 @@ function parseMarkdownBlocks(rawContent: string): ParsedBlock[] {
       continue;
     }
 
+    // Heading 1 or Heading 4+
+    if (line.startsWith("#")) {
+      const text = line.replace(/^#+\s*/, "").replace(/\*\*/g, "").trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+      blocks.push({ type: "h3", text, id });
+      i++;
+      continue;
+    }
+
     // Callout (> ...)
     if (line.startsWith(">")) {
       const calloutLines: string[] = [];
@@ -151,16 +160,19 @@ function parseMarkdownBlocks(rawContent: string): ParsedBlock[] {
     while (i < lines.length) {
       const l = lines[i].trim();
       if (!l) break;
-      if (
-        l.startsWith("#") ||
-        l.startsWith(">") ||
-        (l.startsWith("|") && l.includes("|", 1)) ||
-        l.startsWith("- ") ||
-        l.startsWith("* ") ||
-        /^\d+\.\s/.test(l) ||
-        l.toLowerCase().includes("0856-0717-9735")
-      ) {
-        break;
+      if (pLines.length > 0) {
+        if (
+          l.startsWith("#") ||
+          l.startsWith(">") ||
+          (l.startsWith("|") && l.includes("|", 1)) ||
+          l.startsWith("- ") ||
+          l.startsWith("* ") ||
+          /^\d+\.\s/.test(l) ||
+          l.includes("0856-0717-9735") ||
+          l.includes("samiratravelsurabayaterpercaya")
+        ) {
+          break;
+        }
       }
       pLines.push(l);
       i++;
@@ -168,6 +180,8 @@ function parseMarkdownBlocks(rawContent: string): ParsedBlock[] {
 
     if (pLines.length > 0) {
       blocks.push({ type: "p", text: pLines.join(" ") });
+    } else {
+      i++; // Safety guard: guarantee loop index advancement
     }
   }
 

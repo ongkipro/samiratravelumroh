@@ -36,7 +36,7 @@ export function getWhatsAppUrl(options: WhatsAppOptions = {}): string {
 
     case "furoda":
       message = `Assalamu'alaikum Konsultan Haji Samira Travel,\n` +
-        `Saya ingin konsultasi pendaftaran program *Haji Khusus / Haji Furoda 20 Hari (Tanpa Antri)* biaya USD 17.000 dengan garansi 100% Full Refund DP.\n\n` +
+        `Saya ingin konsultasi pendaftaran program *Haji Khusus / Haji Furoda 20 Hari (Langsung Berangkat Kuota Resmi)* biaya USD 17.000 dengan garansi 100% Full Refund DP.\n\n` +
         `Mohon informasi alur pengurusan visa dan jadwal manasik haji. Terima kasih.`;
       break;
 
