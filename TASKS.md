@@ -36,8 +36,10 @@ Sesuai spesifikasi `development-kit`, seluruh proses pembangunan wajib melalui j
 - [x] **Milestone 7**: Direktori 26 Kantor Cabang Fisik & Peluang Kemitraan DGi (Phase 7)
 - [x] **Milestone 8**: Kredensial Otoritas, Rekor MURI, Guinness World Records & Testimoni Medis (Phase 8)
 - [x] **Milestone 9**: Inbound Content Silo (400 Artikel Terindeks + In-Article WhatsApp Callout) (Phase 9)
-- [x] **Milestone 10**: SEO Engine Otomatis, Dynamic Sitemap (456 URLs) & JSON-LD (Phase 10)
+- [x] **Milestone 10**: SEO Engine Otomatis, Dynamic Sitemap & JSON-LD (Phase 10)
 - [x] **Milestone 11**: Audit Aksesibilitas, Mobile Anti-Zoom, Core Web Vitals & Production Build (Phase 11)
+- [x] **Milestone 12**: Production Deployment, Brand Favicon Suite & Edge Performance (Phase 12)
+- [x] **Milestone 13**: All in One SEO XML Sitemap Architecture & Multi-Category Sitemaps (Phase 13)
 
 ---
 
@@ -198,3 +200,29 @@ Sesuai spesifikasi `development-kit`, seluruh proses pembangunan wajib melalui j
 - [x] **Task 11.4**: Uji coba kompilasi TypeScript (`npx tsc --noEmit`) = 0 error.
 - [x] **Task 11.5**: Uji coba kompilasi produksi (`npm run build`) = 456 rute SSG sukses tanpa error.
 - [x] **Task 11.6**: Audit Google Lighthouse & Core Web Vitals (Target: Mobile > 92, Desktop > 98).
+
+### Phase 12: Production Deployment, Brand Favicon Suite & Edge Performance
+- [x] **Task 12.1**: Pembuatan repositori publik GitHub `ongkipro/samiratravelumroh` dan branch `main`.
+- [x] **Task 12.2**: Setup project Vercel `ongkipro/samiratravelumroh` dengan integrasi Git deployment otomatis.
+- [x] **Task 12.3**: Konfigurasi custom domain `samiratravelumrohhaji.com` & `www.samiratravelumrohhaji.com` dengan validasi SSL di Vercel Edge.
+- [x] **Task 12.4**: Pembuatan suite favicon multi-resolusi 3D transparan penuh (*Royal Emerald & Gold*):
+  - `src/app/icon.png`, `src/app/apple-icon.png`, `src/app/favicon.ico`
+  - `public/favicon.png`, `public/favicon-16x16.png`, `public/favicon-32x32.png`
+  - `public/apple-touch-icon.png`, `public/icon-192.png`, `public/icon-512.png`
+- [x] **Task 12.5**: Integrasi dependensi `sharp` dan konfigurasi `minimumCacheTTL` 1 tahun di `next.config.ts`.
+- [x] **Task 12.6**: Desain halaman 404 kustom bernuansa islami di `src/app/not-found.tsx`.
+- [x] **Task 12.7**: Optimasi SSG parser artikel di `src/app/artikel/[slug]/page.tsx` (seluruh 400 artikel ter-parse dalam 61ms, build 457 halaman dalam 11 detik).
+
+### Phase 13: All in One SEO XML Sitemap Architecture & Advanced Robots.txt
+- [x] **Task 13.1**: Pembangunan arsitektur XML Sitemap Index berstandar All in One SEO / Yoast SEO di `src/lib/sitemap-helper.ts`.
+- [x] **Task 13.2**: Implementasi master index `/sitemap.xml` dan alias `/sitemap_index.xml` via route handlers Next.js App Router.
+- [x] **Task 13.3**: Pemecahan sub-sitemap per kategori:
+  - `/page-sitemap.xml` (10 halaman statis utama)
+  - `/paket-sitemap.xml` (11 paket umroh kota embarkasi)
+  - `/umroh-plus-sitemap.xml` (5 destinasi umroh plus)
+  - `/cabang-sitemap.xml` (26 kantor cabang fisik resmi)
+  - `/post-sitemap.xml` (400 artikel edukasi inbound SEO)
+- [x] **Task 13.4**: Integrasi Google Image Sitemap namespace (`xmlns:image`) pada seluruh entri sitemap.
+- [x] **Task 13.5**: Implementasi stylesheet visual interaktif `/sitemap.xsl` bertema Samira Travel untuk rendering browser ramah manusia.
+- [x] **Task 13.6**: Penyempurnaan `src/app/robots.ts` dengan deklarasi bot mesin pencari dan direktori sitemap lengkap.
+- [x] **Task 13.7**: Verifikasi HTTP 200 live di edge server Vercel untuk seluruh endpoint sitemap dan robots.txt.

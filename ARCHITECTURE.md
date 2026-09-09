@@ -105,21 +105,25 @@ Ketika admin CMS atau database Postgres/Supabase ditambahkan di kemudian hari, d
 
 ---
 
-## 5. Arsitektur SEO & Core Web Vitals
+## 5. Arsitektur SEO, Multi-Category Sitemap & Core Web Vitals
 
 1. **Metode Rendering (100% SSG)**:
-   * Menggunakan `export const dynamic = 'error'` dan `generateStaticParams()` pada seluruh dynamic route. Tidak ada pemanggilan server runtime yang lambat.
-2. **Dynamic Sitemap (`src/app/sitemap.ts`)**:
-   * Menghasilkan file XML yang memetakan seluruh:
-     * 14 Halaman Utama
-     * 11 Halaman Kota
-     * 5 Halaman Umroh Plus
-     * 26 Halaman Kantor Cabang
-     * 400 Halaman Artikel
-     * Total: **456 URL terindeks secara instan oleh Google**.
-3. **Structured Data Injection (JSON-LD)**:
+   * Menggunakan `generateStaticParams()` pada seluruh dynamic route. Mengompilasi 466 rute statis secara efisien dan cepat tanpa dependensi runtime lambat.
+2. **All in One SEO Multi-Category Sitemap Architecture**:
+   * Menggantikan sitemap tunggal menjadi sistem **Sitemap Index & Sub-Sitemaps Kategori**:
+     * `src/app/sitemap.xml/route.ts` & `src/app/sitemap_index.xml/route.ts`: Master index XML.
+     * `src/app/page-sitemap.xml/route.ts`: 10 halaman statis utama.
+     * `src/app/paket-sitemap.xml/route.ts`: 11 paket umroh kota keberangkatan.
+     * `src/app/umroh-plus-sitemap.xml/route.ts`: 5 destinasi wisata halal plus.
+     * `src/app/cabang-sitemap.xml/route.ts`: 26 kantor cabang fisik.
+     * `src/app/post-sitemap.xml/route.ts`: 400 artikel edukasi inbound SEO.
+     * `src/app/sitemap.xsl/route.ts`: Stylesheet visual XSLT interaktif bernuansa *Royal Emerald & Gold*.
+   * Menyertakan namespace Google Image Sitemap (`xmlns:image`) untuk optimasi pengindeksan gambar di Google Images & Google Discover.
+3. **Konfigurasi `src/app/robots.ts`**:
+   * Menyediakan aturan crawl granular untuk Googlebot, Googlebot-Image, dan Bingbot, serta mendaftarkan seluruh endpoint sitemap dan host kanonikal `https://samiratravelumrohhaji.com`.
+4. **Structured Data Injection (JSON-LD)**:
    * Setiap halaman menginjeksi script `<script type="application/ld+json">` yang tervalidasi skema Google Rich Results.
-4. **Target Kecepatan (Web Vitals Budget)**:
+5. **Target Kecepatan (Web Vitals Budget)**:
    * First Contentful Paint (FCP): < 0.8 detik
    * Largest Contentful Paint (LCP): < 1.4 detik
    * Cumulative Layout Shift (CLS): 0.00

@@ -116,6 +116,35 @@ Semua transaksi pembayaran wajib ditujukan langsung ke rekening resmi atas nama 
 
 ## 6. Kontak Layanan Resmi Samira Travel
 
-- **Layanan Kontak Terpadu (Telepon & WhatsApp)**: **`0856-0717-9735`**
+- **Layanan Kontak Terpadu (Telepon & WhatsApp)**: **`0856-0717-9735`** / **`(021) 8690-9999`**
 - **Cakupan Layanan**: Konsultasi Umroh Reguler, Umroh Plus, Haji Khusus Furoda, & Kemitraan Agensi DGi
-- **Email Resmi**: `samiratravelsurabayaterpercaya@gmail.com`
+- **Email Resmi**: `info@samiratravelumrohhaji.com` / `samiratravelsurabayaterpercaya@gmail.com`
+
+---
+
+## 7. Arsitektur Portal Web Modern (Next.js 16 App Router)
+
+Aplikasi portal web publik ini dibangun dari awal (*clean-slate rebuild*) menggunakan arsitektur modern berkinerja tinggi:
+- **Framework**: Next.js 16.3.4 (Turbopack, React Server Components, TypeScript).
+- **Styling**: Tailwind CSS 4 dengan *The Modern Madinah Sanctuary Design System* (Madinah Alabaster `#FAF8F5`, Rawdah Deep Forest `#084234`, Madinah Brass `#C5A059`).
+- **Data Access Layer (DAL)**: 100% decoupling data produk paket, 26 cabang, dan 400 artikel edukasi.
+- **Rute Statis (SSG)**: Mengompilasi **466 rute statis** via `generateStaticParams()` dalam waktu 34 detik.
+- **Brand Favicon Suite**: Favicon 3D transparan penuh (full/fill 96%) berbasis kaligrafi resmi *سميرة* dalam format multi-resolusi (`favicon.ico`, `favicon.png`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`).
+- **Performa Gambar**: Terintegrasi engine `sharp` dengan `minimumCacheTTL` 1 tahun.
+
+---
+
+## 8. Status Deployment Produksi & Peta Situs (All in One SEO)
+
+- **Domain Utama**: [`https://samiratravelumrohhaji.com`](https://samiratravelumrohhaji.com)
+- **Live Edge Deployment**: [`https://samiratravelumroh.vercel.app`](https://samiratravelumroh.vercel.app)
+- **Sitemap Index Master**: [`https://samiratravelumrohhaji.com/sitemap.xml`](https://samiratravelumrohhaji.com/sitemap.xml)
+- **Sub-Sitemap Kategori**:
+  - `page-sitemap.xml` (10 halaman statis utama)
+  - `paket-sitemap.xml` (11 paket umroh kota embarkasi langsung)
+  - `umroh-plus-sitemap.xml` (5 paket wisata halal umroh plus)
+  - `cabang-sitemap.xml` (26 kantor cabang resmi se-Indonesia)
+  - `post-sitemap.xml` (400 artikel edukasi dengan Google Image Sitemap)
+  - `sitemap.xsl` (Interactive XSLT styling)
+  - `robots.txt` (Pengaturan crawling Googlebot, Googlebot-Image, Bingbot)
+
