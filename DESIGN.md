@@ -26,8 +26,8 @@
 3. **Dilarang Frame Artifisial pada Gambar**:
    - Gambar dilarang diberi padding kaku, border ganda, atau latar polaroid palsu.
    - Seluruh foto dokumentasi dan gambar visual harus tampil *clean*, *full-bleed*, atau dalam *stage aspect-ratio* presisi (16:9 / 16:10 / 4:5) dengan cropping profesional.
-4. **Dilarang Tombol WhatsApp Berlebihan**:
-   - Cukup 1 tombol aksi utama kontekstual per viewport/section + 1 *Floating WhatsApp Widget* di desktop dan 1 *Sticky Mobile Bar* di mobile. Tidak boleh ada 3–4 tombol WA bertumpukan di satu layar.
+4. **Dilarang Tombol WhatsApp Berlebihan (Spam CTA)**:
+   - Cukup 1 tombol aksi utama kontekstual per viewport/section + 1 *Floating WhatsApp Radar* di desktop dan 1 *Mobile Web App Dock* (`MobileAppDock.tsx`) di mobile yang bermutasi adaptif menjadi sticky price bar saat scrolling di halaman paket. Tidak boleh ada 3–4 tombol WA bertumpukan di satu layar.
 5. **Zero Raw Emojis**:
    - Seluruh ikonografi strictly menggunakan vektor SVG dari `lucide-react`.
 
@@ -131,7 +131,7 @@ Untuk mengangkat kualitas web agar benar-benar setara portal umrah luxury kekini
 - **Mobile Viewport (< 768px)**:
   - Header ramping dengan logo tajam dan tombol darurat hotline / menu drawer.
   - Kartu paket memadatkan metadata penting: durasi, hotel ring-1, harga all-in, dan CTA WhatsApp.
-  - *Sticky Bottom Conversion Bar*: Selalu siap di dasar layar dengan tombol WA berukuran jempol (`min-h-[46px]`).
+  - *Mobile Web App Dock (`MobileAppDock.tsx`)*: Dock bawah 4-tab (Beranda, Paket, 26 Cabang, Tanya CS) yang ramah jempol, otomatis bermutasi menjadi sticky price conversion bar saat scrolling di halaman paket.
 - **Tablet (768px – 1024px)**:
   - Grid 2 kolom seimbang dan rapi.
 - **Desktop (≥ 1024px)**:

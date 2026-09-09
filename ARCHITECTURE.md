@@ -23,7 +23,7 @@
 [ React Server Components ]      [ Client Islands ("use client") ]     [ Route Handlers / SEO ]
 • 100% Pre-rendered HTML         • Interactive Flight Deck             • dynamic sitemap.xml
 • 400 Articles Reader            • Financing Calculator Slider         • dynamic robots.txt
-• City Landing Pages             • Bottom Sheet Drawer (Mobile)        • JSON-LD Injections
+• City Landing Pages             • Mobile App Dock & Global Search Modal        • JSON-LD Injections
 • Zero Client JS Overhead        • Floating WhatsApp Radar Pulse       • Metadata API
      └─────────────────────────────────────┬─────────────────────────────────────┘
                                            │

@@ -121,12 +121,17 @@ Mayoritas calon jemaah haji dan umrah adalah kalangan lanjut usia (lansia), pens
 
 ### 4.3. Mobile-First: Web App-Like View Experience
 Di perangkat smartphone (akses > 82% pengguna), portal beroperasi layaknya aplikasi native yang taktil, cepat, dan ergonomis:
-1. **Fixed Top App Header**:
-   * Header ramping mengapung dengan logo Samira Travel tajam, lencana *Peringkat #1 Nasional*, hotline telepon darurat, dan tombol drawer menu hamburger yang mudah dijangkau.
-2. **Sticky Bottom Conversion & Anchor Bar (`StickyMobileBar`)**:
-   * Bar mengapung di bagian bawah layar yang terkunci pada zona jangkauan satu ibu jari (*thumb zone*).
-   * Menampilkan anchor harga acuan paket terendah (*"Mulai Rp 35.000.000"*) dan tombol hijau WhatsApp berukuran lebar minimum `44px` tinggi dengan efek taktil responsif (`:active:scale-[0.98]`).
-   * Mendukung penuh `pb-safe` / `env(safe-area-inset-bottom)` agar tidak terpotong garis gesture home iPhone.
+1. **Fixed Top App Header (56px)**:
+   * Header ramping mengapung dengan logo Samira Travel tajam, hotline telepon darurat, tombol pencarian cepat `Cmd+K` / Search, dan tombol drawer menu yang mudah dijangkau.
+2. **Mobile Web App Bottom Dock (`MobileAppDock.tsx`)**:
+   * Dock navigasi 4-tab yang menempel di bagian bawah layar smartphone dalam jangkauan satu ibu jari (*thumb zone*):
+     1. **Beranda** (Ikon Home): Kembali ke hub utama.
+     2. **Paket** (Ikon Compass): Akses cepat katalog umroh & haji.
+     3. **26 Cabang** (Ikon MapPin): Temukan kantor fisik terdekat di kota jemaah.
+     4. **Tanya CS** (Ikon MessageCircle hijau): WhatsApp langsung ke representasi resmi Samira Travel.
+   * **Adaptive Contextual Morphing**:
+     * Pada halaman detail paket (`/paket-umroh/[city]` & `/umroh-plus/[slug]`), saat jemaah menggulir (*scroll*) melewati 380px, dock 4-tab otomatis bermutasi (*smooth spring transition*) menjadi **Sticky Conversion Anchor Bar** yang menampilkan harga acuan terendah (*"Mulai Rp 35 Jt"*) dan tombol hijau WhatsApp lebar penuh (`min-h-[46px]`).
+   * Mendukung penuh `pb-safe` / `env(safe-area-inset-bottom)` agar tidak terpotong indikator gesture home iPhone.
 3. **Boarding Pass Card Transformation (Dual-Mode Table)**:
    * Menghilangkan jebakan tabel horizontal yang sulit digeser di layar HP (*no horizontal scroll traps*).
    * Tabel jadwal penerbangan di desktop otomatis bermutasi di mobile menjadi **Kartu Boarding Pass Tiket Pesawat Vertikal** yang memuat jam terbang, nomor maskapai, tanggal masehi/hijriyah, dan sisa seat.
@@ -134,6 +139,28 @@ Di perangkat smartphone (akses > 82% pengguna), portal beroperasi layaknya aplik
    * Pemilihan 11 kota embarkasi dan kategori paket di mobile disajikan dalam bentuk deretan *horizontal scrolling chips* yang halus atau modal lembar geser bawah (*bottom sheet*) bergaya iOS/Android native.
 5. **Anti-Zoom Trap Invariant**:
    * Seluruh elemen input pencarian, dropdown, dan form wajib disetel minimal font **`16px` (`text-base`)** pada breakpoint mobile untuk mencegah browser Safari/Chrome melakukan auto-zoom paksa yang merusak layout.
+
+### 4.4. Anti-Pattern & Legacy UI/UX Rejection Contract (7 Aturan Anti-Trigger UI Lama)
+Untuk memastikan tidak ada AI agent atau developer yang terpicu mengulang desain UI/UX lama yang generik atau kaku, aturan penolakan mutlak (*Haram*) berikut wajib dipatuhi:
+1. **Haram Box-in-Box / Card-in-Card Syndrome**:
+   * Dilarang membungkus komponen dalam kartu abu-abu (`bg-slate-50 border`) di dalam kartu putih (`bg-white border`).
+   * Gunakan arsitektur terbuka (*The Open Sanctuary*): pemisah garis rambut 1px (`#E8E3DA`), whitespace lega, dan hierarki tipografi.
+2. **Haram Equal Bento Grid AI Slop**:
+   * Dilarang menyusun 6 atau 9 kartu persegi identik berjejer yang monoton.
+   * Gunakan ritme editorial: kartu hero/unggulan lebih besar dengan visual 16:9 sinematik, didampingi list/split metadata yang ringkas.
+3. **Haram Pill & Badge Inflation**:
+   * Dilarang menaruh pil badge `rounded-full uppercase tracking-wider` di atas setiap judul secara berulang. Cukup 1 kicker kategori minimalis atau lencana akreditasi resmi.
+4. **Haram Gradasi Hijau Neon Murahan**:
+   * Dilarang menggunakan warna hijau terang/neon template AI.
+   * Wajib menggunakan **The Sacred Palette**: *Madinah Alabaster* (`#FAF8F5`), *Rawdah Deep Forest* (`#084234`), *Madinah Brass* (`#C5A059`), dan *Midnight Rawdah* (`#04261E`).
+5. **Haram Frame Artifisial & Polaroid Palsu pada Foto**:
+   * Foto tidak boleh diberi border ganda, rotasi miring, atau efek polaroid palsu.
+   * Seluruh gambar tampil *clean*, *full-bleed*, atau dalam rasio presisi 16:9 / 1:1.41 (A4) / 1:1 sesuai Matriks Aset Gambar.
+6. **Haram Multi-Tombol WhatsApp Bertumpuk (Spam CTA)**:
+   * Dilarang menaruh 3–4 tombol WhatsApp dalam satu viewport.
+   * Cukup 1 tombol aksi utama kontekstual per section + 1 dock/bar di mobile.
+7. **Haram Tabel Horizontal di Layar Mobile**:
+   * Dilarang menyajikan tabel yang mengharuskan scroll ke samping di layar HP. Wajib otomatis bermutasi menjadi kartu vertikal *Boarding Pass*.
 
 ---
 
