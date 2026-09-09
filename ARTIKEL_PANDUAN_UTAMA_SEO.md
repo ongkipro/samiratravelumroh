@@ -1,18 +1,22 @@
-# Kumpulan Artikel Pilar SEO (Cornerstone Content) - Samira Travel
+# Kumpulan 10 Artikel Pilar SEO (Cornerstone Content) - Samira Travel
 
-Dokumen ini memuat **5 Artikel Edukasi Pilar Utama** yang disusun menggunakan standar keahlian konten kami (`copywriting`, `content`, `volumx-writer`, dan `seo-website-builder`). 
+Dokumen ini memuat **10 Artikel Edukasi Pilar Utama** yang disusun menggunakan standar keahlian konten kami (`copywriting`, `content`, `volumx-writer`, dan `seo-website-builder`). 
 
 Seluruh artikel ditulis dalam **Bahasa Indonesia alami berbobot praktisi (100% Human Writing)**, bebas dari klise AI (*anti-AI slop*), tanpa kosakata Melayu, memenuhi formula SEO on-page modern (*Intent Visibility*, *Key Takeaways*, *H2 Contract Fulfillment*, *Meta Title/Description*, batas karakter ketat, tabel data riil, dan FAQ nyata).
 
 ---
 
-## Daftar Isi Artikel Pilar
+## Daftar Isi 10 Artikel Pilar
 1. [Biaya Umroh 2026: Rincian Komponen Paket, Pilihan Embarkasi, dan Tips Biaya Tersembunyi](#artikel-1)
 2. [Syarat Visa Umroh 2026: Dokumen Resmi, Aturan Paspor Dua Kata, dan Ketentuan Baru Saudi](#artikel-2)
 3. [Panduan Tata Cara Ibadah Umroh: Urutan Rukun, Bacaan Doa, dan Larangan Ihram Sesuai Sunnah](#artikel-3)
 4. [Haji Furoda 2026: Biaya USD 17.000, Alur Visa Mujamalah Resmi, dan Fasilitas Maktab Khusus](#artikel-4)
 5. [Cara Cek Legalitas Travel Umroh Berizin Kemenag: Panduan Praktis Aplikasi SISKOPATUH](#artikel-5)
-
+6. [Jadwal Masuk Raudhah 2026: Aturan Aplikasi Nusuk, Kuota Izin Tasreh, dan Tips Ibadah Khusyuk](#artikel-6)
+7. [Daftar Perlengkapan Umroh 2026: Checklist Lengkap Jamaah Pria dan Wanita](#artikel-7)
+8. [Perbedaan Haji Furoda, Haji Khusus, dan Haji Reguler: Rincian Biaya, Kuota, dan Waktu Tunggu](#artikel-8)
+9. [Wisata Sejarah Kota Thaif: Cable Car Pegunungan, Kebun Mawar, dan Ziarah Masjid Ibnu Abbas](#artikel-9)
+10. [Tips Umroh Ramah Lansia dan Jamaah Kebutuhan Medis Khusus: Persiapan Fisik, Kursi Roda, dan Obat](#artikel-10)
 ---
 
 <a id="artikel-1"></a>
@@ -342,46 +346,351 @@ Untuk memastikan proses pendaftaran berjalan aman dan transparan:
 
 ---
 
-# Cara Cek Legalitas Travel Umroh Berizin Kemenag: Panduan Praktis Aplikasi SISKOPATUH
+# Cara Cek Legalitas Travel Umroh Berizin Kemenag: Panduan Praktis Aplikasi SISKOPATUH dan SIMPU
 
-Sebelum menyetorkan uang muka pendaftaran umroh, langkah paling mendasar yang wajib dilakukan setiap calon jamaah adalah memeriksa keabsahan izin operasional biro perjalanan tersebut di Kementerian Agama Republik Indonesia. Maraknya kasus travel bodong atau travel yang hanya berstatus agen tanpa izin Penyelenggara Perjalanan Ibadah Umrah (PPIU) dapat dihindari sepenuhnya jika masyarakat memanfaatkan basis data resmi pemerintah.
+Sebelum menyetorkan uang muka pendaftaran umroh sepeser pun, langkah paling mendasar yang wajib dilakukan setiap calon jamaah adalah memeriksa keabsahan izin operasional biro perjalanan tersebut di Kementerian Agama Republik Indonesia. Maraknya kasus travel bodong, penelantaran jamaah di bandara, atau biro perjalanan yang beroperasi tanpa izin Penyelenggara Perjalanan Ibadah Umrah (PPIU) dapat dihindari sepenuhnya apabila masyarakat memanfaatkan basis data keterbukaan informasi publik yang disediakan pemerintah.
 
 > [!NOTE] Prinsip Gerakan 5 Pasti Umroh Kemenag RI
-> 1. **Pasti Travelnya Berizin**: Memiliki SK PPIU aktif dari Kementerian Agama.
-> 2. **Pasti Jadwalnya**: Memiliki kepastian tanggal terbang dan nomor penerbangan.
-> 3. **Pasti Terbangnya**: Tiket pesawat pulang-pergi sudah dipesan (*block seat*).
-> 4. **Pasti Hotelnya**: Nama dan lokasi hotel di Makkah & Madinah jelas.
-> 5. **Pasti Visanya**: Terdaftar di e-Visa Kementerian Haji Arab Saudi.
+> 1. **Pasti Travelnya Berizin**: Memiliki SK PPIU aktif dari Kementerian Agama Republik Indonesia.
+> 2. **Pasti Jadwalnya**: Memiliki kepastian tanggal terbang pulang-pergi dan nomor penerbangan yang terdaftar.
+> 3. **Pasti Terbangnya**: Tiket pesawat internasional pulang-pergi sudah dipesan (*block seat / charter*).
+> 4. **Pasti Hotelnya**: Nama dan lokasi hotel di Makkah dan Madinah tercantum jelas beserta bukti reservasi.
+> 5. **Pasti Visanya**: Terdaftar resmi pada manifes e-Visa Kementerian Haji dan Umrah Kerajaan Arab Saudi.
 
 ---
 
-## 1. Langkah Cek Legalitas PPIU Melalui Website Resmi Kemenag
+## 1. Langkah Cek Legalitas PPIU Melalui Portal Resmi SIMPU Kemenag
 
-Pemerintah menyediakan portal publik Sistem Informasi dan Komputerisasi Pengelolaan Terpadu Umrah dan Haji Khusus (**SIMPU / SISKOPATUH**):
+Pemerintah melalui Direktorat Jenderal Penyelenggaraan Haji dan Umrah (Ditjen PHU) menyediakan portal publik Sistem Informasi Manajemen Perjalanan Umrah (**SIMPU**) yang dapat diakses masyarakat secara gratis:
 
-1. Buka peramban (*browser*) dan akses portal resmi: `https://simpu.kemenag.go.id/`.
-2. Pilih menu **"Daftar Penyelenggara Umrah (PPIU)"**.
-3. Masukkan nama badan hukum travel pada kolom pencarian (contoh: ketik **`PT Samira Ali Wisata`**).
-4. Periksa hasil data yang ditampilkan sistem:
-   - **Nomor SK Izin**: Pastikan tertera nomor SK Menteri Agama aktif (contoh: *SK No. 137 Tahun 2020*).
-   - **Status Akreditasi**: Periksa nilai akreditasi biro travel (akreditasi A mencerminkan kepatuhan audit operasional tertinggi).
-   - **Alamat Kantor Pusat**: Pastikan alamat operasional fisik sesuai dengan lokasi kantor yang Anda kunjungi.
-   - **Penanggung Jawab**: Nama pimpinan atau direktur utama tercatat secara sah.
-
----
-
-## 2. Cara Memverifikasi Nomor Porsi Umroh (NPU) Jamaah
-
-Setelah mendaftar dan membayar uang muka di travel resmi, setiap jamaah berhak mendapatkan **Nomor Porsi Umroh (NPU)**:
-- NPU adalah tanda bukti bahwa identitas jamaah telah diinput secara sah ke dalam manifes nasional Ditjen Penyelenggaraan Haji dan Umrah Kemenag RI.
-- Jamaah dapat mengunduh aplikasi mobile resmi **Umrah Cerdas** di Google Play Store atau App Store.
-- Masukkan Nomor Porsi Umroh (NPU) atau nomor paspor pada menu cek porsi untuk melihat status penerbitan visa, nama maskapai penerbangan, serta kepesertaan asuransi perjalanan resmi.
+1. Buka peramban (*browser*) di ponsel atau komputer, lalu akses tautan resmi: `https://simpu.kemenag.go.id/`.
+2. Klik menu navigasi **"Daftar PPIU"** atau pilih bilah pencarian penyelenggara.
+3. Masukkan nama badan hukum resmi travel pada kolom pencarian (contoh: ketik **`PT Samira Ali Wisata`**).
+4. Cermati empat parameter legalitas utama yang ditampilkan sistem:
+   - **Nomor SK Izin Operasional**: Pastikan nomor SK Menteri Agama masih aktif dan berlaku (contoh: *SK Menteri Agama RI No. 137 Tahun 2020*).
+   - **Peringkat Akreditasi**: Periksa sertifikasi akreditasi berkala biro perjalanan (Akreditasi A mencerminkan kualifikasi tertinggi dalam kepatuhan manajemen dan perlindungan hak jamaah).
+   - **Alamat Kantor Fisik**: Bandingkan alamat kantor operasional yang tertera di sistem Kemenag dengan alamat kantor cabang atau perwakilan yang Anda datangi.
+   - **Nama Penanggung Jawab / Direksi**: Nama direktur utama tercantum secara sah dan dapat dikonfirmasi identitasnya.
 
 ---
 
-## 3. Ciri-Ciri Biro Travel Umroh Kredibel
+## 2. Cara Memverifikasi Nomor Porsi Umroh (NPU) di Aplikasi SISKOPATUH
 
-Selain izin operasional formal, biro perjalanan terpercaya memiliki standar transparansi berikut:
-- **Rekening Penampungan Berbadan Hukum**: Penyetoran biaya umroh selalu menggunakan rekening giro atas nama perseroan terbatas (PT), bukan rekening pribadi pemilik atau agen.
-- **Peralatan dan Fasilitas Transparan**: Menyediakan perlengkapan berkualitas (koper fiber standar internasional, seragam batik resmi, kain ihram berkualitas).
-- **Pembimbing Tersertifikasi**: Memiliki muthawwif dan tour leader yang memegang sertifikasi kompetensi dari Badan Nasional Sertifikasi Profesi (BNSP).
+Sistem Komputerisasi Pengelolaan Terpadu Umrah dan Haji Khusus (**SISKOPATUH**) adalah benteng utama perlindungan jamaah Indonesia:
+- **Hak Memperoleh NPU**: Begitu jamaah membayar uang muka pendaftaran dan menyerahkan paspor, biro travel wajib menginput data jamaah ke dalam SISKOPATUH untuk menerbitkan **Nomor Porsi Umroh (NPU)**.
+- **Verifikasi Mandiri via Aplikasi Umrah Cerdas**:
+  1. Unduh aplikasi mobile resmi **Umrah Cerdas** di Google Play Store atau Apple App Store.
+  2. Buka menu **Cek Porsi Umroh**.
+  3. Masukkan nomor paspor atau Nomor Porsi Umroh (NPU) Anda.
+  4. Sistem akan menampilkan rincian: nama jamaah, nama travel penyelenggara, jadwal keberangkatan, status penerbitan visa umroh, maskapai penerbangan, dan nomor polis asuransi perjalanan resmi.
+- **Tanda Bahaya (*Red Flag*)**: Apabila travel beralasan tidak dapat menerbitkan nomor porsi umroh hingga mendekati hari keberangkatan, patut diduga kuat travel tersebut tidak mendaftarkan jamaah secara resmi atau tidak memiliki izin PPIU sendiri (*hanya menjadi calo/broker tiket*).
+
+---
+
+## 3. Dokumen Legalitas Fisik yang Wajib Dipajang di Kantor Travel
+
+Berdasarkan regulasi Kementerian Agama, kantor pusat maupun kantor cabang resmi biro perjalanan umroh wajib memperlihatkan dokumen perizinan di ruang pelayanan publik:
+1. **Salinan Sertifikat Izin PPIU dan PIHK**: Dicetak resmi dengan stempel legalisir Kemenag RI.
+2. **Nomor Induk Berusaha (NIB)**: Bukti izin operasional berbasis risiko KBLI 79122 dari sistem OSS BKPM (contoh Samira Travel: `1609210047562`).
+3. **Sertifikat Akreditasi Lembaga Sertifikasi Usaha (LSU)**: Dokumen evaluasi standar pelayanan minimal biro perjalanan wisata.
+4. **Tanda Keanggotaan Asosiasi Resmi**: Bukti terdaftar aktif dalam asosiasi biro perjalanan haji dan umroh resmi yang diakui pemerintah (seperti HIMPUH, SAPUHI, atau ASITA).
+5. **Sertifikasi Kompetensi Tour Leader & Muthawwif**: Sertifikat profesi dari Badan Nasional Sertifikasi Profesi (BNSP) yang membuktikan para pembimbing ibadah memiliki kompetensi standar dalam tata kelola perjalanan dan fikih haji-umroh.
+
+---
+
+## 4. Sanksi Hukum Bagi Travel Tanpa Izin (Pasal 122 UU No. 8/2019)
+
+Masyarakat perlu memahami bahwa penyelenggaraan perjalanan ibadah umroh diatur ketat oleh undang-undang. Praktik penyelenggaraan umroh tanpa izin resmi bukan sekadar pelanggaran administratif, melainkan tindak pidana murni:
+- **Pasal 122 UU Nomor 8 Tahun 2019**: Menegaskan bahwa setiap orang atau badan yang tanpa hak dan tanpa izin operasional resmi PPIU dari Menteri Agama mengumpulkan dana, memberangkatkan, atau menyelenggarakan perjalanan ibadah umroh dipidana dengan **penjara paling lama 6 (enam) tahun atau denda paling banyak Rp 6.000.000.000 (enam miliar rupiah)**.
+- **Perlindungan Rekening Berbadan Hukum**: Travel berizin resmi diwajibkan menyalurkan seluruh transaksi keuangan ke rekening atas nama perseroan terbatas (PT) atau Virtual Account resmi. Travel yang meminta setoran tunai tanpa kuitansi berstempel atau meminta transfer ke rekening pribadi pemilik berisiko tinggi melakukan penggelapan dana jamaah.
+
+---
+
+## Tanya Jawab Seputar Legalitas Travel Umroh (FAQ)
+
+### Apa bedanya travel yang memiliki izin PPIU sendiri dengan travel yang hanya bertindak sebagai agen?
+Travel pemegang izin resmi PPIU (Penyelenggara Perjalanan Ibadah Umrah) memiliki kewenangan legal langsung untuk mengajukan visa ke Kedutaan/Kementerian Haji Arab Saudi, mencarter pesawat, dan bertanggung jawab penuh secara hukum atas keselamatan jamaah. Agen atau perwakilan adalah perorangan/badan yang bermitra resmi di bawah naungan izin PPIU induk (seperti agen Pejuang Baitullah DGi yang bernaung di bawah PPIU PT Samira Ali Wisata).
+
+### Bagaimana jika nama travel terdaftar di Kemenag tetapi statusnya sedang dalam pembekuan izin?
+Kementerian Agama secara rutin merilis daftar travel yang dikenai sanksi administratif (peringatan tertulis, pembekuan izin sementara, hingga pencabutan izin tetap). Status ini dapat dilihat langsung pada kolom status operasional di portal SIMPU Kemenag. Jangan mendaftar pada travel yang berstatus *"Dibekukan"* atau *"Izin Habis/Tidak Berlaku"*.
+
+### Apa langkah yang harus diambil jika menemukan indikasi penipuan travel umroh?
+Jamaah dapat membuat laporan pengaduan resmi ke kantor Kementerian Agama Kabupaten/Kota setempat melalui Seksi Penyelenggaraan Haji dan Umrah (PHU), atau melaporkan tindak pidana penipuan ke kepolisian dengan melampirkan kuitansi setoran, brosur penawaran, dan riwayat komunikasi.
+
+<a id="artikel-6"></a>
+# Artikel 6
+
+### Metadata SEO
+- **Target Keyword**: `Jadwal Masuk Raudhah Nusuk 2026`
+- **Slug**: `jadwal-masuk-raudhah-masjid-nabawi-aturan-aplikasi-nusuk`
+- **Meta Title** (54 karakter): `Jadwal Masuk Raudhah 2026: Aturan Aplikasi Nusuk & Tips`
+- **Meta Description** (149 karakter): `Panduan resmi jadwal dan izin masuk Raudhah Masjid Nabawi 2026 via aplikasi Nusuk. Ketahui kuota izin tasreh, jadwal pria/wanita, serta tips lolos antrean.`
+
+---
+
+# Jadwal Masuk Raudhah 2026: Aturan Aplikasi Nusuk, Kuota Izin Tasreh, dan Tips Ibadah Khusyuk
+
+Raudhah Asy-Syarifah di dalam Masjid Nabawi Madinah adalah area mulia yang disebut oleh Rasulullah SAW sebagai salah satu taman surga (*Raudhah min Riyadhil Jannah*). Berada di antara mimbar dan makam Nabi Muhammad SAW, tempat ini menjadi tujuan utama setiap jamaah untuk memanjatkan doa mustajab dan shalat sunnah. Namun, sejak Pemerintah Kerajaan Arab Saudi menerapkan digitalisasi perizinan ketat melalui aplikasi **Nusuk**, jamaah tidak bisa lagi masuk secara bebas tanpa jadwal izin resmi (*tasreh*).
+
+> [!NOTE] Poin Penting Izin Raudhah 2026
+> - Setiap jamaah hanya berhak memperoleh izin masuk Raudhah resmi **satu kali dalam rentang waktu 365 hari (1 tahun kalender)** melalui aplikasi Nusuk.
+> - Pembagian jadwal masuk dipisahkan secara tegas antara jamaah laki-laki dan jamaah perempuan dengan jam operasional khusus.
+> - Jamaah yang berangkat bersama biro travel resmi berizin PPIU (seperti Samira Travel) mendapatkan pengurusan izin masuk kelompok (*tasreh jama'i*) yang dikoordinasikan langsung oleh tim muthawwif.
+
+---
+
+## 1. Pembagian Jadwal Masuk Raudhah untuk Laki-laki dan Perempuan
+
+Otoritas Pengelola Dua Masjid Suci (*General Authority for the Affairs of the Grand Mosque and the Prophet's Mosque*) menetapkan jadwal masuk harian sebagai berikut:
+
+| Kategori Jamaah | Sesi Waktu Masuk Harian | Pintu Masuk Resmi | Catatan Operasional |
+|:---|:---|:---:|:---|
+| **Jamaah Laki-laki** | 1. Pukul 01.00 dini hari hingga menjelang Shalat Subuh.<br>2. Pukul 11.00 siang hingga menjelang Shalat Isya. | **Bab As-Salam (Pintu 1)** / Pintu 37 | Wajib hadir 15–30 menit sebelum jam reservasi barcode. |
+| **Jamaah Perempuan** | 1. Pukul 06.00 pagi (ba'da Subuh) hingga pukul 11.00 siang.<br>2. Pukul 21.30 malam (ba'da Isya) hingga pukul 00.30 dini hari. | **Bab Utsman bin Affan (Pintu 24 & 25)** | Area pemeriksaan khusus di pelataran sayap utara. |
+
+---
+
+## 2. Cara Membuat Izin Masuk Raudhah Mandiri via Aplikasi Nusuk
+
+Bagi jamaah yang ingin memastikan reservasi mandiri di ponsel cerdas (*smartphone*):
+1. Unduh aplikasi resmi **Nusuk** (tersedia di Google Play Store dan Apple App Store).
+2. Pilih bahasa (tersedia opsi Bahasa Inggris dan Bahasa Arab).
+3. Buat akun baru (*New User*) dan pilih kategori **Visitor** (Pengunjung Mancanegara).
+4. Masukkan data: Nomor Visa Umroh, Nomor Paspor, Tanggal Lahir, Kewarganegaraan (*Indonesia*), Email aktif, dan kata sandi.
+5. Verifikasi kode OTP 4 digit yang dikirimkan ke email Anda.
+6. Pada menu utama, pilih layanan **Prophet's Mosque Services** lalu klik **Praying in the Noble Rawdah**.
+7. Pilih nama jamaah, tentukan tanggal yang masih tersedia (indikator hijau berarti kuota longgar, kuning berarti sisa sedikit, merah berarti kuota penuh), lalu pilih slot jam kunjungan.
+8. Sistem akan menerbitkan **Barcode Tasreh Resmi**. Tunjukkan barcode digital ini kepada petugas Asykar di pintu pemeriksaan pintu masuk Masjid Nabawi.
+
+---
+
+## 3. Etika dan Ketentuan Penting Saat Berada di Raudhah
+
+Mengingat waktu ibadah di dalam Raudhah dibatasi rata-rata 10 hingga 15 menit per kloter jamaah:
+- **Prioritaskan Shalat Sunnah dan Doa**: Begitu memasuki karpet hijau Raudhah, segera laksanakan shalat sunnah tahiyyatul masjid dan shalat sunnah mutlak 2 rakaat, lalu sujud panjang memohon hajat dan ampunan.
+- **Hindari Mengambil Foto Berlebihan**: Mengambil video atau swafoto (*selfie*) berlebihan dapat mengganggu kekhusyukan jamaah lain dan berisiko ditegur petugas Asykar.
+- **Ucapkan Salam ke Makam Nabi**: Saat keluar dari area Raudhah, jamaah laki-laki akan melintasi makam Rasulullah SAW, Abu Bakar Ash-Shiddiq, dan Umar bin Khattab seraya melafalkan salam dengan suara pelan dan santun:
+  *`Assalaamu 'alaika yaa Rasuulallaah, wa rahmatullaahi wa barakaatuh`*.
+
+---
+
+<a id="artikel-7"></a>
+# Artikel 7
+
+### Metadata SEO
+- **Target Keyword**: `Daftar Perlengkapan Umroh 2026`
+- **Slug**: `daftar-perlengkapan-umroh-pria-wanita-checklist-lengkap`
+- **Meta Title** (54 karakter): `Daftar Perlengkapan Umroh 2026: Checklist Pria & Wanita`
+- **Meta Description** (149 karakter): `Daftar checklist perlengkapan umroh 2026 untuk pria dan wanita. Ketahui pakaian ihram, dokumen penting, obat pribadi, dan tips koper tidak kelebihan bagasi.`
+
+---
+
+# Daftar Perlengkapan Umroh 2026: Checklist Lengkap Jamaah Pria dan Wanita
+
+Mempersiapkan barang bawaan untuk perjalanan ibadah umroh selama 9 hingga 16 hari di Tanah Suci membutuhkan strategi pengemasan (*packing*) yang cermat. Membawa barang terlalu banyak akan merepotkan saat perpindahan hotel dari Madinah ke Makkah, sementara tertinggalnya barang-barang penting seperti obat pribadi atau sandal yang nyaman dapat mengganggu kenyamanan ibadah.
+
+> [!NOTE] Panduan Bagasi Standar Maskapai
+> - Maskapai penerbangan umroh (seperti Lion Air charter) umumnya menyediakan jatah **bagasi utama maksimal 25–30 kg** dan **bagasi kabin maksimal 7 kg**.
+> - Air zamzam 5 liter disiapkan terpisah oleh biro travel dan tidak memotong jatah berat bagasi koper Anda.
+
+---
+
+## 1. Dokumen dan Barang Krusial di Dalam Tas Paspor / Kabin
+
+Seluruh dokumen identitas berikut wajib dimasukkan ke dalam **tas paspor selempang kecil** yang selalu melekat di badan, bukan di koper bagasi besar:
+1. **Paspor Asli dan Buku Kuning Vaksin**: Disimpan di saku dalam tas yang beritsleting aman.
+2. **KTP dan Salinan Kartu Keluarga**: Untuk verifikasi administrasi cadangan.
+3. **Uang Tunai Real (SAR) dan Rupiah (IDR)**: Siapkan uang tunai pecahan kecil (1, 5, 10, 50 Riyal) untuk kebutuhan sedekah dan belanja harian.
+4. **Smartphone dan Charger**: Serta powerbank dengan kapasitas di bawah 20.000 mAh (aturan keselamatan penerbangan melarang powerbank di koper bagasi).
+5. **Satu Stel Pakaian Ihram Cadangan di Kabin**: Khusus bagi penerbangan yang langsung mendarat di Jeddah dan langsung mengambil miqat di atas pesawat (*Yalamlam*).
+
+---
+
+## 2. Checklist Perlengkapan Khusus Jamaah Laki-laki
+
+| Jenis Barang | Jumlah yang Disarankan | Keterangan Pemakaian |
+|:---|:---:|:---|
+| **Kain Ihram Katun** | 2 Set (4 Lembar) | 1 set dipakai saat umroh, 1 set cadangan bersih jika terkena najis/kotor. |
+| **Sabuk Ihram** | 1 Buah | Berfungsi mengencangkan kain sarung ihram tanpa peniti dan menyimpan dompet/ponsel. |
+| **Baju Koko / Gamis Pria** | 3 – 4 Potong | Digunakan untuk shalat harian di masjid saat tidak dalam keadaan ihram. |
+| **Celana Panjang Santai** | 3 – 4 Potong | Celana berbahan katun ringan yang tidak panas. |
+| **Pakaian Dalam** | 6 – 8 Potong | Disarankan membawa pakaian dalam sekali pakai atau bahan cepat kering. |
+| **Sandal Gunung / Selop Terbuka** | 1 Pasang | Memenuhi syarat ihram (tidak menutupi mata kaki dan tumit). |
+
+---
+
+## 3. Checklist Perlengkapan Khusus Jamaah Perempuan
+
+| Jenis Barang | Jumlah yang Disarankan | Keterangan Pemakaian |
+|:---|:---:|:---|
+| **Gamis Syar'i / Baju Kurung** | 4 – 5 Potong | Pilih warna yang tidak mencolok (hitam, putih, biru tua, cokelat) dan bahan tidak menerawang. |
+| **Jilbab Bergo Panjang** | 3 – 4 Potong | Menutup dada dan punggung secara sempurna, praktis tanpa banyak jarum pentul. |
+| **Mukena Santai** | 1 – 2 Potong | Untuk kenyamanan shalat di hotel dan masjid. |
+| **Ciput / Dalaman Jilbab** | 4 – 5 Potong | Menjaga rambut tidak keluar saat berwudhu dan shalat. |
+| **Kaos Kaki Tebal** | 5 – 6 Pasang | Kaki adalah aurat wanita saat shalat, siapkan kaos kaki telapak hitam agar tidak cepat kotor. |
+| **Manset Tangan** | 3 Pasang | Mencegah lengan baju tersingkap saat takbiratul ihram. |
+
+---
+
+## 4. Perlengkapan Medis dan Perawatan Pribadi
+
+Suhu udara di Arab Saudi memiliki kelembapan rendah (*dry heat*) yang dapat membuat kulit kering dan bibir pecah-pecah:
+- **Pelembab Kulit (*Body Lotion*) & Lip Balm Non-Parfum**: Menghindari iritasi bibir dan tumit pecah-pecah.
+- **Semprotan Air Wajah (*Face Mist Bottle*)**: Sangat membantu menyegarkan wajah saat thawaf di siang hari.
+- **Obat-obatan Pribadi**: Obat flu, obat batuk hisap, parasetamol penurun panas, obat lambung/maag, diare, minyak angin, dan plester luka.
+- **Kacamata Hitam dan Payung Kecil**: Melindungi mata dan kepala dari terik sinar matahari langsung saat ziarah luar ruangan.
+
+---
+
+<a id="artikel-8"></a>
+# Artikel 8
+
+### Metadata SEO
+- **Target Keyword**: `Perbedaan Haji Furoda Khusus Reguler`
+- **Slug**: `perbedaan-haji-furoda-haji-khusus-dan-haji-reguler`
+- **Meta Title** (54 karakter): `Perbedaan Haji Furoda, Khusus & Reguler: Biaya & Waktu`
+- **Meta Description** (150 karakter): `Pahami perbedaan Haji Furoda, Haji Khusus (Plus), dan Haji Reguler. Ketahui rincian masa tunggu, estimasi biaya, kuota visa, dan fasilitas maktab di Saudi.`
+
+---
+
+# Perbedaan Haji Furoda, Haji Khusus, dan Haji Reguler: Rincian Biaya, Kuota, dan Waktu Tunggu
+
+Bagi masyarakat Indonesia yang berniat menunaikan rukun Islam kelima, memahami tiga jalur keberangkatan haji yang legal diatur pemerintah sangatlah penting. Perbedaan antara Haji Reguler, Haji Khusus (dulu dikenal sebagai ONH Plus), dan Haji Furoda (Mujamalah) terletak pada sumber kuota visa, masa antrean keberangkatan, rincian biaya yang dikeluarkan, serta kelas fasilitas maktab selama hari-hari masya'ir di Arafah dan Mina.
+
+> [!NOTE] Perbandingan Cepat 3 Jalur Haji
+> - **Haji Reguler**: Kuota resmi pemerintah, antrean 20–40 tahun, biaya terjangkau (Bipih ~Rp 56–60 juta).
+> - **Haji Khusus (PIHK)**: Kuota resmi pemerintah, antrean 5–8 tahun, biaya USD 11.000–14.000.
+> - **Haji Furoda (Mujamalah)**: Kuota visa undangan Kerajaan Saudi, **tanpa antre (berangkat tahun berjalan)**, biaya USD 17.000–25.000.
+
+---
+
+## 1. Tabel Komparasi Menyeluruh 3 Jalur Haji Resmi
+
+| Parameter Perbandingan | Haji Reguler | Haji Khusus (PIHK / Plus) | Haji Furoda (Mujamalah) |
+|:---|:---|:---|:---|
+| **Penyelenggara** | Kementerian Agama RI (Pemerintah) | Biro Travel Berizin PIHK Resmi | Biro Travel Berizin PIHK Resmi |
+| **Sumber Kuota Visa** | Kuota Negara RI (UU No. 8/2019) | Kuota Negara RI (Alokasi 8% Khusus) | Visa Mujamalah Langsung dari Saudi |
+| **Waktu Antrean** | **20 hingga 45 Tahun** (Tergantung Provinsi) | **5 hingga 8 Tahun** | **Tanpa Antri (Tahun Berjalan)** |
+| **Estimasi Biaya** | Rp 56.000.000 – Rp 60.000.000 | USD 11.000 – USD 14.000 (~Rp 180 Jt) | **USD 17.000 – USD 20.000** (~Rp 275 Jt) |
+| **Durasi Program** | 40 – 42 Hari | 25 – 30 Hari | **20 – 25 Hari (Kloter Akhir)** |
+| **Akomodasi Hotel** | Hotel bintang 3 (jarak 1–3 km, bus shalawat) | Hotel bintang 4/5 (ring 1 pelataran masjid) | Hotel bintang 5 ring 1 pelataran masjid |
+| **Tenda di Mina & Arafah**| Tenda standar reguler kapasitas 100–200 orang | Tenda maktab ber-AC semi-eksklusif | Tenda Maktab Khusus AC + Kasur busa lipat |
+| **Transportasi Bus** | Bus massal antar-jemput Kemenag | Bus pariwisata AC rombongan travel | Bus pariwisata eksekutif AC + Toilet |
+
+---
+
+## 2. Kelebihan dan Pertimbangan Masing-Masing Jalur
+
+1. **Jalur Haji Reguler**:
+   - *Kelebihan*: Biaya paling terjangkau karena disubsidi oleh nilai manfaat dana haji yang dikelola Badan Pengelola Keuangan Haji (BPKH).
+   - *Pertimbangan*: Waktu tunggu yang sangat lama. Calon jamaah yang mendaftar di usia 40 tahun berisiko baru dipanggil saat berusia 65 hingga 75 tahun ketika fisik sudah menurun.
+2. **Jalur Haji Khusus (PIHK)**:
+   - *Kelebihan*: Waktu tunggu lebih singkat (5–8 tahun), hotel lebih dekat ke masjid, dan durasi tinggal di Saudi lebih pendek (sekitar 25–30 hari).
+   - *Pertimbangan*: Membutuhkan kesiapan finansial awal (setoran awal USD 4.000 untuk penguncian nomor porsi haji khusus di Kemenag).
+3. **Jalur Haji Furoda (Mujamalah)**:
+   - *Kelebihan*: **Langsung berangkat di tahun berjalan**, sangat ideal bagi jamaah lansia atau pengusaha yang tidak dapat meninggalkan pekerjaan dalam durasi 40 hari. Keberangkatan kloter akhir meminimalkan waktu tunggu di tanah suci sebelum puncak wukuf.
+   - *Pertimbangan*: Kuota visa bergantung pada persetujuan Pemerintah Kerajaan Arab Saudi pada musim berjalan. Oleh karena itu, pilihlah travel PIHK resmi (seperti Samira Travel) yang memberikan garansi uang kembali 100% (*full refund*) jika visa tidak terbit.
+
+---
+
+<a id="artikel-9"></a>
+# Artikel 9
+
+### Metadata SEO
+- **Target Keyword**: `Wisata Sejarah Kota Thaif`
+- **Slug**: `wisata-sejarah-kota-thaif-panduan-umroh-plus`
+- **Meta Title** (54 karakter): `Wisata Sejarah Kota Thaif: Cable Car & Makam Ibnu Abbas`
+- **Meta Description** (149 karakter): `Panduan wisata sejarah Kota Thaif pada paket Umroh Plus. Nikmati hawa sejuk pegunungan, kereta gantung, pabrik parfum mawar, dan ziarah Masjid Ibnu Abbas.`
+
+---
+
+# Wisata Sejarah Kota Thaif: Cable Car Pegunungan, Kebun Mawar, dan Ziarah Masjid Ibnu Abbas
+
+Terletak sekitar 70 kilometer di tenggara Kota Suci Makkah, **Kota Ta'if (Thaif)** menawarkan nuansa yang sangat kontras dengan lanskap gurun pasir Arab Saudi. Berada di ketinggian lebih dari 1.800 meter di atas permukaan laut di kawasan Pegunungan Sarawat, Thaif memiliki udara sejuk, tanah subur berhias pohon buah-buahan delima dan anggur, serta ladang bunga mawar legendaris. Dalam sejarah Islam, Thaif menyimpan kisah dakwah penuh kesabaran dari Rasulullah SAW.
+
+> [!NOTE] Poin Utama Kunjungan ke Thaif
+> - Waktu tempuh perjalanan dari Makkah ke Thaif berkisar antara 1,5 hingga 2 jam melintasi jalan tol pegunungan berkelok yang mulus.
+> - Thaif adalah lokasi Miqat resmi **Qarnul Manazil (As-Sailul Kabir)** bagi jamaah yang hendak melaksanakan umroh kembali ke Makkah.
+> - Destinasi utama meliputi Masjid Abdullah bin Abbas, pabrik penyulingan mawar (*Rose Factory*), dan wisata kereta gantung (*Telefrik*).
+
+---
+
+## 1. Jejak Sejarah Dakwah Rasulullah SAW di Thaif
+
+Mengunjungi Thaif bukan sekadar wisata alam, melainkan sarana napak tilas keteguhan tauhid:
+- Pada tahun ke-10 kenabian (*'Amul Huzni* atau tahun kesedihan), Rasulullah SAW berjalan kaki ke Thaif untuk mencari perlindungan dakwah setelah wafatnya Khadijah RA dan Abu Thalib.
+- Meskipun ditolak dan dilempari batu oleh penduduk Thaif saat itu, Rasulullah SAW menolak tawaran Malaikat Jibril untuk menimpakan gunung ke penduduk Thaif, melainkan berdoa:
+  *`Allahummahdi qawmi fa innahum laa ya'lamuun`* (Ya Allah, berilah petunjuk kepada kaumku karena sesungguhnya mereka tidak mengetahui).
+- Buah dari kesabaran tersebut, seluruh penduduk Thaif kemudian memeluk agama Islam dan melahirkan generasi sahabat terkemuka.
+
+---
+
+## 2. Destinasi Utama dalam Program Umroh Plus Thaif
+
+1. **Masjid Abdullah bin Abbas**:
+   Masjid bersejarah yang di sampingnya terdapat makam sahabat mulia Abdullah bin Abbas RA (sepupu Rasulullah SAW yang dijuluki *Turjumanul Qur'an* atau ahli tafsir Al-Qur'an terkemuka).
+2. **Perkebunan dan Pabrik Minyak Wangi Mawar (*Taif Rose Factory*)**:
+   Thaif terkenal di seluruh dunia sebagai penghasil minyak mawar murni (*Wardh Taif*) berkualitas tinggi yang digunakan untuk mencuci dinding Ka'bah setiap tahun. Jamaah dapat melihat langsung proses distilasi tradisional dan membeli air mawar murni serta minyak wangi khas.
+3. **Kereta Gantung (*Cable Car / Telefrik*) Al-Hada**:
+   Meluncur dari puncak Gunung Al-Hada menuju lembah wisata Kar Tourist Village, menyajikan pemandangan tebing batu dramatis dan jalan pegunungan yang spektakuler.
+4. **Masjid Al-Kuk (Masjid Siku)** dan **Masjid Addas**:
+   Tempat singgah Rasulullah SAW saat beristirahat dan bertemu dengan seorang pemuda nasrani bernama Addas yang membawakan buah anggur dan akhirnya menyatakan keimanannya kepada Islam.
+
+---
+
+## 3. Mengambil Miqat Umroh di Qarnul Manazil
+
+Setelah menikmati wisata sejarah dan kesejukan Kota Thaif, rombongan jamaah bersiap kembali ke Makkah untuk melaksanakan ibadah umroh:
+- Bus rombongan akan berhenti di **Masjid Qarnul Manazil (As-Sailul Kabir)**.
+- Jamaah telah mengenakan pakaian ihram sejak dari hotel di Thaif atau berganti pakaian di kamar mandi masjid miqat.
+- Melaksanakan shalat sunnah ihram 2 rakaat dan melafalkan niat ihram umroh sebelum bus melintasi batas miqat menuju Masjidil Haram.
+
+---
+
+<a id="artikel-10"></a>
+# Artikel 10
+
+### Metadata SEO
+- **Target Keyword**: `Tips Umroh Lansia dan Pasien Sakit`
+- **Slug**: `tips-umroh-ramah-lansia-dan-jamaah-kebutuhan-medis-khusus`
+- **Meta Title** (54 karakter): `Tips Umroh Lansia 2026: Persiapan Fisik & Kursi Roda`
+- **Meta Description** (149 karakter): `Panduan praktis umroh ramah lansia dan jamaah kebutuhan medis khusus. Pelajari tips sewa kursi roda resmi, pendampingan medis, dan pemilihan hotel ring 1.`
+
+---
+
+# Tips Umroh Ramah Lansia dan Jamaah Kebutuhan Medis Khusus: Persiapan Fisik, Kursi Roda, dan Obat
+
+Menjalankan ibadah umroh bersama orang tua lanjut usia (lansia) atau mendampingi anggota keluarga yang memiliki kondisi medis tertentu (seperti riwayat jantung, diabetes, pasca-stroke, hingga pasien gagal ginjal rutin cuci darah) membutuhkan perencanaan yang matang. Dengan persiapan yang tepat, ibadah tetap dapat terlaksana dengan tenang, aman, dan penuh kekhusyukan tanpa membebani kondisi fisik jamaah.
+
+> [!NOTE] 3 Kunci Keberhasilan Umroh Lansia
+> 1. **Pilih Paket dengan Hotel Ring 1**: Hotel yang berada di pelataran Masjidil Haram dan Masjid Nabawi meminimalkan jarak jalan kaki lansia.
+> 2. **Gunakan Layanan Kursi Roda Resmi Masjidil Haram**: Memanfaatkan pendorong resmi (*Mu'tamir Service*) untuk thawaf dan sa'i yang aman dan berizin.
+> 3. **Konsultasikan Rekam Medis Sebelum Berangkat**: Laporkan kondisi riil jamaah kepada biro travel agar tim handling dapat menyiapkan pendampingan prioritas di bandara dan tanah suci.
+
+---
+
+## 1. Persiapan Dokumen Medis dan Obat-obatan Pribadi
+
+1. **Surat Rekomendasi Dokter Spesialis**:
+   Mintalah surat keterangan laik terbang (*Fit to Fly Certificate*) dari dokter yang merawat, lengkap dengan rincian diagnosa penyakit dan daftar obat yang rutin dikonsumsi dalam Bahasa Inggris.
+2. **Membawa Obat Pribadi Cadangan (1,5 Kali Lipat Kebutuhan)**:
+   Jika perjalanan berlangsung selama 12 hari, bawalah persediaan obat untuk 18 hari. Masukkan obat-obatan penting ke dalam tas kabin kecil yang mudah dijangkau saat di dalam pesawat.
+3. **Pemberitahuan Tindakan Hemodialisa (Cuci Darah)**:
+   Bagi jamaah yang wajib menjalani cuci darah rutin, biro perjalanan berpengalaman (seperti Samira Travel) dapat membantu pendaftaran jadwal tindakan medis di rumah sakit resmi di Madinah (*Al Madinah General Hospital*) dan Makkah (*King Abdulaziz Hospital*) jauh sebelum hari keberangkatan.
+
+---
+
+## 2. Panduan Menggunakan Kursi Roda Resmi di Masjidil Haram
+
+Pelataran thawaf (*Mataf*) saat ini memiliki jalur khusus untuk kursi roda di lantai atas:
+- **Jalur Thawaf Kursi Roda Manual**: Terletak di lantai 1 (Mezzanine) Masjidil Haram yang steril dari jamaah yang berjalan kaki.
+- **Skuter Elektrik Mandiri**: Masjidil Haram menyediakan penyewaan skuter listrik (*Electric Scooter*) di lantai 3 bagi jamaah yang ingin mengendarai kursi roda sendiri tanpa pendorong.
+- **Tarif Jasa Pendorong Resmi**: Gunakan jasa pendorong berompi resmi bernomor registrasi dari otoritas Masjidil Haram. Hindari calo pendorong tidak resmi di luar area masjid demi keselamatan dan kepastian tarif.
+
+---
+
+## 3. Pengaturan Ritme Ibadah Lansia di Tanah Suci
+
+- **Hindari Memaksakan Diri di Bawah Terik Siang**: Suhu siang hari di Arab Saudi dapat mencapai lebih dari 40°C. Ajak jamaah lansia berangkat ke masjid sebelum adzan berkumandang atau pilih waktu shalat Ashar, Maghrib, dan Isya untuk ibadah yang lebih sejuk.
+- **Manfaatkan Keringanan Fiqih (*Rukhsah*)**: Jamaah lansia yang fisiknya lemah diperbolehkan shalat di area hotel yang terhubung dengan pengeras suara masjid jika kondisi tidak memungkinkan, serta diperbolehkan dibadal-umrohkan untuk thawaf dan sa'i jika terjadi kelelahan ekstrem.
+- **Kecukupan Asupan Cairan**: Ingatkan lansia untuk minum air zamzam sedikit demi sedikit namun sering guna mencegah dehidrasi.

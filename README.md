@@ -14,7 +14,7 @@ Data yang dihimpun mencakup seluruh struktur produk paket umroh & haji, harga, *
 |:---|:---|
 | **Nama Badan Hukum** | **PT Samira Ali Wisata** |
 | **Merek Dagang Resmi** | **Samira Travel** |
-| **Slogan / Tagline** | *"Sahabat Umrah & Haji Keluarga Anda"* |
+| **Slogan / Tagline** | *"Biro Perjalanan Umrah & Haji Khusus Resmi Kemenag RI"* |
 | **Nomor Induk Berusaha (NIB)** | **`1609210047562`** (Sistem OSS Berbasis Risiko BKPM RI) |
 | **Izin Operasional PPIU (Umroh)** | **SK Menteri Agama RI No. 137 Tahun 2020** *(Pembaruan dari SK Dirjen PHU No. D/834 Th 2016)* |
 | **Izin Operasional PIHK (Haji)** | **SK Menteri Agama RI No. `16092100475620002`** *(Diterbitkan 25 Februari 2022)* |
@@ -48,7 +48,7 @@ samiratravelumroh/
 ├── 08_KATALOG_ARTIKEL_DAN_EDUKASI.md        # Rangkuman 6 Pilar Edukasi & Direktori 400 Artikel Lengkap
 ├── 09_ASET_VISUAL_DAN_BUKTI_PENGHARGAAN.md  # Bukti Rekor Dunia, MURI, Rekening Resmi & Badge Homepage
 ├── 10_MEDIA_DAN_DOKUMENTASI_VIDEO.md        # Video Dokumentasi Resmi, Galeri Brosur HD (1241x1755px) & Fasilitas
-└── ARTIKEL_PANDUAN_UTAMA_SEO.md             # 5 Artikel Pilar Edukasi SEO-Ready (Standar Copywriting & Content Skill)
+└── ARTIKEL_PANDUAN_UTAMA_SEO.md             # 10 Artikel Pilar Edukasi SEO-Ready (Standar Copywriting & Content Skill)
 ```
 
 ---
