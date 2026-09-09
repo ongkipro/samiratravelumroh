@@ -31,14 +31,15 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://samiratravelumrohhaji.com"),
   title: {
-    default: "Samira Travel | Biro Umroh & Haji Khusus Resmi Kemenag RI (Peringkat #1 Nasional)",
-    template: "%s | Samira Travel",
+    default: "Samira Travel - Biro Umroh & Haji Khusus Resmi Kemenag RI",
+    template: "%s - Samira Travel",
   },
   description:
-    "Biro Perjalanan Umrah & Haji Khusus Resmi Kemenag RI (PPIU No. 137/2020 & PIHK 2022). Penerbangan langsung charter Lion Air & Saudia, jaminan pasti berangkat, pemegang Guinness World Records, dan didukung 26 kantor cabang di seluruh Indonesia.",
+    "Biro perjalanan umroh & haji khusus resmi Kemenag RI (PPIU No. 137/2020). Penerbangan langsung charter Lion Air, hotel bintang 5, dan garansi pasti berangkat.",
   keywords: [
     "samira travel",
     "travel umroh terbaik",
+    "paket umroh 2026",
     "biaya umroh 2026",
     "paket umroh surabaya",
     "paket umroh jakarta",
@@ -57,10 +58,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://samiratravelumrohhaji.com",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.png", type: "image/png", sizes: "32x32" },
+      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
+      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   openGraph: {
-    title: "Samira Travel | Biro Umroh & Haji Khusus Resmi Kemenag RI",
+    title: "Samira Travel - Biro Umroh & Haji Khusus Resmi Kemenag RI",
     description:
-      "Biro Perjalanan Umrah Peringkat #1 Nasional Kemenag RI (28.673 Jemaah). Penerbangan langsung charter Lion Air & Saudia, jaminan pasti berangkat.",
+      "Biro perjalanan umroh peringkat #1 nasional Kemenag RI. Penerbangan langsung charter Lion Air & Saudia, hotel bintang 5 pelataran, garansi pasti berangkat.",
     url: "https://samiratravelumrohhaji.com",
     siteName: "Samira Travel",
     locale: "id_ID",
@@ -76,9 +89,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Samira Travel | Biro Umroh & Haji Khusus Resmi Kemenag RI",
+    title: "Samira Travel - Biro Umroh & Haji Khusus Resmi Kemenag RI",
     description:
-      "Peringkat #1 Nasional Jemaah Umroh Terbanyak Kemenag RI. Penerbangan charter pasti berangkat.",
+      "Peringkat #1 nasional jemaah umroh terbanyak Kemenag RI. Penerbangan charter pasti berangkat.",
     images: ["/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp"],
   },
   robots: {

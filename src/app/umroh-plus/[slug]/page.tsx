@@ -44,8 +44,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const cleanTitle = tour.title
     .replace(/^Paket\s+/i, "")
     .replace(new RegExp(`\\s+${tour.durationDays}\\s+Hari$`, "i"), "");
-  const title = `Paket ${cleanTitle} ${tour.durationDays} Hari 2026 - Biaya ${tour.priceFormatted}`;
-  const description = `${tour.description} Nikmati kenyamanan ibadah umrah plus wisata halal ${tour.city} bersama Samira Travel, akomodasi hotel bintang, dan muthawif bersertifikasi resmi.`;
+  const title = `Paket Umroh Plus ${cleanTitle} 2026 (${tour.durationDays} Hari) - Mulai ${tour.priceFormatted}`;
+  const description = `Paket ibadah umroh plus ${cleanTitle} 2026 durasi ${tour.durationDays} hari. Hotel bintang 5 pelataran, city tour eksklusif, muthawwif BNSP, garansi pasti terbang.`;
   const pageUrl = `https://samiratravelumrohhaji.com/umroh-plus/${slug}`;
   const ogImage = tour.flyerImage || "/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp";
 
@@ -111,7 +111,7 @@ export default async function UmrohPlusDetailPage({ params }: Props) {
             <div className="absolute inset-0 z-0">
               <Image
                 src={tour.flyerImage}
-                alt={`Destinasi Wisata Halal ${tour.title} | Samira Travel`}
+                alt={`Destinasi Wisata Halal ${tour.title} - Samira Travel`}
                 fill
                 priority
                 quality={95}

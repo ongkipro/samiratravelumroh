@@ -12,15 +12,15 @@ import { BranchQuickSelector } from "@/components/home/BranchQuickSelector";
 import { RecentArticlesSection } from "@/components/home/RecentArticlesSection";
 
 export const metadata: Metadata = {
-  title: "Samira Travel | Biro Umroh & Haji Khusus Resmi Kemenag RI - Peringkat #1 Nasional",
+  title: "Samira Travel - Biro Umroh & Haji Khusus Resmi Kemenag RI",
   description:
-    "Biro Perjalanan Umrah & Haji Khusus Resmi Kemenag RI (PPIU No. 137/2020 & PIHK 2022). Penerbangan langsung charter Lion Air & Saudia 11 kota, jaminan pasti berangkat, pemegang rekor dunia Guinness World Records.",
+    "Biro perjalanan umroh & haji khusus resmi Kemenag RI (PPIU No. 137/2020). Penerbangan charter langsung 11 kota, hotel bintang 5, dan garansi pasti berangkat.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com",
   },
   openGraph: {
-    title: "Samira Travel | Biro Umroh & Haji Khusus Resmi Kemenag RI",
-    description: "Biro Perjalanan Umrah Peringkat #1 Nasional Kemenag RI (28.673 Jemaah). Penerbangan langsung charter Lion Air & Saudia, jaminan pasti berangkat.",
+    title: "Samira Travel - Biro Umroh & Haji Khusus Resmi Kemenag RI",
+    description: "Biro perjalanan umroh peringkat #1 nasional Kemenag RI (28.673 jemaah). Penerbangan langsung charter Lion Air & Saudia, jaminan pasti berangkat.",
     url: "https://samiratravelumrohhaji.com",
     siteName: "Samira Travel",
     locale: "id_ID",
@@ -36,8 +36,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Samira Travel | Biro Umroh & Haji Khusus Resmi Kemenag RI",
-    description: "Peringkat #1 Nasional Jemaah Umroh Terbanyak Kemenag RI. Penerbangan charter pasti berangkat.",
+    title: "Samira Travel - Biro Umroh & Haji Khusus Resmi Kemenag RI",
+    description: "Peringkat #1 nasional jemaah umroh terbanyak Kemenag RI. Penerbangan charter pasti berangkat.",
     images: ["/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp"],
   },
 };

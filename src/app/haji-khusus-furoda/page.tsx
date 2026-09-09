@@ -16,14 +16,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Haji Khusus Furoda 2026 Langsung Berangkat - Biaya Mulai USD 17.000",
+  title: "Haji Khusus Furoda 2026 Resmi - Kuota Langsung Berangkat",
   description:
-    "Program Haji Khusus Furoda Mujamalah 2026 resmi langsung berangkat pada musim berjalan. Biaya USD 17.000 dengan jaminan garansi 100% Full Refund DP USD 5.000 jika visa tidak terbit. Hotel bintang 5 dan Maktab VIP Arafah-Mina.",
+    "Program Haji Furoda Mujamalah 2026 resmi kuota Kerajaan Arab Saudi. Biaya USD 17.000, hotel bintang 5 pelataran, maktab VIP, dan garansi 100% full refund DP.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/haji-khusus-furoda",
   },
   openGraph: {
-    title: "Haji Khusus Furoda 2026 Langsung Berangkat - Biaya Mulai USD 17.000",
+    title: "Haji Khusus Furoda 2026 Resmi - Kuota Langsung Berangkat",
     description:
       "Program Haji Khusus Furoda Mujamalah 2026 langsung berangkat kuota resmi Kerajaan Arab Saudi. Garansi 100% Full Refund DP.",
     url: "https://samiratravelumrohhaji.com/haji-khusus-furoda",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Haji Khusus Furoda 2026 Langsung Berangkat - Biaya Mulai USD 17.000",
+    title: "Haji Khusus Furoda 2026 Resmi - Kuota Langsung Berangkat",
     description: "Langsung berangkat musim haji 2026 dengan kuota resmi Mujamalah Kerajaan Arab Saudi. Garansi 100% Full Refund DP.",
     images: ["/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp"],
   },

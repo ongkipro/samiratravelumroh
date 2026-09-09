@@ -14,16 +14,16 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Testimoni Jemaah & Video Pengalaman Ibadah Umrah Haji",
+  title: "Testimoni Jemaah Umroh - Pengalaman Ibadah Nyata & Amanah",
   description:
-    "Kisah nyata para jemaah Samira Travel: Artis Citra Kirana, Rezky Adhitya, Ungu Band, video testimoni pasien cuci darah (hemodialisa), hingga kisah kakek pencari rumput menabung 19 tahun.",
+    "Kisah nyata jemaah Samira Travel: artis, pasien cuci darah hemodialisa, hingga kisah inspiratif ibadah khusyuk di Tanah Suci. Bukti pelayanan amanah!",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/testimoni",
   },
   openGraph: {
-    title: "Testimoni Jemaah & Video Pengalaman Ibadah Umrah Haji",
+    title: "Testimoni Jemaah Umroh - Pengalaman Ibadah Nyata & Amanah",
     description:
-      "Kisah nyata para jemaah Samira Travel: Artis Citra Kirana, Ungu Band, pasien hemodialisa, hingga kisah inspiratif menabung 19 tahun.",
+      "Kisah nyata para jemaah Samira Travel: artis, pasien hemodialisa, hingga kisah inspiratif ibadah ke Tanah Suci bersama biro umroh amanah.",
     url: "https://samiratravelumrohhaji.com/testimoni",
     images: [
       {
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Testimoni Jemaah & Video Pengalaman Ibadah Umrah Haji",
+    title: "Testimoni Jemaah Umroh - Pengalaman Ibadah Nyata & Amanah",
     description:
-      "Kisah nyata para jemaah Samira Travel: Artis Citra Kirana, Ungu Band, pasien hemodialisa, dan kisah inspiratif.",
+      "Kisah nyata para jemaah Samira Travel: artis, pasien hemodialisa, dan kisah inspiratif.",
     images: ["/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp"],
   },
 };

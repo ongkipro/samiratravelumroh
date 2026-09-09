@@ -9,14 +9,14 @@ import { ArticleCatalogClient } from "@/components/articles/ArticleCatalogClient
 import { BookOpen, ShieldCheck, Award } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Pusat Artikel & Panduan Lengkap Ibadah Umrah Haji (400 Panduan)",
+  title: "Panduan Umroh & Haji 2026 - Artikel Manasik & Tips Ibadah",
   description:
-    "Kumpulan 400 artikel panduan manasik, tips persiapan fisik, fikih umrah, tata cara ziarah Makkah & Madinah, hingga kabar regulasi visa Arab Saudi terbaru 2026.",
+    "Kumpulan panduan manasik umroh, syarat visa 2026, persiapan ibadah, tata cara ziarah Makkah & Madinah, serta regulasi resmi Kementerian Agama RI.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/artikel",
   },
   openGraph: {
-    title: "Pusat Artikel & Panduan Lengkap Ibadah Umrah Haji (400 Panduan)",
+    title: "Panduan Umroh & Haji 2026 - Artikel Manasik & Tips Ibadah",
     description: "400 panduan manasik terpercaya, tips persiapan keberangkatan, dan sejarah tempat mustajab Baitullah.",
     url: "https://samiratravelumrohhaji.com/artikel",
     images: [
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pusat Artikel & Panduan Lengkap Ibadah Umrah Haji (400 Panduan)",
+    title: "Panduan Umroh & Haji 2026 - Artikel Manasik & Tips Ibadah",
     description: "400 panduan manasik terpercaya, tips persiapan keberangkatan, dan sejarah tempat mustajab Baitullah.",
     images: ["/images/editorial_makkah_sanctuary_dawn.jpg"],
   },

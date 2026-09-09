@@ -14,14 +14,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Cicilan Umroh Syariah - Program Umroh Dulu Bayar Belakangan Resmi OJK",
+  title: "Cicilan Umroh Syariah - Program Umroh Dulu Bayar Belakangan",
   description:
-    "Simulasi cicilan pembiayaan umrah syariah tanpa jaminan bersama AMITRA Astra dan Bank Syariah Indonesia (BSI). DP mulai Rp 5 Juta, tenor 12-36 bulan, akad Murabahah terdaftar OJK.",
+    "Simulasi pembiayaan umroh syariah tanpa agunan via AMITRA & BSI. Berangkat umroh dulu bayar belakangan, proses cepat, akad syariah diawasi OJK.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/pembiayaan-syariah",
   },
   openGraph: {
-    title: "Cicilan Umroh Syariah - Umroh Dulu Bayar Belakangan Resmi OJK",
+    title: "Cicilan Umroh Syariah - Program Umroh Dulu Bayar Belakangan",
     description:
       "Simulasi cicilan pembiayaan umrah syariah tanpa jaminan bersama AMITRA Astra dan BSI. DP mulai Rp 5 Juta, tenor 12-36 bulan, akad Murabahah resmi OJK.",
     url: "https://samiratravelumrohhaji.com/pembiayaan-syariah",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cicilan Umroh Syariah - Umroh Dulu Bayar Belakangan Resmi OJK",
+    title: "Cicilan Umroh Syariah - Program Umroh Dulu Bayar Belakangan",
     description:
       "Simulasi cicilan pembiayaan umrah syariah tanpa jaminan bersama AMITRA Astra dan BSI. DP mulai Rp 5 Juta, tenor 12-36 bulan.",
     images: ["/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp"],

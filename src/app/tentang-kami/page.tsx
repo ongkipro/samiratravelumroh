@@ -28,14 +28,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Profil & Legalitas Resmi PT Samira Ali Wisata - Peringkat #1 Kemenag",
+  title: "Profil & Legalitas PT Samira Ali Wisata - Peringkat #1 Kemenag",
   description:
-    "Profil resmi PT Samira Ali Wisata (Samira Travel). Biro perjalanan umrah & haji khusus peringkat #1 nasional Kemenag RI, pemegang Rekor Dunia Guinness World Records, dan 3 Rekor MURI.",
+    "Profil resmi PT Samira Ali Wisata (Samira Travel). Izin PPIU No. 137/2020 resmi Kemenag RI, pemegang Guinness World Records, dan peraih 3 Rekor MURI.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/tentang-kami",
   },
   openGraph: {
-    title: "Profil & Legalitas Resmi PT Samira Ali Wisata - Peringkat #1 Kemenag",
+    title: "Profil & Legalitas PT Samira Ali Wisata - Peringkat #1 Kemenag",
     description: "Biro perjalanan umrah peringkat #1 nasional Kemenag RI dengan 29.171+ jemaah, pemegang Guinness World Records dan 3 Rekor MURI.",
     url: "https://samiratravelumrohhaji.com/tentang-kami",
     images: [
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Profil & Legalitas Resmi PT Samira Ali Wisata - Peringkat #1 Kemenag",
+    title: "Profil & Legalitas PT Samira Ali Wisata - Peringkat #1 Kemenag",
     description: "Biro perjalanan umrah peringkat #1 nasional Kemenag RI dengan 29.171+ jemaah, pemegang Guinness World Records dan 3 Rekor MURI.",
     images: ["/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp"],
   },

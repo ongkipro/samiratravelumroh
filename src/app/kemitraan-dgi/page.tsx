@@ -15,14 +15,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Peluang Kemitraan DGi - Agen Syiar Pejuang Baitullah Non-MLM",
+  title: "Peluang Usaha Kemitraan DGi - Agen Travel Umroh Non-MLM",
   description:
-    "Bergabunglah bersama komunitas Pejuang Baitullah DGi Samira Travel. Komisi ujrah Rp 1,5 Jt - Rp 4 Jt/jemaah, reward 1 tiket umrah gratis setiap 10-12 jemaah, starter kit promosi lengkap, dan pelatihan sertifikasi BNSP.",
+    "Raih keberkahan peluang usaha syiar Baitullah bersama Samira Travel. Kemitraan DGi resmi non-MLM, komisi menarik, starter kit, dan bimbingan sertifikasi BNSP.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/kemitraan-dgi",
   },
   openGraph: {
-    title: "Peluang Kemitraan DGi - Agen Syiar Pejuang Baitullah Non-MLM",
+    title: "Peluang Usaha Kemitraan DGi - Agen Travel Umroh Non-MLM",
     description:
       "Program kemitraan syiar umrah amanah DGi Samira Travel tanpa sistem MLM. Komisi menarik, reward tiket gratis, starter kit promosi, dan bimbingan sertifikasi BNSP.",
     url: "https://samiratravelumrohhaji.com/kemitraan-dgi",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Peluang Kemitraan DGi - Agen Syiar Pejuang Baitullah Non-MLM",
+    title: "Peluang Usaha Kemitraan DGi - Agen Travel Umroh Non-MLM",
     description:
       "Program kemitraan syiar umrah amanah DGi Samira Travel tanpa sistem MLM. Komisi menarik, reward tiket gratis, dan bimbingan BNSP.",
     images: ["/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp"],

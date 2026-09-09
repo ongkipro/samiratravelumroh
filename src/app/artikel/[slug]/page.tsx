@@ -205,16 +205,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const coverImage = getArticleCoverImage(article);
   const pageUrl = `https://samiratravelumrohhaji.com/artikel/${slug}`;
+  const description = article.excerpt && article.excerpt.length > 160 
+    ? article.excerpt.slice(0, 157).trim() + "..." 
+    : (article.excerpt || "Panduan ibadah umrah dan haji terpercaya bersama Samira Travel.");
 
   return {
     title: article.title,
-    description: article.excerpt,
+    description,
     alternates: {
       canonical: pageUrl,
     },
     openGraph: {
-      title: article.title,
-      description: article.excerpt,
+      title: `${article.title} - Samira Travel`,
+      description,
       url: pageUrl,
       type: "article",
       publishedTime: article.date,
@@ -230,8 +233,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title: article.title,
-      description: article.excerpt,
+      title: `${article.title} - Samira Travel`,
+      description,
       images: [coverImage],
     },
   };

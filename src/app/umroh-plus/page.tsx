@@ -25,15 +25,15 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Katalog Paket Umroh Plus 2026 - Thaif, Al-Ula, Turki, Riyadh & Jeddah",
+  title: "Paket Umroh Plus 2026 - Wisata Halal Turki, Ta'if & Al-Ula",
   description:
-    "Jelajahi peradaban Islam dan keajaiban dunia dalam program Umroh Plus Samira Travel 2026. Pilihan destinasi Thaif, Al-Ula (Hegra UNESCO), Turki Bosphorus, Riyadh, dan Jeddah.",
+    "Paket umroh plus 2026 resmi Kemenag RI. Wisata napak tilas sejarah Islam ke Ta'if, Al-Ula Hegra UNESCO, dan Turki. Fasilitas hotel bintang 5 & muthawwif BNSP.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/umroh-plus",
   },
   openGraph: {
-    title: "Katalog Paket Umroh Plus 2026 - Thaif, Al-Ula, Turki, Riyadh & Jeddah",
-    description: "Ibadah umrah khusyuk dipadu wisata sejarah peradaban Islam di Thaif, Al-Ula Hegra UNESCO, Turki Bosphorus, Riyadh, dan Jeddah.",
+    title: "Paket Umroh Plus 2026 - Wisata Halal Turki, Ta'if & Al-Ula",
+    description: "Ibadah umrah khusyuk dipadu wisata sejarah peradaban Islam di Ta'if, Al-Ula Hegra UNESCO, Turki Bosphorus, Riyadh, dan Jeddah.",
     url: "https://samiratravelumrohhaji.com/umroh-plus",
     images: [
       {
@@ -47,8 +47,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Katalog Paket Umroh Plus 2026 - Thaif, Al-Ula, Turki, Riyadh & Jeddah",
-    description: "Ibadah umrah khusyuk dipadu wisata sejarah peradaban Islam di Thaif, Al-Ula, Turki, Riyadh, dan Jeddah.",
+    title: "Paket Umroh Plus 2026 - Wisata Halal Turki, Ta'if & Al-Ula",
+    description: "Ibadah umrah khusyuk dipadu wisata sejarah peradaban Islam di Ta'if, Al-Ula, Turki, Riyadh, dan Jeddah.",
     images: ["/images/umroh_plus_heritage_sanctuary.jpg"],
   },
 };

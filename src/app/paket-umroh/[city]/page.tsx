@@ -61,8 +61,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const tour = await getTourByCity(city);
   if (!tour) return { title: "Paket Tidak Ditemukan" };
 
-  const title = `Biaya & Paket Umroh ${tour.city} ${tour.durationDays} Hari 2026 - Mulai ${tour.priceFormatted}`;
-  const description = `Daftar paket umroh resmi keberangkatan langsung dari ${tour.city} durasi ${tour.durationDays} hari bersama Samira Travel. Penerbangan charter ${tour.airline}, hotel ${tour.hotelMakkah.name}, bimbingan Muthawwif berpengalaman.`;
+  const title = `Paket Umroh ${tour.city} 2026 (${tour.durationDays} Hari) - Mulai ${tour.priceFormatted}`;
+  const description = `Paket umroh resmi 2026 keberangkatan langsung dari ${tour.city} durasi ${tour.durationDays} hari. Penerbangan charter ${tour.airline}, hotel bintang 5, garansi pasti terbang.`;
   const pageUrl = `https://samiratravelumrohhaji.com/paket-umroh/${city}`;
   const ogImage = tour.flyerImage || "/images/paket_umroh_sanctuary_hero.jpg";
 

@@ -23,14 +23,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Direktori 26 Kantor Cabang Resmi Se-Indonesia - Alamat & Kontak",
+  title: "Direktori 26 Kantor Cabang Resmi - Alamat & Kontak Se-Indonesia",
   description:
-    "Temukan alamat dan kontak 26 kantor cabang resmi Samira Travel di Sumatera, Jawa, Bali, Nusa Tenggara, Kalimantan, dan Sulawesi. Layanan pendaftaran tatap muka, konsultasi berkas paspor, dan penyerahan koper.",
+    "Alamat dan kontak 26 kantor cabang resmi Samira Travel di Sumatera, Jawa, Kalimantan, Sulawesi, dan Bali. Layanan tatap muka, bimbingan berkas, & manasik.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/kantor-cabang",
   },
   openGraph: {
-    title: "Direktori 26 Kantor Cabang Resmi Se-Indonesia - Alamat & Kontak",
+    title: "Direktori 26 Kantor Cabang Resmi - Alamat & Kontak Se-Indonesia",
     description: "Jaringan 26 kantor cabang fisik resmi Samira Travel di seluruh nusantara. Konsultasi langsung, bimbingan paspor, dan pengambilan koper perlengkapan.",
     url: "https://samiratravelumrohhaji.com/kantor-cabang",
     images: [
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Direktori 26 Kantor Cabang Resmi Se-Indonesia - Alamat & Kontak",
+    title: "Direktori 26 Kantor Cabang Resmi - Alamat & Kontak Se-Indonesia",
     description: "Jaringan 26 kantor cabang fisik resmi Samira Travel di seluruh nusantara. Konsultasi langsung, bimbingan paspor, dan pengambilan koper perlengkapan.",
     images: ["/images/branch_sanctuary_network.jpg"],
   },

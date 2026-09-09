@@ -42,8 +42,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const branch = await getBranchBySlug(slug);
   if (!branch) return { title: "Cabang Tidak Ditemukan" };
 
-  const title = `${branch.name} - Alamat, No Telepon & Jadwal Layanan`;
-  const description = `Alamat kantor resmi ${branch.name}, ${branch.address}. Layanan pendaftaran paket umrah 2026, haji furoda, konsultasi pembiayaan syariah, dan penyerahan koper resmi Samira Travel.`;
+  const title = `Samira Travel Cabang ${branch.name} - Alamat & Kontak Resmi`;
+  const description = `Alamat resmi kantor cabang Samira Travel di ${branch.city} (${branch.address}). Layanan pendaftaran paket umroh 2026, haji furoda, & bimbingan manasik.`;
   const pageUrl = `https://samiratravelumrohhaji.com/kantor-cabang/${slug}`;
 
   return {

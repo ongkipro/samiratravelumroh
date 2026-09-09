@@ -25,14 +25,14 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Katalog Paket Umroh 2026 - 11 Kota Embarkasi Langsung",
+  title: "Paket Umroh 2026 Resmi Kemenag - Jadwal & Biaya 11 Kota",
   description:
-    "Daftar lengkap paket umroh resmi 2026 dari Surabaya, Jakarta, Medan, Makassar, Palembang, Padang, Pontianak, Aceh, Denpasar, Batam, dan Pekanbaru. Penerbangan langsung charter Lion Air, hotel bintang 4 & 5.",
+    "Pilihan paket umroh 2026 resmi Kemenag RI penerbangan langsung dari 11 kota embarkasi. Hotel bintang 5 dekat masjid, fasilitas komplit, dan garansi pasti terbang.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/paket-umroh",
   },
   openGraph: {
-    title: "Katalog Paket Umroh 2026 | Samira Travel",
+    title: "Paket Umroh 2026 Resmi Kemenag - Jadwal & Biaya 11 Kota",
     description: "Pilihan paket umroh resmi dari 11 kota embarkasi se-Indonesia. Jaminan 100% kepastian terbang charter, hotel ring 1 pelataran Ka'bah & Nabawi.",
     url: "https://samiratravelumrohhaji.com/paket-umroh",
     images: [
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Katalog Paket Umroh 2026 - 11 Kota Embarkasi Langsung",
+    title: "Paket Umroh 2026 Resmi Kemenag - Jadwal & Biaya 11 Kota",
     description: "Pilihan paket umroh resmi dari 11 kota embarkasi se-Indonesia. Jaminan 100% kepastian terbang charter.",
     images: ["/images/paket_umroh_sanctuary_hero.jpg"],
   },
