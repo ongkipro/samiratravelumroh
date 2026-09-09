@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #FAF8F5;
+  --surface: #FFFFFF;
+  --surface-muted: #F2EFE9;
+  --brand-primary: #084234;
+  --brand-deep: #04261E;
+  --gold-accent: #C5A059;
+  --gold-deep: #9B7832;
+  --ink-primary: #0F172A;
+  --ink-muted: #475569;
+  --border-hairline: #E8E3DA;
+  --wa-conversion: #15803D;
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-deep: var(--brand-deep);
+  --color-gold-accent: var(--gold-accent);
+  --color-gold-deep: var(--gold-deep);
+  --color-ink-primary: var(--ink-primary);
+  --color-ink-muted: var(--ink-muted);
+  --color-border-hairline: var(--border-hairline);
+  --color-wa-conversion: var(--wa-conversion);
+  --font-sans: var(--font-jakarta), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: var(--font-playfair), Georgia, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: var(--canvas);
+  color: var(--ink-primary);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Mobile Anti-Zoom Rule: prevent iOS/Chrome auto-zoom on input focus */
+input, select, textarea {
+  font-size: 16px !important;
+}
+
+@media (min-width: 768px) {
+  input, select, textarea {
+    font-size: 0.9375rem !important; /* 15px on desktop */
+  }
+}
+
+/* Safe area support for notch and home bar */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(1rem, env(safe-area-inset-top));
+}
+
+/* Animation keyframes for Madinah Serenity */
+@keyframes canopyRotate {
+  0% {
+    transform: rotate(0deg) scale(0.98);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.98);
+  }
+}
+
+@keyframes goldSheen {
+  0% {
+    transform: translateX(-150%) skewX(-20deg);
+  }
+  30%, 100% {
+    transform: translateX(250%) skewX(-20deg);
+  }
+}
+
+@keyframes radarWave {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
+.animate-canopy-slow {
+  animation: canopyRotate 45s linear infinite;
+}
+
+.animate-gold-sheen {
+  animation: goldSheen 7s ease-in-out infinite;
+}
+
+.animate-radar-wave {
+  animation: radarWave 3s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/* Islamic Architectural Arch Mask (Kubah & Gerbang Babussalam) */
+.arch-top {
+  border-top-left-radius: 2.5rem;
+  border-top-right-radius: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .arch-top {
+    border-top-left-radius: 3.5rem;
+    border-top-right-radius: 3.5rem;
+  }
+}
+
+.arch-portal {
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .arch-portal {
+    border-top-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+/* Metallic Madinah Brass Shimmer */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #F5E6C8 45%, #C5A059 80%, #9B7832 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #C5A059 0%, #D4AF37 50%, #B8934A 100%);
+}
+
+.bg-rawdah-gradient {
+  background: linear-gradient(180deg, #04261E 0%, #063529 50%, #084234 100%);
+}
+
+/* Islamic Geometric Arabesque Pattern Background */
+.bg-arabesque-pattern {
+  background-color: #FAF8F5;
+  background-image: radial-gradient(#C5A059 0.85px, transparent 0.85px), radial-gradient(#084234 0.65px, #FAF8F5 0.65px);
+  background-size: 28px 28px;
+  background-position: 0 0, 14px 14px;
+}
+
+.bg-arabesque-dark {
+  background-color: #04261E;
+  background-image: radial-gradient(#C5A059 0.75px, transparent 0.75px);
+  background-size: 32px 32px;
+}
+
+/* Luxury Islamic hairline border */
+.border-gold-hairline {
+  border-color: rgba(197, 160, 89, 0.35);
+}
+
+.shadow-madinah {
+  box-shadow: 0 10px 30px -5px rgba(8, 66, 52, 0.08), 0 4px 6px -2px rgba(197, 160, 89, 0.05);
+}
