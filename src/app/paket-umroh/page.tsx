@@ -7,6 +7,11 @@ import { buildBreadcrumbSchema } from "@/lib/seo";
 import { PackageCatalogClient } from "@/components/packages/PackageCatalogClient";
 import { HotelTierShowcase } from "@/components/packages/HotelTierShowcase";
 import { 
+  NaturalBrushBadge, 
+  NaturalBrushHighlight, 
+  FlightLedgerSeal 
+} from "@/components/decorations/NaturalBrush";
+import { 
   MapPin, 
   Plane, 
   ShieldCheck, 
@@ -176,7 +181,7 @@ export default async function PaketUmrohIndexPage() {
                 </span>
 
                 <h1 className="font-playfair text-3xl sm:text-5xl lg:text-6xl font-bold text-[#FAF8F5] leading-[1.15] drop-shadow-md">
-                  Katalog Paket Umroh & Haji Khusus 2026
+                  Katalog Paket Umroh &amp; <NaturalBrushHighlight variant="gold">Haji Khusus 2026</NaturalBrushHighlight>
                 </h1>
 
                 <p className="text-sm sm:text-base md:text-lg text-emerald-100/90 max-w-2xl leading-relaxed font-normal drop-shadow">
@@ -337,9 +342,11 @@ export default async function PaketUmrohIndexPage() {
           <section id="embarkasi" className="scroll-mt-24 bg-white rounded-3xl p-6 sm:p-10 border border-[#E8E3DA] shadow-sm space-y-6">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="space-y-1.5">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#084234]">
-                  Penerbangan Langsung
-                </span>
+                <div>
+                  <NaturalBrushBadge variant="emerald">
+                    Penerbangan Langsung
+                  </NaturalBrushBadge>
+                </div>
                 <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0F172A]">
                   11 Kota Embarkasi Keberangkatan Langsung
                 </h2>
@@ -348,10 +355,10 @@ export default async function PaketUmrohIndexPage() {
                 </p>
               </div>
 
-              <span className="text-xs font-semibold text-[#084234] bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200 shrink-0 flex items-center gap-1.5">
-                <Plane className="w-3.5 h-3.5 text-[#C5A059]" />
-                <span>Lion Air Charter & Saudia Airlines</span>
-              </span>
+              <FlightLedgerSeal
+                airlinesText="Lion Air Charter & Saudia Airlines"
+                charterRouteText="Direct Flight 11 Embarkasi"
+              />
             </div>
 
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
@@ -386,11 +393,13 @@ export default async function PaketUmrohIndexPage() {
           {/* Section: Comprehensive Catalog Client with Search, City Filter & Sorting */}
           <section id="katalog" className="scroll-mt-24 space-y-6">
             <div className="text-center max-w-2xl mx-auto space-y-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#084234] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
-                Eksplorasi Katalog Interaktif
-              </span>
+              <div>
+                <NaturalBrushBadge variant="gold">
+                  Eksplorasi Katalog Interaktif
+                </NaturalBrushBadge>
+              </div>
               <h2 className="font-playfair text-2xl sm:text-4xl font-bold text-[#0F172A]">
-                Pilihan Paket Ibadah Umrah Musim 2026
+                Pilihan Paket Ibadah Umrah <NaturalBrushHighlight variant="gold">Musim 2026</NaturalBrushHighlight>
               </h2>
               <p className="text-xs sm:text-sm text-slate-600">
                 Gunakan filter kategori, kota keberangkatan, atau pencarian cepat untuk menemukan paket terbaik keluarga Anda.
@@ -406,9 +415,11 @@ export default async function PaketUmrohIndexPage() {
           {/* Section: 4 Keunggulan Fasilitas All-Inclusive */}
           <section id="fasilitas" className="scroll-mt-24 bg-white rounded-3xl p-6 sm:p-10 border border-[#E8E3DA] shadow-sm space-y-8">
             <div className="text-center max-w-2xl mx-auto space-y-2">
-              <span className="text-xs font-bold text-[#084234] uppercase tracking-wider bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
-                Fasilitas Tanpa Biaya Tersembunyi
-              </span>
+              <div>
+                <NaturalBrushBadge variant="emerald">
+                  Fasilitas Tanpa Biaya Tersembunyi
+                </NaturalBrushBadge>
+              </div>
               <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0F172A]">
                 Standar Pelayanan VIP Setiap Paket Umroh
               </h2>

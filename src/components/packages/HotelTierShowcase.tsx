@@ -18,6 +18,7 @@ import {
   Compass
 } from "lucide-react";
 import { HOTEL_TIERS, HOTEL_DISCLAIMER, HotelTier } from "@/data/hotel-tiers";
+import { NaturalBrushBadge, NaturalBrushHighlight } from "@/components/decorations/NaturalBrush";
 
 interface HotelTierShowcaseProps {
   initialTierId?: "safara" | "safawi" | "sukari" | "majol";
@@ -54,12 +55,14 @@ export function HotelTierShowcase({
     >
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-8 space-y-2">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#084234]/8 border border-[#084234]/15 text-[#084234] text-xs font-bold uppercase tracking-wider">
-          <Building2 className="w-3.5 h-3.5 text-[#C5A059]" />
-          <span>Fasilitas &amp; Jarak Hotel Resmi Samira Travel</span>
+        <div>
+          <NaturalBrushBadge variant="gold">
+            <Building2 className="w-3.5 h-3.5 text-[#9B7832]" />
+            <span>Fasilitas &amp; Jarak Hotel Resmi Samira Travel</span>
+          </NaturalBrushBadge>
         </div>
         <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0F172A] tracking-tight">
-          Pilihan Paket Akomodasi &amp; Video Bukti Real Jarak Hotel
+          Pilihan Paket Akomodasi &amp; <NaturalBrushHighlight variant="gold">Video Bukti Real</NaturalBrushHighlight> Jarak Hotel
         </h2>
         <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
           Samira Travel memberikan transparansi penuh untuk seluruh jemaah. Saksikan langsung video dokumentasi rute jalan kaki dari lobi hotel menuju pelataran Masjidil Haram dan Masjid Nabawi.

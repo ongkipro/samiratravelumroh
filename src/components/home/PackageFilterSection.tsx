@@ -12,6 +12,7 @@ import {
   ArrowRight, 
   Star
 } from "lucide-react";
+import { NaturalBrushBadge, NaturalBrushHighlight } from "@/components/decorations/NaturalBrush";
 
 interface PackageFilterSectionProps {
   tours: TourPackage[];
@@ -40,11 +41,13 @@ export function PackageFilterSection({ tours }: PackageFilterSectionProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-2 mb-8">
-          <span className="text-xs font-semibold tracking-[0.2em] text-[#9B7832] uppercase block">
-            Pilihan Jadwal Keberangkatan 1448 H
-          </span>
+          <div>
+            <NaturalBrushBadge variant="gold">
+              Pilihan Jadwal Keberangkatan 1448 H
+            </NaturalBrushBadge>
+          </div>
           <h2 className="font-playfair text-xl sm:text-2xl md:text-3xl font-bold text-[#0F172A]">
-            Paket Umrah & Haji Khusus
+            Paket Umrah &amp; <NaturalBrushHighlight variant="gold">Haji Khusus 2026</NaturalBrushHighlight>
           </h2>
           <p className="text-xs sm:text-sm text-slate-600">
             Penerbangan langsung pesawat charter berjadwal pasti, akomodasi bintang 4 & 5 di pelataran masjid suci, dan bimbingan manasik intensif bersanad.

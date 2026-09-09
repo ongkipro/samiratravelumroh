@@ -6,6 +6,11 @@ import { getPlusTours } from "@/lib/data-service";
 import { buildBreadcrumbSchema } from "@/lib/seo";
 import { UmrohPlusCatalogClient } from "@/components/packages/UmrohPlusCatalogClient";
 import { 
+  NaturalBrushBadge, 
+  NaturalBrushHighlight, 
+  FlightLedgerSeal 
+} from "@/components/decorations/NaturalBrush";
+import { 
   Compass, 
   ShieldCheck, 
   Hotel, 
@@ -354,11 +359,13 @@ export default async function UmrohPlusIndexPage() {
           {/* Section: Interactive Catalog Section with Destination Filter */}
           <section id="katalog" className="scroll-mt-24 space-y-6">
             <div className="text-center max-w-2xl mx-auto space-y-2">
-              <span className="text-xs font-bold uppercase tracking-wider text-[#084234] bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
-                Pilihan Paket Terjadwal Musim 2026
-              </span>
+              <div>
+                <NaturalBrushBadge variant="gold">
+                  Pilihan Paket Terjadwal Musim 2026
+                </NaturalBrushBadge>
+              </div>
               <h2 className="font-playfair text-2xl sm:text-4xl font-bold text-[#0F172A]">
-                Katalog Lengkap Paket Umroh Plus Samira Travel
+                Katalog Lengkap Paket <NaturalBrushHighlight variant="gold">Umroh Plus</NaturalBrushHighlight> Samira Travel
               </h2>
               <p className="text-xs sm:text-sm text-slate-600">
                 Pilih destinasi ziarah favorit Anda untuk melihat rincian fasilitas hotel, maskapai penerbangan, dan jadwal keberangkatan.
@@ -372,9 +379,11 @@ export default async function UmrohPlusIndexPage() {
           <section id="destinasi" className="scroll-mt-24 bg-white rounded-3xl p-6 sm:p-10 border border-[#E8E3DA] shadow-sm space-y-8">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-wider text-[#C5A059]">
-                  Eksplorasi Warisan Peradaban
-                </span>
+                <div>
+                  <NaturalBrushBadge variant="gold">
+                    Eksplorasi Warisan Peradaban
+                  </NaturalBrushBadge>
+                </div>
                 <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0F172A]">
                   5 Destinasi Ziarah Pilihan Umroh Plus
                 </h2>
@@ -383,10 +392,10 @@ export default async function UmrohPlusIndexPage() {
                 </p>
               </div>
 
-              <span className="text-xs font-semibold text-[#084234] bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200 shrink-0 flex items-center gap-1.5">
-                <Sparkles className="w-3.5 h-3.5 text-[#C5A059]" />
-                <span>Dokumentasi Otentik Samira Travel</span>
-              </span>
+              <FlightLedgerSeal
+                airlinesText="Full Charter Lion Air & Saudia"
+                charterRouteText="Rute Ziarah Langsung"
+              />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -451,9 +460,11 @@ export default async function UmrohPlusIndexPage() {
           {/* Section: Keunggulan Layanan Umroh Plus Samira Travel */}
           <section id="keunggulan" className="scroll-mt-24 bg-white rounded-3xl p-6 sm:p-10 border border-[#E8E3DA] shadow-sm space-y-8">
             <div className="text-center max-w-2xl mx-auto space-y-2">
-              <span className="text-xs font-bold text-[#084234] uppercase tracking-wider bg-emerald-50 px-3 py-1 rounded-full border border-emerald-100">
-                Kenyamanan & Kepastian Layanan
-              </span>
+              <div>
+                <NaturalBrushBadge variant="emerald">
+                  Kenyamanan &amp; Kepastian Layanan
+                </NaturalBrushBadge>
+              </div>
               <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-[#0F172A]">
                 Mengapa Memilih Umroh Plus Samira Travel?
               </h2>
