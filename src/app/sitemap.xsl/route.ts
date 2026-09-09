@@ -2,7 +2,7 @@ export const dynamic = "force-static";
 
 export async function GET() {
   const xsl = `<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="2.0"
+<xsl:stylesheet version="1.0"
   xmlns:html="http://www.w3.org/TR/REC-html40"
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -265,7 +265,7 @@ export async function GET() {
           </xsl:if>
 
           <div class="footer">
-            <span>&copy; 2026 PT Samira Ali Wisata. Izin Resmi Umroh PPIU No. 137/2020 &amp; PIHK 2022.</span>
+            <span>&#169; 2026 PT Samira Ali Wisata. Izin Resmi Umroh PPIU No. 137/2020 &amp; PIHK 2022.</span>
             <span>All in One SEO Compatible Sitemap</span>
           </div>
         </div>
@@ -277,6 +277,7 @@ export async function GET() {
   return new Response(xsl, {
     headers: {
       "Content-Type": "text/xsl; charset=utf-8",
+      "Access-Control-Allow-Origin": "*",
       "Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate=43200",
     },
   });

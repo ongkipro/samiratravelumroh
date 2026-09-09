@@ -123,6 +123,7 @@ export async function GET() {
   return new Response(xml, {
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
+      "Access-Control-Allow-Origin": "*",
       "Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate=43200",
     },
   });
