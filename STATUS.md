@@ -2,7 +2,7 @@
 
 Dokumen status resmi kondisi terkini (*current snapshot*), kelaikan sistem, dan panduan kelanjutan pekerjaan untuk sesi mendatang.
 
-**Tanggal Pembaruan**: 9 September 2026, 16:45 WIB  
+**Tanggal Pembaruan**: 9 September 2026, 18:50 WIB  
 **Status Keseluruhan**: **100% HEALTHY / PRODUCTION READY (VERCEL GREEN)**  
 **Target Domain Utama**: `https://samiratravelumrohhaji.com`  
 **Live Edge Production**: `https://samiratravelumroh.vercel.app`  
@@ -15,8 +15,8 @@ Dokumen status resmi kondisi terkini (*current snapshot*), kelaikan sistem, dan 
 | Komponen | Status | Keterangan |
 | :--- | :--- | :--- |
 | **TypeScript Typecheck** | `PASSED (0 Errors)` | `npx tsc --noEmit` bersih tanpa warning atau tipe rusak. |
-| **Turbopack Production Build** | `PASSED` | `next build` mengompilasi **466 rute statis (SSG)** dalam 34 detik. |
-| **Vercel Production Deployment** | `● Ready` | Deployment ID `dpl_8ZWXT6iXAprJN9G9A9gXKmrvL4v1` aktif di CDN global. |
+| **Turbopack Production Build** | `PASSED` | `next build` mengompilasi **466 rute statis (SSG)** dalam 12.9 detik. |
+| **Vercel Production Deployment** | `● Ready` | Deployment ID `dpl_2srskJz7NaytQ4yoNGJFxVAg1qbU` aktif di CDN global. |
 | **Git Working Tree** | `Clean` | Sinkron penuh dengan branch `main` di `origin`. Tanpa AI trailer. |
 | **SEO & Schema.org** | `100% Valid` | JSON-LD schema organisasi, produk paket, breadcrumb, dan artikel. |
 | **Arsitektur Sitemap** | `AIOSEO Compatible` | Sitemap Index + 5 Sub-Sitemap Kategori + Stylesheet XSLT + Google Image. |

@@ -119,11 +119,14 @@ Ketika admin CMS atau database Postgres/Supabase ditambahkan di kemudian hari, d
      * `src/app/post-sitemap.xml/route.ts`: 400 artikel edukasi inbound SEO.
      * `src/app/sitemap.xsl/route.ts`: Stylesheet visual XSLT interaktif bernuansa *Royal Emerald & Gold*.
    * Menyertakan namespace Google Image Sitemap (`xmlns:image`) untuk optimasi pengindeksan gambar di Google Images & Google Discover.
-3. **Konfigurasi `src/app/robots.ts`**:
-   * Menyediakan aturan crawl granular untuk Googlebot, Googlebot-Image, dan Bingbot, serta mendaftarkan seluruh endpoint sitemap dan host kanonikal `https://samiratravelumrohhaji.com`.
-4. **Structured Data Injection (JSON-LD)**:
+3. **Konfigurasi `src/app/robots.ts` & AI Answer Engine Directives**:
+   * Menyediakan aturan crawl granular untuk Googlebot, Googlebot-Image, Bingbot, serta **15 bot AI/LLM** (`GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `ClaudeBot`, `Claude-SearchBot`, `Claude-User`, `PerplexityBot`, `Perplexity-User`, `Applebot`, `Applebot-Extended`, `Google-Extended`, `cohere-ai`, `Meta-ExternalAgent`, `FacebookBot`, `Bytespider`).
+   * Mendaftarkan seluruh endpoint sitemap dan host kanonikal `https://samiratravelumrohhaji.com`.
+4. **AI & LLM Grounding (`public/llms.txt`)**:
+   * Menghadirkan file ringkasan standar Markdown terstruktur yang memuat profil entitas legal, keunggulan kompetitif, katalog 11 kota, dan indeks sitemap untuk sitasi AI search engine.
+5. **Structured Data Injection (JSON-LD)**:
    * Setiap halaman menginjeksi script `<script type="application/ld+json">` yang tervalidasi skema Google Rich Results.
-5. **Target Kecepatan (Web Vitals Budget)**:
+6. **Target Kecepatan (Web Vitals Budget)**:
    * First Contentful Paint (FCP): < 0.8 detik
    * Largest Contentful Paint (LCP): < 1.4 detik
    * Cumulative Layout Shift (CLS): 0.00

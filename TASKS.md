@@ -40,6 +40,7 @@ Sesuai spesifikasi `development-kit`, seluruh proses pembangunan wajib melalui j
 - [x] **Milestone 11**: Audit Aksesibilitas, Mobile Anti-Zoom, Core Web Vitals & Production Build (Phase 11)
 - [x] **Milestone 12**: Production Deployment, Brand Favicon Suite & Edge Performance (Phase 12)
 - [x] **Milestone 13**: All in One SEO XML Sitemap Architecture & Multi-Category Sitemaps (Phase 13)
+- [x] **Milestone 14**: AI Search Engine Readiness & LLM Answer Grounding (llms.txt + AI Bot Rules) (Phase 14)
 
 ---
 
@@ -226,3 +227,10 @@ Sesuai spesifikasi `development-kit`, seluruh proses pembangunan wajib melalui j
 - [x] **Task 13.5**: Implementasi stylesheet visual interaktif `/sitemap.xsl` bertema Samira Travel untuk rendering browser ramah manusia.
 - [x] **Task 13.6**: Penyempurnaan `src/app/robots.ts` dengan deklarasi bot mesin pencari dan direktori sitemap lengkap.
 - [x] **Task 13.7**: Verifikasi HTTP 200 live di edge server Vercel untuk seluruh endpoint sitemap dan robots.txt.
+
+### Phase 14: AI Search Engine Readiness & LLM Answer Grounding
+- [x] **Task 14.1**: Pembuatan berkas standar `public/llms.txt` berformat Markdown spesifikasi Answer.AI memuat profil entitas legalitas, keunggulan kompetitif, katalog paket, 11 rute kota, dan sitemap index.
+- [x] **Task 14.2**: Optimasi `src/app/robots.ts` dengan menyertakan aturan akses terperinci untuk 15 bot AI/LLM (`GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `ClaudeBot`, `Claude-SearchBot`, `Claude-User`, `PerplexityBot`, `Perplexity-User`, `Applebot`, `Applebot-Extended`, `Google-Extended`, `cohere-ai`, `Meta-ExternalAgent`, `FacebookBot`, `Bytespider`).
+- [x] **Task 14.3**: Pengujian dan verifikasi HTTP 200 live di edge network Vercel untuk `/llms.txt` dan `/robots.txt`.
+- [x] **Task 14.4**: Pembersihan dan penonaktifan service localhost dev server (port 3000 idle/bersih).
+

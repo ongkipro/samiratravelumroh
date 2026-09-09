@@ -55,12 +55,14 @@ Catatan eksekusi teknis, riwayat build, perbaikan bug, dan deployment produksi k
 
 ---
 
-## [2026-09-09 16:55:00 +07:00] — AI Search Engine & LLM Readiness (llms.txt + robots.ts AI Directives)
-
+## [2026-09-09 17:06:00 +07:00] — AI Search Engine & LLM Readiness (llms.txt + robots.ts AI Directives)
+- **Commit**: `d5427bc` (`feat(seo): add public/llms.txt and optimize robots.ts with AI crawler directives`) & `afff458` (`docs: update STATUS.md with llms.txt and AI bot rules status`)
+- **Deployment**: Vercel Production `dpl_2srskJz7NaytQ4yoNGJFxVAg1qbU` (`● READY` di Edge Network).
 - **Implementasi**:
   1. Pembuatan file standar `public/llms.txt` yang memuat ringkasan identitas legalitas perusahaan, keunggulan kompetitif, katalog rute, daftar 11 kota embarkasi, dan referensi indeks sitemap untuk AI answer engines (ChatGPT, Claude, Perplexity, Gemini, Apple Intelligence).
   2. Optimasi `src/app/robots.ts` dengan menyertakan aturan akses terperinci untuk crawler AI: `GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `ClaudeBot`, `Claude-SearchBot`, `Claude-User`, `PerplexityBot`, `Perplexity-User`, `Applebot`, `Applebot-Extended`, `Google-Extended`, `cohere-ai`, `Meta-ExternalAgent`, `FacebookBot`, dan `Bytespider`.
   3. Memastikan jalur publik dan `/llms.txt` terbuka untuk sitasi AI search engine dengan tetap memproteksi endpoint privat/API.
+  4. Nonaktifkan dev server localhost (port 3000 bebas dan siap untuk sesi berikutnya).
 
 ---
 
