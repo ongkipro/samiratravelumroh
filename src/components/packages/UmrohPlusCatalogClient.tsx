@@ -129,7 +129,7 @@ export function UmrohPlusCatalogClient({ tours }: UmrohPlusCatalogClientProps) {
                 <div className="relative aspect-[16/9] w-full bg-slate-100 overflow-hidden">
                   <Image
                     src={meta.flyer}
-                    alt={tour.title}
+                    alt={`${tour.title} - Paket Wisata Halal Samira Travel`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
@@ -182,14 +182,28 @@ export function UmrohPlusCatalogClient({ tours }: UmrohPlusCatalogClientProps) {
                   </p>
 
                   {/* Hotel Accommodation Specs */}
-                  <div className="text-xs text-slate-600 space-y-1 pt-1 bg-[#FAF8F5] p-3 rounded-xl border border-[#E8E3DA]/80">
-                    <div className="flex items-center justify-between">
-                      <span className="truncate">Makkah: <strong className="font-semibold text-slate-800">{tour.hotelMakkah.name.split("/")[0].trim()}</strong></span>
-                      <span className="text-amber-600 font-bold shrink-0 ml-2 text-[11px]">★ {tour.hotelMakkah.stars}</span>
+                  <div className="text-xs text-slate-600 space-y-1.5 pt-1 bg-[#FAF8F5] p-3 rounded-xl border border-[#E8E3DA]/80">
+                    <div>
+                      <div className="flex items-center justify-between">
+                        <span className="truncate">Makkah: <strong className="font-semibold text-slate-800">{tour.hotelMakkah.name.split("/")[0].trim()}</strong></span>
+                        <span className="text-amber-600 font-bold shrink-0 ml-2 text-[11px]">★ {tour.hotelMakkah.stars}</span>
+                      </div>
+                      {tour.hotelMakkah.distanceText && (
+                        <div className="text-[10px] text-emerald-800 font-medium truncate mt-0.5">
+                          🚶 {tour.hotelMakkah.distanceText}
+                        </div>
+                      )}
                     </div>
-                    <div className="flex items-center justify-between">
-                      <span className="truncate">Madinah: <strong className="font-semibold text-slate-800">{tour.hotelMadinah.name.split("/")[0].trim()}</strong></span>
-                      <span className="text-amber-600 font-bold shrink-0 ml-2 text-[11px]">★ {tour.hotelMadinah.stars}</span>
+                    <div className="pt-1 border-t border-[#E8E3DA]/60">
+                      <div className="flex items-center justify-between">
+                        <span className="truncate">Madinah: <strong className="font-semibold text-slate-800">{tour.hotelMadinah.name.split("/")[0].trim()}</strong></span>
+                        <span className="text-amber-600 font-bold shrink-0 ml-2 text-[11px]">★ {tour.hotelMadinah.stars}</span>
+                      </div>
+                      {tour.hotelMadinah.distanceText && (
+                        <div className="text-[10px] text-amber-800 font-medium truncate mt-0.5">
+                          🚶 {tour.hotelMadinah.distanceText}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

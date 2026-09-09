@@ -82,7 +82,7 @@ export function Footer() {
             <Link href="/" className="inline-block" aria-label="Samira Travel Beranda">
               <Image
                 src="/images/logo-samira-travel-dark.webp"
-                alt="Samira Travel | Umroh dan Haji Khusus Resmi Kemenag RI"
+                alt="Samira Travel - Biro Perjalanan Umrah & Haji Khusus Resmi Kemenag RI"
                 width={180}
                 height={60}
                 className="h-11 sm:h-12 w-auto object-contain"

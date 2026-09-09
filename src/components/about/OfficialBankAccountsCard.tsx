@@ -18,10 +18,10 @@ interface BankLogoMapping {
 }
 
 const BANK_LOGOS: BankLogoMapping = {
-  "Bank Syariah Indonesia (BSI)": "/images/bank-bsi-syariah-indonesia-rekening-resmi.png",
-  "Bank Mandiri": "/images/bank-mandiri-rekening-resmi.png",
-  "Bank Permata Syariah": "/images/bank-permata-syariah-rekening-resmi.png",
-  "Bank Muamalat": "/images/bank-muamalat-rekening-resmi.png",
+  "Bank Syariah Indonesia (BSI)": "/images/bank-bsi-syariah-indonesia-rekening-resmi.webp",
+  "Bank Mandiri": "/images/bank-mandiri-rekening-resmi.webp",
+  "Bank Permata Syariah": "/images/bank-permata-syariah-rekening-resmi.webp",
+  "Bank Muamalat": "/images/bank-muamalat-rekening-resmi.webp",
 };
 
 export function OfficialBankAccountsCard() {
@@ -81,7 +81,7 @@ export function OfficialBankAccountsCard() {
                     {logoSrc ? (
                       <Image
                         src={logoSrc}
-                        alt={account.bank}
+                        alt={`Rekening Resmi ${account.bank} atas nama PT Samira Ali Wisata - Samira Travel`}
                         fill
                         className="object-contain object-left"
                       />

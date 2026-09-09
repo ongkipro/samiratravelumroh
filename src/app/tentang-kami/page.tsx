@@ -178,8 +178,8 @@ export default function TentangKamiPage() {
           {/* Photographic Background (1376x768, 16:9) */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/editorial_makkah_sanctuary_dawn.jpg"
-              alt="Makkah Sanctuary Dawn Samira Travel"
+              src="/images/masjidil-haram-kabah-makkah-dawn.webp"
+              alt="Keagungan Masjidil Haram dan Ka'bah di Makkah Al-Mukarramah - Samira Travel"
               fill
               priority
               quality={90}

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: "https://samiratravelumrohhaji.com/artikel",
     images: [
       {
-        url: "/images/editorial_makkah_sanctuary_dawn.jpg",
+        url: "/images/masjidil-haram-kabah-makkah-dawn.webp",
         width: 1200,
         height: 630,
         alt: "Pusat Literasi & Artikel Edukasi Umrah Haji Samira Travel",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Panduan Umroh & Haji 2026 - Artikel Manasik & Tips Ibadah",
     description: "400 panduan manasik terpercaya, tips persiapan keberangkatan, dan sejarah tempat mustajab Baitullah.",
-    images: ["/images/editorial_makkah_sanctuary_dawn.jpg"],
+    images: ["/images/masjidil-haram-kabah-makkah-dawn.webp"],
   },
 };
 
@@ -65,11 +65,12 @@ export default async function ArtikelIndexPage() {
         <section className="relative overflow-hidden bg-[#04261E] text-white pt-24 sm:pt-28 pb-16 md:pb-20">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/editorial_makkah_sanctuary_dawn.jpg"
-              alt="Makkah Sanctuary Dawn - Samira Travel Edukasi"
+              src="/images/masjidil-haram-kabah-makkah-dawn.webp"
+              alt="Panduan dan Edukasi Ibadah Umrah Haji di Masjidil Haram - Samira Travel"
               fill
               priority
               quality={90}
+              sizes="100vw"
               className="object-cover object-center"
             />
             {/* Directional Luminous Overlays for High Text Legibility */}

@@ -19,8 +19,8 @@ export function HeroSection() {
       {/* 1. Background Artwork: Anchored in lower section, fading smoothly into warm cream canvas */}
       <div className="absolute inset-x-0 bottom-0 top-[34%] sm:top-[32%] lg:top-[30%] z-0 pointer-events-none">
         <Image
-          src="/images/hero-sacred-island.webp"
-          alt="Keagungan Baitullah Ka'bah di Makkah Al-Mukarramah | Samira Travel"
+          src="/images/kabah-baitullah-makkah-al-mukarramah.webp"
+          alt="Keagungan Baitullah Ka'bah di Makkah Al-Mukarramah - Samira Travel"
           fill
           priority
           sizes="100vw"

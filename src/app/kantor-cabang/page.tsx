@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     url: "https://samiratravelumrohhaji.com/kantor-cabang",
     images: [
       {
-        url: "/images/branch_sanctuary_network.jpg",
+        url: "/images/kantor-cabang-resmi-samira-travel.webp",
         width: 1200,
         height: 630,
         alt: "Jaringan Kantor Cabang Resmi Samira Travel Se-Indonesia",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Direktori 26 Kantor Cabang Resmi - Alamat & Kontak Se-Indonesia",
     description: "Jaringan 26 kantor cabang fisik resmi Samira Travel di seluruh nusantara. Konsultasi langsung, bimbingan paspor, dan pengambilan koper perlengkapan.",
-    images: ["/images/branch_sanctuary_network.jpg"],
+    images: ["/images/kantor-cabang-resmi-samira-travel.webp"],
   },
 };
 
@@ -126,8 +126,8 @@ export default async function KantorCabangIndexPage() {
           {/* High-Resolution Photographic Architectural Background (1376x768, 16:9) */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/branch_sanctuary_network.jpg"
-              alt="Jaringan Kantor Cabang Samira Travel Nusantara"
+              src="/images/kantor-cabang-resmi-samira-travel.webp"
+              alt="Jaringan 26 Kantor Cabang Resmi Samira Travel Se-Indonesia"
               fill
               priority
               quality={90}

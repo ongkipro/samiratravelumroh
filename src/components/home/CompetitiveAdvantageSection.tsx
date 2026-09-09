@@ -108,7 +108,7 @@ export function CompetitiveAdvantageSection() {
             <div className="lg:col-span-6 relative aspect-video w-full rounded-2xl overflow-hidden shadow-2xl border-2 border-[#C5A059]/40">
               <Image
                 src="/images/fasilitas-koper-dan-perlengkapan-umroh-eksekutif.webp"
-                alt="Kit Perlengkapan Umrah Samira Travel"
+                alt="Fasilitas Koper dan Perlengkapan Eksekutif Umroh - Samira Travel"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover object-center"

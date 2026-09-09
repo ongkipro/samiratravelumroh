@@ -74,8 +74,8 @@ export default async function HajiFurodaPage() {
           {/* High-Clarity Photographic Kaaba Hajj Sanctuary Background */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/haji_furoda_sanctuary.jpg"
-              alt="Haji Khusus Furoda Makkah Sanctuary"
+              src="/images/haji-khusus-furoda-mujamalah-resmi-kemenag.webp"
+              alt="Ibadah Haji Khusus Furoda Resmi Langsung Berangkat ke Baitullah - Samira Travel"
               fill
               priority
               quality={95}
@@ -240,7 +240,7 @@ export default async function HajiFurodaPage() {
                 <div className="relative aspect-video w-full rounded-xl overflow-hidden shadow-md border border-slate-100">
                   <Image
                     src="/images/fasilitas-koper-dan-perlengkapan-umroh-eksekutif.webp"
-                    alt="Kit Perlengkapan Haji Khusus Samira Travel"
+                    alt="Fasilitas Koper dan Perlengkapan Eksklusif Haji Khusus - Samira Travel"
                     fill
                     sizes="(max-width: 1024px) 100vw, 60vw"
                     className="object-cover object-center"

@@ -91,9 +91,9 @@ export function ArticleCatalogClient({ initialArticles }: ArticleCatalogClientPr
             <div className="lg:col-span-7 relative min-h-[280px] sm:min-h-[380px] lg:min-h-[420px] bg-slate-100 overflow-hidden">
               <Image
                 src={getArticleCoverImage(featuredArticle)}
-                alt={featuredArticle.title}
+                alt={`${featuredArticle.title} - Panduan Ibadah Samira Travel`}
                 fill
-                priority
+                loading="lazy"
                 sizes="(max-width: 1024px) 100vw, 60vw"
                 className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
               />
@@ -236,7 +236,7 @@ export function ArticleCatalogClient({ initialArticles }: ArticleCatalogClientPr
                 >
                   <Image
                     src={coverImage}
-                    alt={article.title}
+                    alt={`${article.title} - Samira Travel`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700"

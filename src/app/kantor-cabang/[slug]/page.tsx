@@ -58,10 +58,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: pageUrl,
       images: [
         {
-          url: "/images/branch_sanctuary_network.jpg",
+          url: "/images/kantor-cabang-resmi-samira-travel.webp",
           width: 1200,
           height: 630,
-          alt: `Kantor Cabang ${branch.name} Samira Travel`,
+          alt: `Kantor Cabang Resmi Samira Travel ${branch.name} - Layanan Umrah & Haji`,
         },
       ],
       type: "website",
@@ -70,7 +70,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       card: "summary_large_image",
       title,
       description,
-      images: ["/images/branch_sanctuary_network.jpg"],
+      images: ["/images/kantor-cabang-resmi-samira-travel.webp"],
     },
   };
 }
@@ -116,8 +116,8 @@ export default async function BranchDetailPage({ params }: Props) {
           {/* Photographic Background (1376x768, 16:9) */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/branch_sanctuary_network.jpg"
-              alt={`Kantor Cabang ${branch.name}`}
+              src="/images/kantor-cabang-resmi-samira-travel.webp"
+              alt={`Kantor Cabang Resmi Samira Travel ${branch.name} - Layanan Konsultasi Umrah & Haji`}
               fill
               priority
               quality={90}

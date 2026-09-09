@@ -5,6 +5,7 @@ import Image from "next/image";
 import { getAllTours, getRegularTours } from "@/lib/data-service";
 import { buildBreadcrumbSchema } from "@/lib/seo";
 import { PackageCatalogClient } from "@/components/packages/PackageCatalogClient";
+import { HotelTierShowcase } from "@/components/packages/HotelTierShowcase";
 import { 
   MapPin, 
   Plane, 
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
     url: "https://samiratravelumrohhaji.com/paket-umroh",
     images: [
       {
-        url: "/images/paket_umroh_sanctuary_hero.jpg",
+        url: "/images/jadwal-paket-umroh-resmi-kemenag.webp",
         width: 1200,
         height: 630,
         alt: "Katalog Paket Umroh 2026 Samira Travel",
@@ -49,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Paket Umroh 2026 Resmi Kemenag - Jadwal & Biaya 11 Kota",
     description: "Pilihan paket umroh resmi dari 11 kota embarkasi se-Indonesia. Jaminan 100% kepastian terbang charter.",
-    images: ["/images/paket_umroh_sanctuary_hero.jpg"],
+    images: ["/images/jadwal-paket-umroh-resmi-kemenag.webp"],
   },
 };
 
@@ -145,8 +146,8 @@ export default async function PaketUmrohIndexPage() {
           {/* High-Resolution Photographic Architectural Background (1376x768, 16:9) */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/paket_umroh_sanctuary_hero.jpg"
-              alt="Katalog Paket Umroh Samira Travel Sanctuary"
+              src="/images/jadwal-paket-umroh-resmi-kemenag.webp"
+              alt="Katalog Pilihan Paket Umroh 2026 Resmi Kemenag - Samira Travel"
               fill
               priority
               quality={90}
@@ -398,6 +399,9 @@ export default async function PaketUmrohIndexPage() {
 
             <PackageCatalogClient tours={allTours} />
           </section>
+
+          {/* Section: Fasilitas & Jarak Hotel Resmi Samira Travel with Video Proof */}
+          <HotelTierShowcase />
 
           {/* Section: 4 Keunggulan Fasilitas All-Inclusive */}
           <section id="fasilitas" className="scroll-mt-24 bg-white rounded-3xl p-6 sm:p-10 border border-[#E8E3DA] shadow-sm space-y-8">

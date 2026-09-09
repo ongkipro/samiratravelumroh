@@ -13,12 +13,12 @@ export interface ArticleMeta {
 
 // Curated high-resolution fallback pool for deterministic cycling
 const FALLBACK_HEROES = [
-  "/images/editorial_manasik_guidance.jpg",
-  "/images/editorial_makkah_sanctuary_dawn.jpg",
-  "/images/package_kaaba_thawaf.jpg",
-  "/images/package_nabawi_canopy.jpg",
-  "/images/haji_furoda_sanctuary.jpg",
-  "/images/nabawi_dawn_pillars.jpg",
+  "/images/bimbingan-manasik-dan-doa-umroh-resmi.webp",
+  "/images/masjidil-haram-kabah-makkah-dawn.webp",
+  "/images/ibadah-thawaf-kabah-masjidil-haram.webp",
+  "/images/payung-madinah-masjid-nabawi-ziarah.webp",
+  "/images/haji-khusus-furoda-mujamalah-resmi-kemenag.webp",
+  "/images/masjid-nabawi-madinah-ziarah-raudhah.webp",
   "/images/biro-perjalanan-umroh-keluarga-samira-travel.webp",
   "/images/fasilitas-koper-dan-perlengkapan-umroh-eksekutif.webp",
 ];
@@ -39,24 +39,24 @@ export function getArticleCoverImage(article: ArticleMeta): string {
 
   // 2. Destinations Plus
   if (text.includes("thaif") || text.includes("thoil")) {
-    return "/images/dest_umroh_plus_thaif.jpg";
+    return "/images/paket-umroh-plus-thaif-wisata-kebun-mawar.webp";
   }
   if (text.includes("turki") || text.includes("turkiye") || text.includes("istanbul") || text.includes("bosphorus")) {
-    return "/images/dest_umroh_plus_turki.jpg";
+    return "/images/paket-umroh-plus-turki-istanbul-bosphorus.webp";
   }
   if (text.includes("al-ula") || text.includes("alula") || text.includes("hegra")) {
-    return "/images/dest_umroh_plus_alula.jpg";
+    return "/images/paket-umroh-plus-al-ula-hegra-unesco.webp";
   }
   if (text.includes("jeddah") || text.includes("corniche") || text.includes("laut merah")) {
-    return "/images/dest_umroh_plus_jeddah.jpg";
+    return "/images/paket-umroh-plus-jeddah-corniche-laut-merah.webp";
   }
   if (text.includes("riyadh") || text.includes("masmak")) {
-    return "/images/dest_umroh_plus_riyadh.jpg";
+    return "/images/paket-umroh-plus-riyadh-benteng-masmak.webp";
   }
 
   // 3. Haji & Furoda
   if (text.includes("furoda") || text.includes("haji khusus") || text.includes("mujamalah") || text.includes("arafah") || text.includes("mina") || text.includes("wukuf") || text.includes("armuzna")) {
-    return "/images/haji_furoda_sanctuary.jpg";
+    return "/images/haji-khusus-furoda-mujamalah-resmi-kemenag.webp";
   }
 
   // 4. Equipment, Packing & Luggage
@@ -71,7 +71,7 @@ export function getArticleCoverImage(article: ArticleMeta): string {
 
   // 6. Madinah, Nabawi & Raudhah
   if (text.includes("madinah") || text.includes("nabawi") || text.includes("raudhah") || text.includes("ziarah") || text.includes("makam rasul")) {
-    return "/images/package_nabawi_canopy.jpg";
+    return "/images/payung-madinah-masjid-nabawi-ziarah.webp";
   }
 
   // 7. Manasik & Doa Guidance
@@ -80,7 +80,7 @@ export function getArticleCoverImage(article: ArticleMeta): string {
   }
 
   if (text.includes("doa") || text.includes("amalan") || text.includes("niat") || text.includes("zikir") || text.includes("dzikir") || text.includes("sunnah") || text.includes("fikih") || text.includes("hukum") || text.includes("ihram") || text.includes("miqat") || text.includes("talbiyah")) {
-    return "/images/editorial_manasik_guidance.jpg";
+    return "/images/bimbingan-manasik-dan-doa-umroh-resmi.webp";
   }
 
   // 8. Flight, Airlines, Visa, Nusuk
@@ -95,7 +95,7 @@ export function getArticleCoverImage(article: ArticleMeta): string {
 
   // 10. Makkah, Kaaba, Thawaf
   if (text.includes("makkah") || text.includes("mekkah") || text.includes("kaaba") || text.includes("ka'bah") || text.includes("thawaf") || text.includes("sa'i") || text.includes("sai") || text.includes("masjidil haram")) {
-    return "/images/editorial_makkah_sanctuary_dawn.jpg";
+    return "/images/masjidil-haram-kabah-makkah-dawn.webp";
   }
 
   // Deterministic Hash Fallback

@@ -364,7 +364,7 @@ export default async function ArticleDetailPage({ params }: Props) {
               <div className="relative aspect-[16/9] w-full rounded-2xl overflow-hidden shadow-md bg-slate-100 border border-slate-100">
                 <Image
                   src={coverImage}
-                  alt={article.title}
+                  alt={`${article.title} - Panduan Ibadah Samira Travel`}
                   fill
                   priority
                   quality={92}
@@ -771,7 +771,7 @@ export default async function ArticleDetailPage({ params }: Props) {
                       >
                         <Image
                           src={relCover}
-                          alt={rel.title}
+                          alt={`${rel.title} - Samira Travel`}
                           fill
                           sizes="(max-width: 768px) 100vw, 33vw"
                           className="object-cover object-center group-hover:scale-105 transition-transform duration-700"

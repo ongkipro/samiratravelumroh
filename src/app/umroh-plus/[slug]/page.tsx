@@ -342,7 +342,7 @@ export default async function UmrohPlusDetailPage({ params }: Props) {
                   <div className="relative aspect-[16/10] w-full rounded-xl overflow-hidden shadow-inner border border-slate-100">
                     <Image
                       src={tour.flyerImage}
-                      alt={`Foto Destinasi ${tour.title}`}
+                      alt={`Dokumentasi Perjalanan Wisata Halal ${tour.title} - Samira Travel`}
                       fill
                       sizes="(max-width: 1024px) 100vw, 30vw"
                       className="object-cover object-center"

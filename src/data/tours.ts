@@ -17,14 +17,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/jadwal-paket-umroh-reguler-lion-air-charter.webp",
     "description": "Program ibadah Umrah Reguler 9 Hari langsung dari Bandara Internasional kota Palembang. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -157,14 +157,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/hotel-bintang-5-dekat-masjid-makkah-madinah.webp",
     "description": "Program ibadah Umrah Reguler 13 Hari langsung dari Bandara Internasional kota Padang. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -297,14 +297,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/hotel-bintang-5-dekat-masjid-makkah-madinah.webp",
     "description": "Program ibadah Umrah Reguler 13 Hari langsung dari Bandara Internasional kota Pontianak. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -437,14 +437,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/jadwal-paket-umroh-reguler-lion-air-charter.webp",
     "description": "Program ibadah Umrah Reguler 13 Hari langsung dari Bandara Internasional kota Aceh. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -577,14 +577,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/hotel-bintang-5-dekat-masjid-makkah-madinah.webp",
     "description": "Program ibadah Umrah Reguler 12 Hari langsung dari Bandara Internasional kota Denpasar. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -717,14 +717,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/jadwal-paket-umroh-reguler-lion-air-charter.webp",
     "description": "Program ibadah Umrah Reguler 12 Hari langsung dari Bandara Internasional kota Makassar. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -857,14 +857,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/jadwal-paket-umroh-reguler-lion-air-charter.webp",
     "description": "Program ibadah Umrah Reguler 12 Hari langsung dari Bandara Internasional kota Medan. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -997,14 +997,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/jadwal-paket-umroh-reguler-lion-air-charter.webp",
     "description": "Program ibadah Umrah Reguler 13 Hari langsung dari Bandara Internasional kota Batam. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -1137,14 +1137,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/hotel-bintang-5-dekat-masjid-makkah-madinah.webp",
     "description": "Program ibadah Umrah Reguler 13 Hari langsung dari Bandara Internasional kota Pekanbaru. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -1277,14 +1277,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/hotel-bintang-5-dekat-masjid-makkah-madinah.webp",
     "description": "Program ibadah Umrah Reguler 12 Hari langsung dari Bandara Internasional kota Surabaya. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -1417,14 +1417,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/jadwal-paket-umroh-reguler-lion-air-charter.webp",
     "description": "Program ibadah Umrah Reguler 9 Hari langsung dari Bandara Internasional kota Jakarta. Hotel ring 1 dekat pelataran Masjidil Haram & Nabawi, jaminan kepastian tiket pesawat charter, bimbingan muthawwif berpengalaman, serta pendampingan tour leader bersertifikat BNSP.",
     "hotelMakkah": {
-      "name": "Hotel Safara / Setaraf Bintang 4 Ring 1",
-      "stars": 4,
-      "distanceText": "< 250 meter ke Masjidil Haram"
+      "name": "Durrat Al Salah / Talat Ajyad (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±9 Menit ke Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Safara Madinah / Setaraf Bintang 4",
-      "stars": 4,
-      "distanceText": "< 150 meter ke Masjid Nabawi"
+      "name": "Plaza Inn Ohud / Maysan Al Taqwa (Paket Safara)",
+      "stars": 3,
+      "distanceText": "±700 meter (Jalan Kaki ±4 Menit ke Nabawi)"
     },
     "inclusions": [
       "Tiket pesawat internasional Lion Air PP (Charter Seat)",
@@ -2250,14 +2250,14 @@ export const toursData: TourPackage[] = [
     "flyerImage": "/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp",
     "description": "Program Ibadah Haji Khusus Furoda / Mujamalah langsung berangkat pada tahun berjalan tanpa menunggu antrean puluhan tahun. Menggunakan kuota visa haji resmi Kerajaan Arab Saudi, fasilitas tenda ber-AC maktab haji khusus di Arafah & Mina, bus berpendingin udara dengan toilet, dan jaminan keamanan dana DP USD 5.000 100% full refund jika visa tidak disetujui.",
     "hotelMakkah": {
-      "name": "Hotel Bintang 5 Pelataran Masjidil Haram",
+      "name": "Movenpick Hotel / Pullman Zamzam (Paket Majol VVIP)",
       "stars": 5,
-      "distanceText": "< 100 meter ke Ka'bah"
+      "distanceText": "0 Meter (Langsung di Pelataran Clock Tower Haram)"
     },
     "hotelMadinah": {
-      "name": "Hotel Bintang 5 Pelataran Masjid Nabawi",
+      "name": "Taiba Front Hotel / Al Aqeeq (Paket Majol VVIP)",
       "stars": 5,
-      "distanceText": "< 100 meter ke Raudhah"
+      "distanceText": "0 Meter (Depan Pagar Pas Pelataran Nabawi)"
     },
     "inclusions": [
       "Penerbitan Visa Haji Khusus Furoda resmi terdaftar e-Hajj KSA",

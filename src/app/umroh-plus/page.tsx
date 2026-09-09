@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: "https://samiratravelumrohhaji.com/umroh-plus",
     images: [
       {
-        url: "/images/umroh_plus_heritage_sanctuary.jpg",
+        url: "/images/paket-umroh-plus-wisata-halal-sejarah-islam.webp",
         width: 1200,
         height: 630,
         alt: "Katalog Paket Umroh Plus 2026 Samira Travel",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Paket Umroh Plus 2026 - Wisata Halal Turki, Ta'if & Al-Ula",
     description: "Ibadah umrah khusyuk dipadu wisata sejarah peradaban Islam di Ta'if, Al-Ula, Turki, Riyadh, dan Jeddah.",
-    images: ["/images/umroh_plus_heritage_sanctuary.jpg"],
+    images: ["/images/paket-umroh-plus-wisata-halal-sejarah-islam.webp"],
   },
 };
 
@@ -154,8 +154,8 @@ export default async function UmrohPlusIndexPage() {
           {/* High-Resolution Photographic Architectural Background (1376x768, 16:9) */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/umroh_plus_heritage_sanctuary.jpg"
-              alt="Perjalanan Umroh Plus Sejarah Peradaban Islam Samira Travel"
+              src="/images/paket-umroh-plus-wisata-halal-sejarah-islam.webp"
+              alt="Paket Umroh Plus Wisata Halal Sejarah Peradaban Islam 2026 - Samira Travel"
               fill
               priority
               quality={90}
@@ -400,7 +400,7 @@ export default async function UmrohPlusIndexPage() {
                     <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-100">
                       <Image
                         src={dest.image}
-                        alt={dest.name}
+                        alt={`Destinasi Wisata Halal ${dest.name} - Paket Umroh Plus Samira Travel`}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         className="object-cover object-center group-hover:scale-105 transition-transform duration-500"

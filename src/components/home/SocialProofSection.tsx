@@ -89,7 +89,7 @@ export function SocialProofSection() {
               width={1600}
               height={428}
               className="w-full h-auto"
-              priority
+              loading="lazy"
             />
           </div>
 

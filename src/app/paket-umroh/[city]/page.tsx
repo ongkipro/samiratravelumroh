@@ -10,6 +10,7 @@ import { ItineraryStepper } from "@/components/packages/ItineraryStepper";
 import { PackageFacilitySection } from "@/components/packages/PackageFacilitySection";
 import { PaymentSecurityCard } from "@/components/packages/PaymentSecurityCard";
 import { PackageRequirementsSection } from "@/components/packages/PackageRequirementsSection";
+import { HotelTierShowcase } from "@/components/packages/HotelTierShowcase";
 import { 
   Plane, 
   Hotel, 
@@ -64,7 +65,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = `Paket Umroh ${tour.city} 2026 (${tour.durationDays} Hari) - Mulai ${tour.priceFormatted}`;
   const description = `Paket umroh resmi 2026 keberangkatan langsung dari ${tour.city} durasi ${tour.durationDays} hari. Penerbangan charter ${tour.airline}, hotel bintang 5, garansi pasti terbang.`;
   const pageUrl = `https://samiratravelumrohhaji.com/paket-umroh/${city}`;
-  const ogImage = tour.flyerImage || "/images/paket_umroh_sanctuary_hero.jpg";
+  const ogImage = tour.flyerImage || "/images/jadwal-paket-umroh-resmi-kemenag.webp";
 
   return {
     title,
@@ -155,8 +156,8 @@ export default async function CityPackageDetailPage({ params }: Props) {
           {/* Photographic Architectural Background (1376x768, 16:9) */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/paket_umroh_sanctuary_hero.jpg"
-              alt={`Paket Umroh Embarkasi ${tour.city} Samira Travel`}
+              src="/images/jadwal-paket-umroh-resmi-kemenag.webp"
+              alt={`Paket Umroh 2026 Keberangkatan ${tour.city} Penerbangan Charter - Samira Travel`}
               fill
               priority
               quality={90}
@@ -391,69 +392,8 @@ export default async function CityPackageDetailPage({ params }: Props) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Left 8 Cols: Hotels, Inclusions/Exclusions, Itinerary Stepper, Requirements */}
             <div className="lg:col-span-8 space-y-8">
-              {/* 1. Hotel Accommodations */}
-              <div className="bg-white rounded-2xl md:rounded-3xl p-6 sm:p-8 border border-[#E8E3DA] shadow-sm space-y-4">
-                <div className="flex items-center justify-between border-b border-slate-100 pb-4">
-                  <div>
-                    <span className="text-[11px] font-bold text-[#C5A059] uppercase tracking-wider block">
-                      Akomodasi Terjamin
-                    </span>
-                    <h2 className="font-playfair text-xl md:text-2xl font-bold text-[#0F172A] flex items-center gap-2">
-                      <Hotel className="w-5 h-5 text-[#084234]" />
-                      <span>Akomodasi Hotel Bintang Pilihan</span>
-                    </h2>
-                  </div>
-                  <span className="hidden sm:inline-flex px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200">
-                    Fullboard (Makan 3x)
-                  </span>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-2 sm:divide-x divide-slate-100">
-                  {/* Hotel Makkah */}
-                  <div className="space-y-2">
-                    <span className="text-[11px] font-bold text-[#C5A059] uppercase tracking-wider block">
-                      Hotel Makkah Al-Mukarramah
-                    </span>
-                    <h3 className="text-base font-bold text-[#0F172A]">
-                      {tour.hotelMakkah.name}
-                    </h3>
-                    <div className="flex items-center gap-1 text-amber-500">
-                      {Array.from({ length: tour.hotelMakkah.stars }).map((_, i) => (
-                        <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                      ))}
-                      <span className="text-xs text-slate-500 font-medium ml-1">
-                        Bintang {tour.hotelMakkah.stars}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-1.5 text-xs text-slate-600 pt-0.5">
-                      <MapPin className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>Jarak: <strong>{tour.hotelMakkah.distanceText}</strong></span>
-                    </div>
-                  </div>
-
-                  {/* Hotel Madinah */}
-                  <div className="space-y-2 sm:pl-6">
-                    <span className="text-[11px] font-bold text-[#C5A059] uppercase tracking-wider block">
-                      Hotel Madinah Al-Munawwarah
-                    </span>
-                    <h3 className="text-base font-bold text-[#0F172A]">
-                      {tour.hotelMadinah.name}
-                    </h3>
-                    <div className="flex items-center gap-1 text-amber-500">
-                      {Array.from({ length: tour.hotelMadinah.stars }).map((_, i) => (
-                        <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
-                      ))}
-                      <span className="text-xs text-slate-500 font-medium ml-1">
-                        Bintang {tour.hotelMadinah.stars}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-1.5 text-xs text-slate-600 pt-0.5">
-                      <MapPin className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                      <span>Jarak: <strong>{tour.hotelMadinah.distanceText}</strong></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {/* 1. Hotel Accommodations & Video Proof Showcase */}
+              <HotelTierShowcase initialTierId="safara" />
 
               {/* 2. Inclusions & Exclusions */}
               <div id="fasilitas" className="scroll-mt-24">
@@ -579,7 +519,7 @@ export default async function CityPackageDetailPage({ params }: Props) {
                   <div className="relative aspect-[16/9] w-full rounded-xl overflow-hidden shadow-inner border border-slate-100 group">
                     <Image
                       src={tour.flyerImage}
-                      alt={`Brosur Paket Umroh ${tour.city}`}
+                      alt={`Brosur Jadwal dan Biaya Paket Umroh Embarkasi ${tour.city} - Samira Travel`}
                       fill
                       sizes="(max-width: 1024px) 100vw, 30vw"
                       className="object-cover object-center group-hover:scale-105 transition-transform duration-500"

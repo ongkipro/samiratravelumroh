@@ -113,11 +113,11 @@ export function PackageFilterSection({ tours }: PackageFilterSectionProps) {
                     <div className="relative aspect-[16/10] lg:aspect-auto lg:col-span-6 min-h-[280px] sm:min-h-[340px] bg-slate-100">
                       <Image
                         src={flyer}
-                        alt={featured.title}
+                        alt={`${featured.title} - Penerbangan Langsung Charter Samira Travel`}
                         fill
                         sizes="(max-width: 1024px) 100vw, 50vw"
                         className="object-cover object-center"
-                        priority
+                        loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent lg:hidden" />
                       
@@ -168,7 +168,7 @@ export function PackageFilterSection({ tours }: PackageFilterSectionProps) {
                               {featured.hotelMakkah.name.split("/")[0].trim()}
                             </div>
                             <span className="inline-block mt-1.5 text-[10px] font-bold text-emerald-800 bg-emerald-100/70 px-2 py-0.5 rounded">
-                              🚶 50m ke Pelataran Ka&apos;bah
+                              🚶 {featured.hotelMakkah.distanceText}
                             </span>
                           </div>
 
@@ -180,7 +180,7 @@ export function PackageFilterSection({ tours }: PackageFilterSectionProps) {
                               {featured.hotelMadinah.name.split("/")[0].trim()}
                             </div>
                             <span className="inline-block mt-1.5 text-[10px] font-bold text-amber-800 bg-amber-100/70 px-2 py-0.5 rounded">
-                              🚶 100m ke Pintu Nabawi
+                              🚶 {featured.hotelMadinah.distanceText}
                             </span>
                           </div>
                         </div>
@@ -286,8 +286,12 @@ export function PackageFilterSection({ tours }: PackageFilterSectionProps) {
                         </Link>
 
                         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-slate-500">
-                          <span>Makkah: <strong className="font-semibold text-slate-700">{tour.hotelMakkah.name.split("/")[0].trim()}</strong> (50m)</span>
-                          <span>Madinah: <strong className="font-semibold text-slate-700">{tour.hotelMadinah.name.split("/")[0].trim()}</strong> (100m)</span>
+                          <span>
+                            Makkah: <strong className="font-semibold text-slate-700">{tour.hotelMakkah.name.split("/")[0].trim()}</strong> ({tour.hotelMakkah.distanceText ? (tour.hotelMakkah.distanceText.includes("(") ? tour.hotelMakkah.distanceText.split("(")[0].trim() : tour.hotelMakkah.distanceText.includes("•") ? tour.hotelMakkah.distanceText.split("•")[0].trim() : tour.hotelMakkah.distanceText.replace(/ke (Masjidil Haram|Masjid Nabawi)/gi, "").trim()) : "Ring 1"})
+                          </span>
+                          <span>
+                            Madinah: <strong className="font-semibold text-slate-700">{tour.hotelMadinah.name.split("/")[0].trim()}</strong> ({tour.hotelMadinah.distanceText ? (tour.hotelMadinah.distanceText.includes("(") ? tour.hotelMadinah.distanceText.split("(")[0].trim() : tour.hotelMadinah.distanceText.includes("•") ? tour.hotelMadinah.distanceText.split("•")[0].trim() : tour.hotelMadinah.distanceText.replace(/ke (Masjidil Haram|Masjid Nabawi)/gi, "").trim()) : "Ring 1"})
+                          </span>
                         </div>
                       </div>
 
