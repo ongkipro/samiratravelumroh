@@ -59,6 +59,7 @@ export function formatW3CDate(date?: string | Date): string {
  * Builds standard XML Sitemap Index (e.g. /sitemap.xml or /sitemap_index.xml)
  */
 export function buildSitemapIndexXml(sitemaps: SitemapIndexItem[]): string {
+  const stylesheetUrl = SITEMAP_BASE_URL.replace(/^https?:/, "") + "/sitemap.xsl";
   const itemsXml = sitemaps
     .map((s) => {
       const lastmod = s.lastmod ? `\n    <lastmod>${formatW3CDate(s.lastmod)}</lastmod>` : "";
@@ -67,7 +68,7 @@ export function buildSitemapIndexXml(sitemaps: SitemapIndexItem[]): string {
     .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="${stylesheetUrl}"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${itemsXml}
 </sitemapindex>`;
@@ -77,6 +78,7 @@ ${itemsXml}
  * Builds standard category-specific urlset XML with Google Image extension
  */
 export function buildUrlSetXml(urls: SitemapItem[]): string {
+  const stylesheetUrl = SITEMAP_BASE_URL.replace(/^https?:/, "") + "/sitemap.xsl";
   const itemsXml = urls
     .map((u) => {
       const lastmodTag = u.lastmod ? `\n    <lastmod>${formatW3CDate(u.lastmod)}</lastmod>` : "";
@@ -96,7 +98,7 @@ export function buildUrlSetXml(urls: SitemapItem[]): string {
     .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="${stylesheetUrl}"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${itemsXml}

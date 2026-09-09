@@ -9,7 +9,7 @@ export async function GET() {
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes"/>
   <xsl:template match="/">
-    <html xmlns="http://www.w3.org/1999/xhtml" lang="id">
+    <html xmlns="http://www.w3.org/1999/xhtml">
       <head>
         <title>XML Sitemap — Samira Travel Umroh &amp; Haji</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -193,12 +193,15 @@ export async function GET() {
                 </thead>
                 <tbody>
                   <xsl:for-each select="sitemap:sitemapindex/sitemap:sitemap">
+                    <xsl:variable name="sitemapURL">
+                      <xsl:value-of select="sitemap:loc"/>
+                    </xsl:variable>
                     <tr>
                       <td>
-                        <a href="{sitemap:loc}"><xsl:value-of select="sitemap:loc"/></a>
+                        <a href="{$sitemapURL}"><xsl:value-of select="sitemap:loc"/></a>
                       </td>
                       <td>
-                        <xsl:value-of select="concat(substring(sitemap:lastmod,0,11),concat(' ', substring(sitemap:lastmod,12,8)))"/>
+                        <xsl:value-of select="concat(substring(sitemap:lastmod,1,10),concat(' ', substring(sitemap:lastmod,12,8)))"/>
                       </td>
                     </tr>
                   </xsl:for-each>
@@ -208,7 +211,7 @@ export async function GET() {
           </xsl:if>
 
           <!-- URLSET VIEW (SUB-SITEMAP) -->
-          <xsl:if test="count(sitemap:urlset/sitemap:url) &gt; 0">
+          <xsl:if test="count(sitemap:sitemapindex/sitemap:sitemap) &lt; 1">
             <div class="nav-bar">
               <a href="/sitemap.xml">&#8592; Kembali ke Sitemap Index Utama</a>
               <span>Jumlah URL: <strong><xsl:value-of select="count(sitemap:urlset/sitemap:url)"/></strong></span>
@@ -226,9 +229,12 @@ export async function GET() {
                 </thead>
                 <tbody>
                   <xsl:for-each select="sitemap:urlset/sitemap:url">
+                    <xsl:variable name="itemURL">
+                      <xsl:value-of select="sitemap:loc"/>
+                    </xsl:variable>
                     <tr>
                       <td>
-                        <a href="{sitemap:loc}"><xsl:value-of select="sitemap:loc"/></a>
+                        <a href="{$itemURL}"><xsl:value-of select="sitemap:loc"/></a>
                       </td>
                       <td>
                         <xsl:choose>
@@ -255,7 +261,7 @@ export async function GET() {
                         </xsl:choose>
                       </td>
                       <td>
-                        <xsl:value-of select="concat(substring(sitemap:lastmod,0,11),concat(' ', substring(sitemap:lastmod,12,8)))"/>
+                        <xsl:value-of select="concat(substring(sitemap:lastmod,1,10),concat(' ', substring(sitemap:lastmod,12,8)))"/>
                       </td>
                     </tr>
                   </xsl:for-each>
@@ -276,9 +282,9 @@ export async function GET() {
 
   return new Response(xsl, {
     headers: {
-      "Content-Type": "text/xsl; charset=utf-8",
+      "Content-Type": "text/xml; charset=utf-8",
       "Access-Control-Allow-Origin": "*",
-      "Cache-Control": "public, max-age=86400, s-maxage=86400, stale-while-revalidate=43200",
+      "Cache-Control": "public, max-age=0, must-revalidate",
     },
   });
 }
