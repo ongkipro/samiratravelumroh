@@ -80,7 +80,7 @@ export function Navbar() {
   const mainNavLinks = [
     { label: "Paket Umroh", href: "/paket-umroh", hasDropdown: true },
     { label: "Umroh Plus", href: "/umroh-plus" },
-    { label: "Haji Furoda", href: "/haji-khusus-furoda", badge: "Tanpa Antre" },
+    { label: "Haji Furoda", href: "/haji-khusus-furoda", badge: "Langsung Berangkat" },
     { label: "26 Cabang", href: "/kantor-cabang" },
     { label: "Tentang Kami", href: "/tentang-kami" },
   ];
@@ -111,18 +111,18 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-15 sm:h-16">
             {/* Brand Logo - Crisp Light WebP */}
-            <Link href="/" className="flex items-center gap-3 shrink-0 py-1" aria-label="Samira Travel Beranda">
+            <Link href="/" className="flex items-center gap-3 shrink-0 py-1 group/logo" aria-label="Samira Travel Beranda">
               <Image
                 src="/images/logo-samira-travel-light.webp"
                 alt="Samira Travel - Biro Perjalanan Umrah & Haji Khusus Resmi Kemenag RI"
                 width={162}
                 height={54}
-                className="h-9 sm:h-10 w-auto object-contain transition-all"
+                className="h-9 sm:h-10 w-auto object-contain transition-transform duration-200 group-hover/logo:scale-[1.02]"
                 priority
               />
             </Link>
 
-            {/* Desktop Navigation Links */}
+            {/* Desktop Navigation Links with Modern Hover & Gold Hairline Animation */}
             <nav className="hidden lg:flex items-center space-x-1 xl:space-x-1.5">
               {mainNavLinks.map((link) => {
                 const isActive =
@@ -133,56 +133,87 @@ export function Navbar() {
                 return (
                   <div
                     key={link.href}
-                    className="relative"
-                    onMouseEnter={() => link.hasDropdown && setIsPaketDropdownOpen(true)}
-                    onMouseLeave={() => link.hasDropdown && setIsPaketDropdownOpen(false)}
+                    className="relative group py-2"
                   >
                     <Link
                       href={link.href}
-                      className={`inline-flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
+                      className={`relative inline-flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium rounded-xl transition-all duration-200 ${
                         isActive
-                          ? "text-[#084234] font-bold bg-[#084234]/5"
-                          : "text-slate-700 hover:text-[#084234] hover:bg-slate-100/70"
+                          ? "text-[#084234] font-bold"
+                          : "text-slate-700 hover:text-[#084234]"
                       }`}
                     >
-                      <span>{link.label}</span>
+                      {/* Subtle Floating Pill Backdrop on Hover */}
+                      <span
+                        className={`absolute inset-0 rounded-xl transition-all duration-250 ease-out ${
+                          isActive
+                            ? "bg-[#084234]/8 shadow-2xs"
+                            : "bg-[#084234]/0 group-hover:bg-[#084234]/5"
+                        }`}
+                      />
+
+                      <span className="relative z-10">{link.label}</span>
+
                       {link.badge && (
-                        <span className="text-[10px] px-1.5 py-0.5 rounded-full font-bold bg-amber-100 text-amber-900 border border-amber-200">
+                        <span className="relative z-10 inline-flex items-center text-[9px] font-extrabold uppercase tracking-wide px-2 py-0.5 rounded-full bg-gradient-to-r from-[#084234]/10 to-[#C5A059]/20 text-[#084234] border border-[#C5A059]/40 group-hover:border-[#C5A059]/70 group-hover:bg-[#C5A059]/20 transition-all duration-200">
                           {link.badge}
                         </span>
                       )}
+
                       {link.hasDropdown && (
-                        <ChevronDown className={`w-3.5 h-3.5 ml-0.5 text-slate-400 transition-transform ${isPaketDropdownOpen ? "rotate-180" : ""}`} />
+                        <ChevronDown className="relative z-10 w-3.5 h-3.5 text-slate-400 group-hover:text-[#084234] transition-transform duration-300 ease-out group-hover:rotate-180" />
                       )}
+
+                      {/* Golden Hairline Underline Indicator Animation */}
+                      <span
+                        className={`absolute bottom-0.5 left-3.5 right-3.5 h-[2px] rounded-full bg-gradient-to-r from-[#C5A059] via-[#E6CA65] to-[#C5A059] transition-all duration-300 ease-out origin-center ${
+                          isActive
+                            ? "opacity-100 scale-x-100 shadow-[0_1px_4px_rgba(197,160,89,0.5)]"
+                            : "opacity-0 scale-x-0 group-hover:opacity-100 group-hover:scale-x-100"
+                        }`}
+                      />
                     </Link>
 
-                    {/* Clean Dropdown for Cities */}
-                    {link.hasDropdown && isPaketDropdownOpen && (
-                      <div className="absolute top-full left-0 w-80 p-3 bg-white/98 backdrop-blur-2xl rounded-2xl shadow-xl border border-[#E8E3DA] z-50 animate-in fade-in slide-in-from-top-2 duration-150 text-[#0F172A]">
-                        <div className="text-[11px] font-bold text-[#084234] uppercase tracking-wider px-2 pb-2 mb-1 border-b border-slate-100 flex items-center justify-between">
-                          <span>11 Kota Embarkasi Langsung</span>
-                          <span className="font-mono text-amber-700 text-[10px]">A330 Charter</span>
-                        </div>
-                        <div className="grid grid-cols-2 gap-1">
-                          {cityDropdown.map((c) => (
+                    {/* Dropdown with Safety Bridge & Smooth Float-Down Animation */}
+                    {link.hasDropdown && (
+                      <div className="absolute top-full left-0 pt-1.5 w-84 invisible opacity-0 -translate-y-2 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-250 ease-out z-50">
+                        <div className="p-3.5 bg-white/98 backdrop-blur-2xl rounded-2xl shadow-[0_16px_48px_rgba(4,38,30,0.14)] border border-[#E8E3DA] relative overflow-hidden ring-1 ring-[#C5A059]/20">
+                          {/* Top Golden Rim Ambient Glow */}
+                          <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-[#C5A059]/50 to-transparent" />
+
+                          <div className="text-[11px] font-bold text-[#084234] uppercase tracking-wider px-2.5 pb-2 mb-1.5 border-b border-slate-100 flex items-center justify-between">
+                            <span>11 Kota Embarkasi Langsung</span>
+                            <span className="text-[10px] font-semibold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+                              Direct Flight
+                            </span>
+                          </div>
+
+                          <div className="grid grid-cols-2 gap-1">
+                            {cityDropdown.map((c) => (
+                              <Link
+                                key={c.href}
+                                href={c.href}
+                                className="group/city flex items-center justify-between px-2.5 py-1.5 rounded-xl text-xs text-slate-600 hover:text-[#084234] hover:bg-[#084234]/6 transition-all duration-150"
+                              >
+                                <span className="group-hover/city:translate-x-1 transition-transform duration-150 font-medium">
+                                  {c.name}
+                                </span>
+                                <span className="text-[10px] text-[#C5A059] group-hover/city:text-[#084234] font-mono font-bold transition-colors">
+                                  {c.code}
+                                </span>
+                              </Link>
+                            ))}
+                          </div>
+
+                          <div className="pt-2.5 mt-2 border-t border-slate-100 px-1">
                             <Link
-                              key={c.href}
-                              href={c.href}
-                              className="flex items-center justify-between px-2.5 py-1.5 rounded-lg text-xs text-slate-600 hover:text-[#084234] hover:bg-[#FAF8F5] transition-colors"
+                              href="/paket-umroh"
+                              className="group/all flex items-center justify-between px-2.5 py-1.5 rounded-xl text-xs font-bold text-[#084234] hover:bg-[#084234]/5 transition-all"
                             >
-                              <span>{c.name}</span>
-                              <span className="text-[10px] text-[#C5A059] font-mono font-bold">{c.code}</span>
+                              <span>Lihat Seluruh Paket &amp; Jadwal</span>
+                              <ChevronRight className="w-3.5 h-3.5 text-[#C5A059] group-hover/all:translate-x-1 transition-transform duration-150" />
                             </Link>
-                          ))}
-                        </div>
-                        <div className="pt-2 mt-2 border-t border-slate-100 px-2">
-                          <Link
-                            href="/paket-umroh"
-                            className="text-xs font-bold text-[#084234] hover:text-[#04261E] hover:underline flex items-center justify-between"
-                          >
-                            <span>Semua Jadwal Umroh</span>
-                            <ChevronRight className="w-3.5 h-3.5" />
-                          </Link>
+                          </div>
                         </div>
                       </div>
                     )}
@@ -191,38 +222,26 @@ export function Navbar() {
               })}
             </nav>
 
-            {/* Right Tools: Clean Search & Emerald Pill CTA */}
-            <div className="flex items-center gap-2.5">
-              {/* Clean Quick Search Button */}
+            {/* Right Tools: Minimalist Search Icon & Mobile Toggle */}
+            <div className="flex items-center gap-2 sm:gap-2.5">
+              {/* Minimalist Circular Search Icon Button */}
               <button
                 type="button"
                 onClick={() => setIsSearchOpen(true)}
-                className="p-2 sm:px-3 sm:py-1.5 rounded-full text-slate-600 hover:text-[#084234] hover:bg-slate-100 border border-[#E8E3DA] bg-white transition-colors flex items-center gap-2 cursor-pointer text-xs"
-                aria-label="Cari jadwal dan paket"
+                aria-label="Cari paket umroh, kota keberangkatan, atau artikel panduan"
+                title="Pencarian Cepat (⌘K)"
+                className="group relative flex items-center justify-center w-10 h-10 rounded-full bg-white/90 hover:bg-white border border-[#E8E3DA] hover:border-[#C5A059]/70 text-slate-600 hover:text-[#084234] shadow-2xs hover:shadow-sm hover:shadow-[#084234]/10 active:scale-90 transition-all duration-200 cursor-pointer"
               >
-                <Search className="w-4 h-4 text-slate-500" />
-                <span className="hidden md:inline text-xs text-slate-600">Cari paket...</span>
-                <kbd className="hidden xl:inline-block text-[10px] px-1.5 py-0.5 bg-slate-100 border border-slate-200 rounded font-mono text-slate-500">
-                  ⌘K
-                </kbd>
+                <Search className="w-4.5 h-4.5 transition-transform duration-200 group-hover:scale-110" />
+                {/* Subtle Ambient Hover Ring */}
+                <span className="absolute inset-0 rounded-full bg-[#084234]/0 group-hover:bg-[#084234]/5 transition-colors duration-200 pointer-events-none" />
               </button>
-
-              {/* Consultation / Booking CTA */}
-              <a
-                href="https://wa.me/6285607179735?text=Assalamu%27alaikum%20Samira%20Travel,%20saya%20ingin%20konsultasi%20paket%20umrah"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden sm:inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full bg-[#084234] hover:bg-[#04261E] text-white text-xs font-bold shadow-xs transition-all active:scale-[0.98]"
-              >
-                <span>Konsultasi Ibadah</span>
-                <ChevronRight className="w-3.5 h-3.5" />
-              </a>
 
               {/* Mobile Menu Toggle Button */}
               <button
                 type="button"
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="lg:hidden p-2 rounded-xl text-slate-800 hover:text-[#084234] hover:bg-slate-100 active:scale-95 transition-all cursor-pointer border border-[#E8E3DA]/80 bg-white shadow-2xs"
+                className="lg:hidden flex items-center justify-center w-10 h-10 rounded-xl text-slate-800 hover:text-[#084234] hover:bg-slate-100 active:scale-90 transition-all cursor-pointer border border-[#E8E3DA]/80 bg-white shadow-2xs"
                 aria-label={isMobileMenuOpen ? "Tutup menu navigasi" : "Buka menu navigasi"}
               >
                 {isMobileMenuOpen ? (
@@ -372,8 +391,8 @@ export function Navbar() {
                     <Award className="w-4 h-4 text-[#C5A059]" />
                     <span className="font-bold text-sm text-[#0F172A]">Haji Khusus &amp; Furoda</span>
                   </div>
-                  <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-amber-200/90 text-amber-950 border border-amber-300">
-                    Tanpa Antre
+                  <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-[#084234]/10 text-[#084234] border border-[#084234]/20">
+                    Langsung Berangkat
                   </span>
                 </Link>
               </div>

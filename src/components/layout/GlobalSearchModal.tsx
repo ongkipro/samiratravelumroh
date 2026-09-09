@@ -35,7 +35,7 @@ const SEARCH_DATABASE: SearchItem[] = [
   { id: "p-turki", category: "paket", title: "Umroh Plus Turki (Bosphorus & Istanbul)", subtitle: "Wisata sejarah Khilafah Utsmaniyah • Rp 37 Jt-an", href: "/umroh-plus/turki", badge: "Populer" },
   { id: "p-riyadh", category: "paket", title: "Umroh Plus Riyadh (Benteng Masmak)", subtitle: "Metropolitan modern & sejarah berdirinya Saudi • Rp 30 Jt-an", href: "/umroh-plus/riyadh" },
   { id: "p-jeddah", category: "paket", title: "Umroh Plus City Tour Jeddah", subtitle: "Masjid Terapung & Laut Merah Corniche • Rp 28 Jt-an", href: "/umroh-plus/jeddah" },
-  { id: "p-furoda", category: "paket", title: "Haji Khusus Furoda 2026 (Tanpa Antre)", subtitle: "Visa Resmi Mujamalah • Maktab AC VIP • USD 17.000 (Garansi DP)", href: "/haji-khusus-furoda", badge: "Tanpa Antri" },
+  { id: "p-furoda", category: "paket", title: "Haji Khusus Furoda 2026 (Langsung Berangkat)", subtitle: "Visa Resmi Mujamalah • Maktab AC VIP • USD 17.000 (Garansi DP)", href: "/haji-khusus-furoda", badge: "Langsung Berangkat" },
 
   // Kantor Cabang Populer
   { id: "c-sby", category: "cabang", title: "Kantor Cabang Surabaya", subtitle: "Jawa Timur • Jl. Gayungsari Barat", href: "/kantor-cabang/surabaya" },

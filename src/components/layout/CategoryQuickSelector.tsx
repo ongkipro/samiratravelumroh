@@ -28,7 +28,7 @@ export function CategoryQuickSelector() {
       href: "/haji-khusus-furoda",
       icon: Award,
       isActive: pathname === "/haji-khusus-furoda",
-      badge: "Tanpa Antre",
+      badge: "Langsung Berangkat",
     },
     {
       label: "26 Cabang",

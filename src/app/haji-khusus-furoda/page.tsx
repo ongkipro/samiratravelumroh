@@ -16,16 +16,18 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Haji Khusus Furoda 2026 Tanpa Antri - Biaya Mulai USD 17.000",
+  title: "Haji Khusus Furoda 2026 Langsung Berangkat - Biaya Mulai USD 17.000",
   description:
-    "Program Haji Khusus Furoda Mujamalah 2026 langsung berangkat tanpa antri. Biaya USD 17.000 dengan jaminan garansi 100% Full Refund DP USD 5.000 jika visa tidak terbit. Hotel bintang 5 dan Maktab VIP Arafah-Mina.",
+    "Program Haji Khusus Furoda Mujamalah 2026 resmi langsung berangkat pada musim berjalan. Biaya USD 17.000 dengan jaminan garansi 100% Full Refund DP USD 5.000 jika visa tidak terbit. Hotel bintang 5 dan Maktab VIP Arafah-Mina.",
   alternates: {
     canonical: "https://samiratravelumrohhaji.com/haji-khusus-furoda",
   },
   openGraph: {
-    title: "Haji Khusus Furoda 2026 Tanpa Antri - Biaya Mulai USD 17.000",
-    description: "Langsung berangkat tahun 2026. Garansi 100% Full Refund DP jika visa tidak disetujui. Kuota resmi terbatas.",
+    title: "Haji Khusus Furoda 2026 Langsung Berangkat - Biaya Mulai USD 17.000",
+    description:
+      "Program Haji Khusus Furoda Mujamalah 2026 langsung berangkat kuota resmi Kerajaan Arab Saudi. Garansi 100% Full Refund DP.",
     url: "https://samiratravelumrohhaji.com/haji-khusus-furoda",
+    siteName: "Samira Travel",
     images: [
       {
         url: "/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp",
@@ -38,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Haji Khusus Furoda 2026 Tanpa Antri - Biaya Mulai USD 17.000",
-    description: "Langsung berangkat tahun 2026 tanpa antri. Garansi 100% Full Refund DP.",
+    title: "Haji Khusus Furoda 2026 Langsung Berangkat - Biaya Mulai USD 17.000",
+    description: "Langsung berangkat musim haji 2026 dengan kuota resmi Mujamalah Kerajaan Arab Saudi. Garansi 100% Full Refund DP.",
     images: ["/images/samira-travel-umroh-dan-haji-resmi-kemenag.webp"],
   },
 };
@@ -100,7 +102,7 @@ export default async function HajiFurodaPage() {
                 </span>
 
                 <h1 className="font-playfair text-3xl sm:text-5xl lg:text-6xl font-bold text-[#FAF8F5] leading-[1.15] drop-shadow-md">
-                  Haji Khusus Furoda 2026 - Ibadah Haji Tanpa Antri
+                  Haji Khusus Furoda 2026 - Kuota Resmi Langsung Berangkat
                 </h1>
 
                 <p className="text-sm sm:text-base md:text-lg text-emerald-100/90 max-w-xl leading-relaxed font-normal drop-shadow">
