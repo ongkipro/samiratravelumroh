@@ -19,12 +19,12 @@ import {
   ChevronRight,
   MessageCircle,
   PhoneCall,
-  Sparkles
+  Sparkles,
+  Mail
 } from "lucide-react";
 
 function formatInlineText(raw: string): React.ReactNode {
   if (!raw) return "";
-  // Clean stray multiple asterisks or brackets
   const cleaned = raw.replace(/\*{3,}/g, "**").replace(/[}{]{2,}=?/g, "").trim();
   const parts = cleaned.split(/(\*\*.*?\*\*)/g);
   return parts.map((part, i) => {
@@ -37,6 +37,140 @@ function formatInlineText(raw: string): React.ReactNode {
     }
     return part;
   });
+}
+
+interface ParsedBlock {
+  type: "h2" | "h3" | "callout" | "table" | "ul" | "ol" | "contact_card" | "p";
+  text?: string;
+  id?: string;
+  items?: string[];
+  lines?: string[];
+  headers?: string[];
+  rows?: string[][];
+}
+
+function parseMarkdownBlocks(rawContent: string): ParsedBlock[] {
+  const lines = rawContent.split("\n");
+  const blocks: ParsedBlock[] = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    const rawLine = lines[i];
+    const line = rawLine.trim();
+
+    if (!line) {
+      i++;
+      continue;
+    }
+
+    // Heading 2
+    if (line.startsWith("## ")) {
+      const text = line.replace(/^##\s*/, "").replace(/\*\*/g, "").trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+      blocks.push({ type: "h2", text, id });
+      i++;
+      continue;
+    }
+
+    // Heading 3
+    if (line.startsWith("### ")) {
+      const text = line.replace(/^###\s*/, "").replace(/\*\*/g, "").trim();
+      const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+      blocks.push({ type: "h3", text, id });
+      i++;
+      continue;
+    }
+
+    // Callout (> ...)
+    if (line.startsWith(">")) {
+      const calloutLines: string[] = [];
+      while (i < lines.length && lines[i].trim().startsWith(">")) {
+        calloutLines.push(lines[i].trim().replace(/^>\s*/, "").trim());
+        i++;
+      }
+      blocks.push({ type: "callout", lines: calloutLines });
+      continue;
+    }
+
+    // Table (| ... |)
+    if (line.startsWith("|") && line.includes("|", 1)) {
+      const tableLines: string[] = [];
+      while (i < lines.length && lines[i].trim().startsWith("|") && lines[i].trim().includes("|", 1)) {
+        tableLines.push(lines[i].trim());
+        i++;
+      }
+      if (tableLines.length >= 2) {
+        const parseRow = (r: string) => r.split("|").slice(1, -1).map((c) => c.trim());
+        const headers = parseRow(tableLines[0]);
+        const rows = tableLines.slice(2).map(parseRow);
+        blocks.push({ type: "table", headers, rows });
+        continue;
+      }
+    }
+
+    // Unordered List (- ... or * ...)
+    if (line.startsWith("- ") || line.startsWith("* ")) {
+      const items: string[] = [];
+      while (i < lines.length && (lines[i].trim().startsWith("- ") || lines[i].trim().startsWith("* "))) {
+        items.push(lines[i].trim().replace(/^[-*]\s*/, ""));
+        i++;
+      }
+      blocks.push({ type: "ul", items });
+      continue;
+    }
+
+    // Numbered List (\d+\. ...)
+    if (/^\d+\.\s/.test(line)) {
+      const items: string[] = [];
+      while (i < lines.length && /^\d+\.\s/.test(lines[i].trim())) {
+        items.push(lines[i].trim().replace(/^\d+\.\s*/, ""));
+        i++;
+      }
+      blocks.push({ type: "ol", items });
+      continue;
+    }
+
+    // Contact Consultation Section
+    if (
+      line.toLowerCase().includes("0856-0717-9735") || 
+      line.toLowerCase().includes("samiratravelsurabayaterpercaya@gmail.com") ||
+      (line.toLowerCase().includes("konsultasi") && (line.includes("0856") || line.toLowerCase().includes("whatsapp")))
+    ) {
+      const contactLines: string[] = [];
+      while (i < lines.length && lines[i].trim()) {
+        contactLines.push(lines[i].trim());
+        i++;
+      }
+      blocks.push({ type: "contact_card", lines: contactLines });
+      continue;
+    }
+
+    // Regular paragraph: accumulate lines until next special block or blank line
+    const pLines: string[] = [];
+    while (i < lines.length) {
+      const l = lines[i].trim();
+      if (!l) break;
+      if (
+        l.startsWith("#") ||
+        l.startsWith(">") ||
+        (l.startsWith("|") && l.includes("|", 1)) ||
+        l.startsWith("- ") ||
+        l.startsWith("* ") ||
+        /^\d+\.\s/.test(l) ||
+        l.toLowerCase().includes("0856-0717-9735")
+      ) {
+        break;
+      }
+      pLines.push(l);
+      i++;
+    }
+
+    if (pLines.length > 0) {
+      blocks.push({ type: "p", text: pLines.join(" ") });
+    }
+  }
+
+  return blocks;
 }
 export async function generateStaticParams() {
   const articles = await getAllArticles();
@@ -258,49 +392,41 @@ export default async function ArticleDetailPage({ params }: Props) {
 
               {/* Rendered Article Body */}
               <div className="prose prose-slate max-w-none text-slate-800 text-sm sm:text-base leading-relaxed space-y-5 pt-2">
-                {article.content.split("\n\n").map((para, pIdx) => {
-                  const trimmed = para.trim();
-                  if (!trimmed) return null;
-
+                {parseMarkdownBlocks(article.content).map((block, bIdx) => {
                   // Heading 2
-                  if (trimmed.startsWith("## ")) {
-                    const text = trimmed.replace(/^##\s*/, "").replace(/\*\*/g, "").trim();
-                    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+                  if (block.type === "h2") {
                     return (
                       <h2
-                        key={pIdx}
-                        id={id}
+                        key={bIdx}
+                        id={block.id}
                         className="font-playfair text-xl sm:text-2xl font-bold text-[#0F172A] pt-6 pb-2 border-b border-slate-100 scroll-mt-24 flex items-center gap-2"
                       >
                         <span className="w-2 h-2 rounded-full bg-[#C5A059] shrink-0" />
-                        <span>{text}</span>
+                        <span>{block.text}</span>
                       </h2>
                     );
                   }
 
                   // Heading 3
-                  if (trimmed.startsWith("### ")) {
-                    const text = trimmed.replace(/^###\s*/, "").replace(/\*\*/g, "").trim();
-                    const id = text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+                  if (block.type === "h3") {
                     return (
                       <h3
-                        key={pIdx}
-                        id={id}
+                        key={bIdx}
+                        id={block.id}
                         className="font-playfair text-lg sm:text-xl font-bold text-[#0F172A] pt-4 pb-1 scroll-mt-24"
                       >
-                        {text}
+                        {block.text}
                       </h3>
                     );
                   }
 
                   // Callout / Note box (> ...)
-                  if (trimmed.startsWith("> ")) {
-                    const noteLines = trimmed.split("\n").map((l) => l.replace(/^>\s*/, "").trim()).filter(Boolean);
-                    const isKeyNote = noteLines[0]?.includes("[!NOTE]");
-                    const titleText = isKeyNote ? noteLines[0].replace(/\[!NOTE\]\s*/, "") || "Poin Penting Panduan" : "Catatan Penting";
-                    const contentLines = isKeyNote ? noteLines.slice(1) : noteLines;
+                  if (block.type === "callout" && block.lines) {
+                    const isKeyNote = block.lines[0]?.includes("[!NOTE]");
+                    const titleText = isKeyNote ? block.lines[0].replace(/\[!NOTE\]\s*/, "") || "Poin Penting Panduan" : "Catatan Penting";
+                    const contentLines = isKeyNote ? block.lines.slice(1) : block.lines;
                     return (
-                      <div key={pIdx} className="p-5 sm:p-6 rounded-2xl bg-[#FAF8F5] border-l-4 border-[#084234] border-y border-r border-[#E8E3DA] my-4 shadow-xs">
+                      <div key={bIdx} className="p-5 sm:p-6 rounded-2xl bg-[#FAF8F5] border-l-4 border-[#084234] border-y border-r border-[#E8E3DA] my-4 shadow-xs">
                         <div className="flex items-center gap-2 font-bold text-[#084234] text-sm mb-2">
                           <Sparkles className="w-4 h-4 text-[#C5A059]" />
                           <span>{titleText}</span>
@@ -317,53 +443,43 @@ export default async function ArticleDetailPage({ params }: Props) {
                   }
 
                   // Table (| ... |)
-                  if (trimmed.startsWith("|") && trimmed.includes("\n|")) {
-                    const tableRows = trimmed.split("\n").map((r) => r.trim()).filter(Boolean);
-                    if (tableRows.length >= 2) {
-                      const parseRow = (row: string) => row.split("|").slice(1, -1).map((c) => c.trim());
-                      const headerCols = parseRow(tableRows[0]);
-                      const bodyRows = tableRows.slice(2); // skip separator row
-                      return (
-                        <div key={pIdx} className="overflow-x-auto my-6 rounded-xl border border-[#E8E3DA] shadow-xs">
-                          <table className="min-w-full divide-y divide-[#E8E3DA] text-left text-xs sm:text-sm">
-                            <thead className="bg-[#FAF8F5]">
-                              <tr>
-                                {headerCols.map((hCol, hIdx) => (
-                                  <th key={hIdx} className="px-4 py-3 font-bold text-[#084234]">
-                                    {formatInlineText(hCol)}
-                                  </th>
+                  if (block.type === "table" && block.headers && block.rows) {
+                    return (
+                      <div key={bIdx} className="overflow-x-auto my-6 rounded-xl border border-[#E8E3DA] shadow-xs">
+                        <table className="min-w-full divide-y divide-[#E8E3DA] text-left text-xs sm:text-sm">
+                          <thead className="bg-[#FAF8F5]">
+                            <tr>
+                              {block.headers.map((hCol, hIdx) => (
+                                <th key={hIdx} className="px-4 py-3 font-bold text-[#084234]">
+                                  {formatInlineText(hCol)}
+                                </th>
+                              ))}
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-[#E8E3DA] bg-white">
+                            {block.rows.map((row, rIdx) => (
+                              <tr key={rIdx} className={rIdx % 2 === 0 ? "bg-white" : "bg-slate-50/50"}>
+                                {row.map((col, cIdx) => (
+                                  <td key={cIdx} className="px-4 py-2.5 text-slate-700">
+                                    {formatInlineText(col)}
+                                  </td>
                                 ))}
                               </tr>
-                            </thead>
-                            <tbody className="divide-y divide-[#E8E3DA] bg-white">
-                              {bodyRows.map((bRow, rIdx) => {
-                                const cols = parseRow(bRow);
-                                return (
-                                  <tr key={rIdx} className={rIdx % 2 === 0 ? "bg-white" : "bg-slate-50/50"}>
-                                    {cols.map((col, cIdx) => (
-                                      <td key={cIdx} className="px-4 py-2.5 text-slate-700">
-                                        {formatInlineText(col)}
-                                      </td>
-                                    ))}
-                                  </tr>
-                                );
-                              })}
-                            </tbody>
-                          </table>
-                        </div>
-                      );
-                    }
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    );
                   }
 
                   // Unordered List
-                  if (trimmed.startsWith("- ")) {
-                    const items = trimmed.split("\n").filter(Boolean);
+                  if (block.type === "ul" && block.items) {
                     return (
-                      <ul key={pIdx} className="space-y-2 my-4 pl-1">
-                        {items.map((it, iIdx) => (
+                      <ul key={bIdx} className="space-y-2.5 my-4 pl-1">
+                        {block.items.map((it, iIdx) => (
                           <li key={iIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#084234] shrink-0 mt-2" />
-                            <span>{formatInlineText(it.replace(/^-\s*/, ""))}</span>
+                            <span>{formatInlineText(it)}</span>
                           </li>
                         ))}
                       </ul>
@@ -371,24 +487,86 @@ export default async function ArticleDetailPage({ params }: Props) {
                   }
 
                   // Numbered List
-                  if (/^\d+\.\s/.test(trimmed)) {
-                    const items = trimmed.split("\n").filter(Boolean);
+                  if (block.type === "ol" && block.items) {
                     return (
-                      <ol key={pIdx} className="space-y-2 my-4 pl-1">
-                        {items.map((it, iIdx) => (
+                      <ol key={bIdx} className="space-y-2.5 my-4 pl-1">
+                        {block.items.map((it, iIdx) => (
                           <li key={iIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
                             <span className="font-bold text-[#084234] shrink-0">{iIdx + 1}.</span>
-                            <span>{formatInlineText(it.replace(/^\d+\.\s*/, ""))}</span>
+                            <span>{formatInlineText(it)}</span>
                           </li>
                         ))}
                       </ol>
                     );
                   }
 
+                  // Official Consultation Action Card
+                  if (block.type === "contact_card" && block.lines) {
+                    return (
+                      <div key={bIdx} className="my-8 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#FAF8F5] to-[#F3EFEA] border-2 border-[#C5A059]/30 shadow-md">
+                        <div className="flex items-center gap-3 mb-3">
+                          <div className="w-10 h-10 rounded-full bg-[#084234] flex items-center justify-center text-white shrink-0">
+                            <PhoneCall className="w-5 h-5 text-[#C5A059]" />
+                          </div>
+                          <div>
+                            <h3 className="text-base sm:text-lg font-bold text-[#084234] font-playfair">
+                              Pusat Layanan Konsultasi & Pendaftaran Resmi
+                            </h3>
+                            <p className="text-xs text-slate-600">
+                              Samira Travel – Sahabat Umrah & Haji Keluarga Anda
+                            </p>
+                          </div>
+                        </div>
+
+                        <div className="text-xs sm:text-sm text-slate-700 my-4 space-y-1.5">
+                          {block.lines.map((l, lIdx) => {
+                            const cleanLine = l.replace(/^[-*]\s*/, "");
+                            if (cleanLine.includes("0856-0717-9735") || cleanLine.includes("samiratravelsurabayaterpercaya")) {
+                              return null;
+                            }
+                            return (
+                              <p key={lIdx} className="leading-relaxed">
+                                {formatInlineText(cleanLine)}
+                              </p>
+                            );
+                          })}
+                        </div>
+
+                        <div className="flex flex-wrap items-center gap-3 pt-2">
+                          <a
+                            href="https://wa.me/6285607179735"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs sm:text-sm font-semibold shadow-sm transition-all transform hover:-translate-y-0.5"
+                          >
+                            <MessageCircle className="w-4 h-4 fill-white" />
+                            <span>Chat WhatsApp: 0856-0717-9735</span>
+                          </a>
+
+                          <a
+                            href="tel:085607179735"
+                            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#084234] hover:bg-[#063328] text-white text-xs sm:text-sm font-semibold shadow-sm transition-all"
+                          >
+                            <PhoneCall className="w-4 h-4 text-[#C5A059]" />
+                            <span>Telepon Langsung</span>
+                          </a>
+
+                          <a
+                            href="mailto:samiratravelsurabayaterpercaya@gmail.com"
+                            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white hover:bg-slate-50 border border-[#E8E3DA] text-slate-700 text-xs sm:text-sm font-medium shadow-2xs transition-all"
+                          >
+                            <Mail className="w-4 h-4 text-[#084234]" />
+                            <span>Kirim Email</span>
+                          </a>
+                        </div>
+                      </div>
+                    );
+                  }
+
                   // Standard Paragraph
                   return (
-                    <p key={pIdx} className="text-slate-700 leading-relaxed text-sm sm:text-base">
-                      {formatInlineText(trimmed)}
+                    <p key={bIdx} className="text-slate-700 leading-relaxed text-sm sm:text-base mb-4">
+                      {formatInlineText(block.text || "")}
                     </p>
                   );
                 })}
