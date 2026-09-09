@@ -87,29 +87,28 @@ Dokumentasi visual kegiatan manasik akbar, sertifikasi, dan pelepasan jamaah di 
 
 ## 6. Spanduk Utama & Visual Sinematik (Hero Banners & Atmosphere)
 
-Seluruh aset visual hero berstandar fotografi natural beresolusi tinggi dengan rasio presisi **16:9 Widescreen**:
+Seluruh aset visual hero berstandar fotografi natural beresolusi tinggi dengan rasio presisi **16:9 Widescreen** dan telah dikonversi ke format **WebP SEO-Friendly**:
 
-| Nama File | Rasio & Dimensi | Subjek & Atmosfer Visual | Penempatan Komponen |
-| :--- | :---: | :--- | :--- |
-| `public/images/banner-hero-kaaba-panorama.jpg`<br>*(Aktif: `banner-hero-1.jpg`)* | **16:9**<br>1376 × 768 px | **Panorama megah Baitullah Ka'bah & Thawaf Fajar**: Cahaya fajar keemasan menyinari Ka'bah Al-Mukarramah dan marmer putih mataf dengan jemaah Indonesia thawaf khusyuk. | `src/components/home/HeroSection.tsx` |
-| `public/images/banner-hero-keluarga-natural.jpg` | **16:9**<br>1376 × 768 px | **Kehangatan Keluarga / Pasangan Jemaah Indonesia**: Pria berbusana ihram putih dan wanita berhijab syar'i berdoa dengan tangan terangkat berlatar Baitullah. | Alternatif Hero & Halaman Tentang Kami |
-| `public/images/hero_kaaba_sanctuary.jpg` | **16:9**<br>1376 × 768 px | **Baitullah Sanctuary Atmosphere**: Suasana sakral Ka'bah sudut luas berpadu pilar arsitektural Masjidil Haram. | Cadangan Hero & Halaman Haji Furoda |
-| `public/images/nabawi_dawn_pillars.jpg` | **16:9**<br>1376 × 768 px | **Pelataran Masjid Nabawi Madinah Fajar**: Payung-payung hidrolik raksasa putih terbuka dengan ornamen emas berpadu marmer Alabaster sejuk. | Header Halaman Paket Umroh & City Pages |
+| Nama Berkas WebP Canonical | Rasio & Dimensi | Target Keyword SEO (Indonesia) | Subjek & Atmosfer Visual | Penempatan Komponen |
+| :--- | :---: | :--- | :--- | :--- |
+| `samira-travel-umroh-dan-haji-resmi-kemenag.webp` | **16:9**<br>1376 × 768 px | `samira travel umroh dan haji` *(On-Domain)* | **Panorama megah Baitullah Ka'bah & Thawaf Fajar**: Cahaya fajar keemasan menyinari Ka'bah Al-Mukarramah dan marmer putih mataf dengan jemaah Indonesia thawaf khusyuk. | `src/components/home/HeroSection.tsx` *(Default Hero)* |
+| `biro-perjalanan-umroh-keluarga-samira-travel.webp` | **16:9**<br>1376 × 768 px | `travel umroh keluarga terpercaya` | **Kehangatan Keluarga / Pasangan Jemaah Indonesia**: Pria berbusana ihram putih dan wanita berhijab syar'i berdoa dengan tangan terangkat berlatar Baitullah. | Alternatif Hero & Halaman Tentang Kami |
+| `paket-umroh-madinah-ziarah-masjid-nabawi.webp` | **16:9**<br>1376 × 768 px | `paket umroh madinah masjid nabawi` | **Pelataran Masjid Nabawi Madinah Fajar**: Payung-payung hidrolik raksasa putih terbuka dengan ornamen emas berpadu marmer Alabaster sejuk. | Header Halaman Paket Umroh & City Pages |
 
 ---
 
-## 7. Destinasi Umroh Plus & Paket Unggulan (Rasio 16:9)
+## 7. Destinasi Umroh Plus & Paket Unggulan (Rasio 16:9 WebP)
 
-| Nama File | Rasio & Dimensi | Subjek Destinasi | Penempatan Komponen |
-| :--- | :---: | :--- | :--- |
-| `public/images/dest_umroh_plus_thaif.jpg` | **16:9**<br>1376 × 768 px | Pegunungan sejuk Ta'if Saudi, perkebunan mawar, & cable car teleferik. | `/umroh-plus/thaif` |
-| `public/images/dest_umroh_plus_alula.jpg` | **16:9**<br>1376 × 768 px | Situs warisan dunia UNESCO Hegra di Al-Ula saat matahari terbenam. | `/umroh-plus/al-ula` |
-| `public/images/dest_umroh_plus_turki.jpg` | **16:9**<br>1376 × 768 px | Panorama Selat Bosphorus & siluet Hagia Sophia / Blue Mosque Istanbul. | `/umroh-plus/turki` |
-| `public/images/dest_umroh_plus_riyadh.jpg` | **16:9**<br>1376 × 768 px | Benteng bersejarah Al-Masmak dan gedung modern ibu kota Riyadh. | `/umroh-plus/riyadh` |
-| `public/images/dest_umroh_plus_jeddah.jpg` | **16:9**<br>1376 × 768 px | Masjid terapung dan pesisir Corniche Laut Merah Jeddah. | `/umroh-plus/jeddah` |
-| `public/images/package_kaaba_thawaf.jpg` | **16:9**<br>1376 × 768 px | Thawaf massal jemaah ihram putih mengelilingi Ka'bah dari sudut atas. | Kartu Paket Reguler 9 & 12 Hari |
-| `public/images/package_nabawi_canopy.jpg` | **16:9**<br>1376 × 768 px | Kanopi payung hidrolik arsitektural Masjid Nabawi langit biru cerah. | Kartu Paket Reguler 13 Hari |
-| `public/images/perlengkapan_umrah_luxury.jpg` | **16:9**<br>1376 × 768 px | Set koper fiber hijau zamrud eksklusif, kain ihram, syal, dan tas paspor. | Rincian Fasilitas Paket |
+| Nama Berkas WebP Canonical | Rasio & Dimensi | Target Keyword SEO | Subjek Destinasi | Penempatan Komponen |
+| :--- | :---: | :--- | :--- | :--- |
+| `paket-umroh-plus-thaif-wisata-kebun-mawar.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus thaif wisata kebun mawar` | Pegunungan sejuk Ta'if Saudi, perkebunan mawar, & cable car teleferik. | `/umroh-plus/thaif` |
+| `paket-umroh-plus-al-ula-hegra-unesco.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus al ula hegra unesco` | Situs warisan dunia UNESCO Hegra di Al-Ula saat matahari terbenam. | `/umroh-plus/al-ula` |
+| `paket-umroh-plus-turki-istanbul-bosphorus.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus turki istanbul bosphorus` | Panorama Selat Bosphorus & siluet Hagia Sophia / Blue Mosque Istanbul. | `/umroh-plus/turki` |
+| `paket-umroh-plus-riyadh-benteng-masmak.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus riyadh benteng masmak` | Benteng bersejarah Al-Masmak dan gedung modern ibu kota Riyadh. | `/umroh-plus/riyadh` |
+| `paket-umroh-plus-jeddah-corniche-laut-merah.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus jeddah corniche laut merah` | Masjid terapung dan pesisir Corniche Laut Merah Jeddah. | `/umroh-plus/jeddah` |
+| `jadwal-paket-umroh-reguler-lion-air-charter.webp` | **16:9**<br>1376 × 768 px | `jadwal paket umroh reguler lion air charter` | Thawaf massal jemaah ihram putih mengelilingi Ka'bah dari sudut atas. | Kartu Paket Reguler 9 & 12 Hari |
+| `hotel-bintang-5-dekat-masjid-makkah-madinah.webp` | **16:9**<br>1376 × 768 px | `hotel bintang 5 dekat masjid makkah madinah` | Kanopi payung hidrolik arsitektural Masjid Nabawi langit biru cerah. | Kartu Paket Reguler 13 Hari |
+| `fasilitas-koper-dan-perlengkapan-umroh-eksekutif.webp` | **16:9**<br>1376 × 768 px | `perlengkapan umroh eksekutif koper fiber` | Set koper fiber hijau zamrud eksklusif, kain ihram, syal, dan tas paspor. | Rincian Fasilitas Paket |
 
 ---
 

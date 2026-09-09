@@ -215,63 +215,51 @@ Setiap klik menuju WhatsApp menghasilkan pesan pembuka yang ramah, sopan, dan te
 
 Tabel ini adalah **sumber kebenaran tunggal (Single Source of Truth)** untuk seluruh aset gambar dalam portal. AI agent dan developer wajib mematuhi rasio, resolusi, dan peran visual berikut saat melakukan implementasi, rendering komponen, maupun regenerasi aset:
 
-### 5.1. Hero Banners & Suasana Spiritual (Rasio 16:9 Widescreen)
+### 5.1. Hero Banners & Suasana Spiritual (Rasio 16:9 Widescreen — Format WebP SEO)
 
-| Nama Berkas | Rasio & Resolusi | Deskripsi Visual & Subjek | Komponen & Halaman | Pedoman Implementasi & AI Prompt Directive |
+| Nama Berkas WebP | Rasio & Resolusi | Kata Kunci Target SEO (Indonesia) | Alt Text Deskriptif Bahasa Indonesia | Peran & Penempatan |
 | :--- | :---: | :--- | :--- | :--- |
-| `banner-hero-kaaba-panorama.jpg`<br>*(Alias: `banner-hero-1.jpg`)* | **16:9**<br>1376 × 768 px | **Panorama megah Ka'bah & Masjidil Haram fajar**: Cahaya fajar keemasan menyinari Ka'bah Al-Mukarramah, marmer putih mataf, dan jemaah Indonesia sedang thawaf khusyuk. | `HeroSection.tsx`<br>(Homepage) | **Default Hero Image**. Latar belakang hero dengan dual gradient overlay (emerald + radial). Negative space di area atas untuk teks H1. Hindari CGI look. |
-| `banner-hero-keluarga-natural.jpg` | **16:9**<br>1376 × 768 px | **Pasangan/Keluarga Jemaah Indonesia berdoa**: Pria berbusana ihram putih rapi dan wanita berhijab syar'i berdoa dengan tangan terangkat penuh haru berlatar Ka'bah. | Alternatif Hero & Halaman Tentang Kami | Representasi slogan *"Sahabat Umrah Keluarga Anda"*. Cocok untuk landing page berorientasi emosional keluarga dan testimoni. |
-| `hero_kaaba_sanctuary.jpg` | **16:9**<br>1376 × 768 px | **Baitullah Sanctuary Atmosphere**: Pelataran Ka'bah dalam suasana damai senja dengan pilar-pilar kubah dan pantulan marmer. | Cadangan Hero / Halaman Haji Furoda | Digunakan jika membutuhkan visual Ka'bah sudut lebih luas tanpa subjek close-up. |
-| `nabawi_dawn_pillars.jpg` | **16:9**<br>1376 × 768 px | **Pelataran Masjid Nabawi Madinah saat Fajar**: Payung-payung hidrolik raksasa putih terbuka dengan ornamen emas berpadu marmer Alabaster bersih. | Background Halaman Paket Umroh & Landing Page Kota | Menghadirkan *Madina tone* otentik. Menguatkan visual ziarah Madinah Al-Munawwarah. |
-| `banner-hero-2.jpg`<br>*(Legacy)* | **3:1**<br>1600 × 533 px | Banner promosi horizontal fasilitas bintang lima dan charter flight. | Arsip Banner Promosi | Format banner ultra-lebar untuk display iklan eksternal. |
+| `samira-travel-umroh-dan-haji-resmi-kemenag.webp` | **16:9**<br>1376 × 768 px | `samira travel umroh dan haji`, `travel umroh terbaik resmi kemenag` | **Samira Travel Umroh dan Haji Resmi Kemenag RI — Pelataran Ka'bah dan Jemaah Thawaf Fajar** | **Hero Banner Utama Homepage (`HeroSection.tsx`)**. Wajib `priority` & `loading="eager"`. |
+| `biro-perjalanan-umroh-keluarga-samira-travel.webp` | **16:9**<br>1376 × 768 px | `travel umroh keluarga terpercaya`, `sahabat umrah keluarga anda` | **Biro Perjalanan Umroh Keluarga Samira Travel — Pasangan Jemaah Indonesia Berdoa Khusyuk di Depan Baitullah** | Alternatif Hero & Halaman Tentang Kami (Emosional Keluarga). |
+| `paket-umroh-madinah-ziarah-masjid-nabawi.webp` | **16:9**<br>1376 × 768 px | `paket umroh madinah masjid nabawi`, `ziarah raudhah mekkah madinah` | **Paket Umroh Madinah Ziarah Masjid Nabawi — Pelataran Marmer Alabaster dan Payung Kanopi Indah** | Hero Halaman Paket Umroh & Halaman Kota Embarkasi. |
 
-### 5.2. Katalog Paket Umroh & Destinasi Umroh Plus (Rasio 16:9 & 1:1.41 Flyer)
+### 5.2. Katalog Paket Umroh & Destinasi Umroh Plus (Rasio 16:9 & 1:1.41 Flyer — WebP)
 
-| Nama Berkas | Rasio & Resolusi | Deskripsi Visual & Subjek | Komponen & Halaman | Pedoman Implementasi & AI Prompt Directive |
+| Nama Berkas WebP | Rasio & Resolusi | Kata Kunci Target SEO | Alt Text Deskriptif | Komponen & Halaman |
 | :--- | :---: | :--- | :--- | :--- |
-| `package_kaaba_thawaf.jpg` | **16:9**<br>1376 × 768 px | **Jemaah Thawaf Mengelilingi Ka'bah**: Dokumentasi jemaah berihram putih berjalan tertib mengitari Ka'bah dalam sudut tinggi sinematik. | `PackageFilterSection.tsx`, `tours.ts` | Kartu flyer paket Umroh Reguler 9 & 12 Hari. Menunjukkan kepadatan ibadah yang tertib dan khusyuk. |
-| `package_nabawi_canopy.jpg` | **16:9**<br>1376 × 768 px | **Kanopi Payung & Menara Masjid Nabawi**: Kemegahan payung arsitektural Nabawi dinaungi langit biru cerah Madinah. | `PackageFilterSection.tsx`, `tours.ts` | Kartu flyer paket Umroh Reguler 13 Hari & paket keberangkatan kota luar Jawa. |
-| `dest_umroh_plus_thaif.jpg` | **16:9**<br>1376 × 768 px | **Lanskap Pegunungan Ta'if & Kebun Mawar**: Lembah hijau pegunungan Ta'if Saudi dengan cable car teleferik di atas perbukitan sejuk. | `UmrohPlusCatalogClient.tsx`, `/umroh-plus/thaif` | Kartu destinasi Umroh Plus Ta'if. Visual pegunungan sejuk dan sejarah dakwah Rasulullah SAW. |
-| `dest_umroh_plus_alula.jpg` | **16:9**<br>1376 × 768 px | **Situs Warisan Dunia UNESCO Hegra di Al-Ula**: Makam batu raksasa berukir monumental di padang pasir keemasan bercahaya sunset. | `UmrohPlusCatalogClient.tsx`, `/umroh-plus/al-ula` | Kartu destinasi Umroh Plus Al-Ula. Nuansa eksklusif wisata sejarah peradaban Nabatean. |
-| `dest_umroh_plus_turki.jpg` | **16:9**<br>1376 × 768 px | **Selat Bosphorus & Siluet Hagia Sophia Istanbul**: Panorama senja Istanbul dengan kubah megah masjid bersejarah dan kapal menyeberangi Bosphorus. | `UmrohPlusCatalogClient.tsx`, `/umroh-plus/turki` | Kartu destinasi Umroh Plus Turki. Nuansa kemegahan jejak kekhalifahan Utsmaniyah. |
-| `dest_umroh_plus_riyadh.jpg` | **16:9**<br>1376 × 768 px | **Benteng Bersejarah Masmak & Skyline Modern Riyadh**: Perpaduan arsitektur benteng tanah liat historis dan gedung modern ibu kota Arab Saudi. | `UmrohPlusCatalogClient.tsx`, `/umroh-plus/riyadh` | Kartu destinasi Umroh Plus Riyadh. |
-| `dest_umroh_plus_jeddah.jpg` | **16:9**<br>1376 × 768 px | **Masjid Terapung & Pantai Corniche Laut Merah Jeddah**: Pesona pesisir kota pelabuhan gerbang masuk Tanah Suci di waktu sore hari. | `UmrohPlusCatalogClient.tsx`, `/umroh-plus/jeddah` | Kartu destinasi Umroh Plus City Tour Jeddah. |
-| `brosur-keberangkatan-01.webp` s/d `11.webp` | **1:1.41 (A4)**<br>1241 × 1755 px | **Brosur Resmi Keberangkatan 11 Kota Embarkasi**: Desain poster vertikal berformat brosur cetak resmi Samira Travel memuat maskapai, jadwal, hotel, dan harga paket per kota. | Halaman Programmatic Kota (`/paket-umroh/[city]`) | Menampilkan brosur fisik asli untuk diunduh calon jemaah via tombol "Unduh Brosur PDF/Gambar". |
+| `jadwal-paket-umroh-reguler-lion-air-charter.webp` | **16:9**<br>1376 × 768 px | `jadwal paket umroh reguler lion air charter` | **Jadwal Paket Umroh Reguler Direct Charter Flight Lion Air Samira Travel** | `PackageFilterSection.tsx`, `tours.ts` |
+| `hotel-bintang-5-dekat-masjid-makkah-madinah.webp` | **16:9**<br>1376 × 768 px | `hotel bintang 5 dekat masjid makkah madinah` | **Fasilitas Hotel Bintang Lima Dekat Pelataran Masjidil Haram dan Masjid Nabawi** | `PackageFilterSection.tsx`, `tours.ts` |
+| `paket-umroh-plus-thaif-wisata-kebun-mawar.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus thaif wisata kebun mawar` | **Paket Umroh Plus Thaif Wisata Kebun Mawar dan Kereta Gantung Telefrik Pegunungan** | `/umroh-plus/thaif` |
+| `paket-umroh-plus-al-ula-hegra-unesco.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus al ula hegra unesco` | **Paket Umroh Plus Al-Ula Ziarah Situs Warisan Dunia UNESCO Hegra Madain Saleh** | `/umroh-plus/al-ula` |
+| `paket-umroh-plus-turki-istanbul-bosphorus.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus turki istanbul bosphorus` | **Paket Umroh Plus Turki Bosphorus Cruise dan Jejak Peradaban Islam Hagia Sophia** | `/umroh-plus/turki` |
+| `paket-umroh-plus-riyadh-benteng-masmak.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus riyadh benteng masmak` | **Paket Umroh Plus Riyadh Sejarah Kerajaan Arab Saudi dan Benteng Bersejarah Masmak** | `/umroh-plus/riyadh` |
+| `paket-umroh-plus-jeddah-corniche-laut-merah.webp` | **16:9**<br>1376 × 768 px | `paket umroh plus jeddah corniche laut merah` | **Paket Umroh Plus City Tour Jeddah Corniche dan Masjid Terapung Laut Merah** | `/umroh-plus/jeddah` |
+| `brosur-keberangkatan-01.webp` s/d `11.webp` | **1:1.41 (A4)**<br>1241 × 1755 px | `brosur umroh resmi [kota] 2026` | **Brosur Resmi Keberangkatan Umroh Samira Travel dari Kota [Nama Kota]** | Dynamic City Pages (`/paket-umroh/[city]`) |
 
-### 5.3. Bukti Rekor Dunia, Rekor MURI, & Penghargaan (High Social Proof)
+### 5.3. Bukti Rekor Dunia, Rekor MURI, & Penghargaan (Format WebP SEO)
 
-| Nama Berkas | Rasio & Resolusi | Deskripsi Visual & Subjek | Komponen & Halaman | Pedoman Implementasi & AI Prompt Directive |
+| Nama Berkas WebP | Rasio & Resolusi | Kata Kunci Target SEO | Alt Text Deskriptif | Komponen & Halaman |
 | :--- | :---: | :--- | :--- | :--- |
-| `tiga-rekor-muri-landscape.png` | **~3.7:1**<br>1600 × 428 px | **3 Piagam Rekor MURI Berjajar Lanskap**: Foto kompilasi 3 piagam asli MURI (2022: Pandemi, 2023: Talbiyah, 2024: 29.171 Jemaah) berlatar emas gelap elegan. | `SocialProofSection.tsx` (Homepage & Tentang Kami) | **Wajib Full-Width Frameless**. Tidak boleh dipotong kotak kecil. Menampilkan 3 pencapaian bersejarah sekaligus dalam 1 pandangan. |
-| `guinness-world-records-halal-dinner-jeddah.png` | **16:9**<br>1600 × 900 px | **Piagam Resmi Guinness World Records**: Sertifikat rekor dunia asli *"Largest Attendance of an Outdoor Halal Dinner Event"* (10.449 jemaah di Asfan, Jeddah). | `SocialProofSection.tsx`, `/tentang-kami` | Ditampilkan dalam rasio 16:9 berdampingan dengan Piala APSI. Objek sertifikat tajam dan teks ref ID `15-782573` dapat dibaca jelas. |
-| `penghargaan-apsi-2026-jamaah-terbanyak.png` | **16:9**<br>1600 × 900 px | **Piala & Piagam Anugerah Perjalanan Suci Indonesia (APSI) 2026**: Penghargaan resmi tvOne/VIVA Group untuk Kinerja Operasional Jemaah Terbanyak Nasional. | `SocialProofSection.tsx`, `/tentang-kami` | Ditampilkan serasi dalam rasio 16:9 mendampingi Guinness World Records. |
-| `galeri-sertifikat-dokumentasi-1.png` s/d `6.png` | **2:1**<br>1000 × 500 px | **Dokumentasi Lapangan Otentik**: Foto asli manasik akbar di ballroom, pelepasan jemaah di terminal bandara internasional, dan syiar daerah. | Galeri Dokumentasi di Homepage & Testimoni | Menegaskan keaslian operasional biro perjalanan fisik yang nyata dan berkapasitas ribuan jemaah. |
+| `tiga-rekor-muri-jamaah-terbanyak-samira-travel.webp` | **~3.7:1**<br>1600 × 428 px | `tiga rekor muri jamaah terbanyak samira travel` | **Tiga Piagam Rekor MURI Jemaah Terbanyak Nasional PT Samira Ali Wisata** | `SocialProofSection.tsx` (Frameless Lanskap) |
+| `rekor-dunia-guinness-world-records-samira-travel.webp` | **16:9**<br>1600 × 900 px | `rekor dunia guinness world records samira travel` | **Sertifikat Resmi Rekor Dunia Guinness World Records Jamuan Makan Halal Terbesar Samira Travel** | `SocialProofSection.tsx`, `/tentang-kami` |
+| `penghargaan-apsi-2026-jamaah-terbanyak-tvone.webp` | **16:9**<br>1600 × 900 px | `penghargaan apsi 2026 jamaah terbanyak tvone` | **Piala Penghargaan Anugerah Perjalanan Suci Indonesia APSI 2026 Kategori Jemaah Terbanyak** | `SocialProofSection.tsx`, `/tentang-kami` |
+| `dokumentasi-manasik-dan-pelepasan-jamaah-samira-travel-1.webp` s/d `6.webp` | **2:1**<br>1000 × 500 px | `dokumentasi manasik umroh samira travel` | **Dokumentasi Asli Manasik Akbar dan Pelepasan Jemaah Samira Travel** | Galeri Dokumentasi di Homepage & Testimoni |
 
-### 5.4. Lencana Nilai Layanan (Core Service Badges — Rasio 1:1 Square)
+### 5.4. Lencana Nilai Layanan, Bank & Perlengkapan Jemaah
 
-| Nama Berkas | Rasio & Resolusi | Deskripsi Visual & Subjek | Komponen & Halaman | Pedoman Implementasi & AI Prompt Directive |
+| Nama Berkas | Rasio | Kata Kunci / Peran | Alt Text Deskriptif | Penempatan |
 | :--- | :---: | :--- | :--- | :--- |
-| `badge-berizin-resmi-ppiu-pihk-kemenag.png` | **1:1**<br>140 × 140 px | Lencana stempel emas resmi Kemenag RI bertuliskan izin PPIU & PIHK. | `CertaintyBar.tsx` (Homepage) | Pilar 1: Legalitas Kemenag RI & Akreditasi A. |
-| `badge-pasti-jadwalnya-booking-seat-hotel.png` | **1:1**<br>140 × 140 px | Lencana ikon pesawat & kalender jadwal pasti terbang. | `CertaintyBar.tsx` (Homepage) | Pilar 2: Tiket Charter Flight Terkonfirmasi. |
-| `badge-pelayanan-terbaik-bintang-lima.png` | **1:1**<br>140 × 140 px | Lencana bintang lima emas kepuasan jemaah dan rekor MURI. | `CertaintyBar.tsx` (Homepage) | Pilar 3: Fasilitas Hotel Bintang 5 Dekat Masjid. |
-| `badge-pelayanan-handling-bandara-hotel.png` | **1:1**<br>140 × 140 px | Lencana layanan pendampingan koper, bandara, & tim medis. | `CertaintyBar.tsx` (Homepage) | Pilar 4: Layanan Handling Paripurna. |
-
-### 5.5. Bukti Rekening Bank Resmi & Peringatan Transaksi (Anti-Fraud)
-
-| Nama Berkas | Rasio & Resolusi | Deskripsi Visual & Subjek | Komponen & Halaman | Pedoman Implementasi & AI Prompt Directive |
-| :--- | :---: | :--- | :--- | :--- |
-| `bank-bsi-syariah-indonesia-rekening-resmi.png` | **~2.17:1**<br>130 × 60 px | Logo resmi Bank Syariah Indonesia (BSI) dengan ornamen hijau-emas. | `FinancingCalculatorIsland.tsx`, Footer | Rekening resmi IDR Samira Travel (`1976076766`). |
-| `bank-permata-syariah-rekening-resmi.png` | **~2.17:1**<br>130 × 60 px | Logo resmi Permata Bank Syariah dengan ornamen kristal. | `FinancingCalculatorIsland.tsx`, Footer | Rekening resmi IDR & USD Samira Travel. |
-| `bank-mandiri-rekening-resmi.png` | **~2.17:1**<br>130 × 60 px | Logo resmi Bank Mandiri berwarna biru tua & pita emas. | Modal Rekening Resmi, Footer | Rekening resmi operasional perusahaan. |
-| `bank-muamalat-rekening-resmi.png` | **~2.17:1**<br>130 × 60 px | Logo resmi Bank Muamalat berwarna ungu khas pionir bank syariah. | Modal Rekening Resmi, Footer | Rekening resmi operasional perusahaan. |
-| `warning-waspada-penipuan-rekening-pribadi.png` | **3:4**<br>300 × 400 px | Poster peringatan resmi anti-penipuan: Larangan transfer ke rekening atas nama pribadi perorangan. | Halaman Tentang Kami, Modal Pembayaran | Memberikan edukasi keamanan finansial jemaah dari oknum penipu. |
-
-### 5.6. Identitas Brand & Perlengkapan Jemaah
-
-| Nama Berkas | Rasio & Resolusi | Deskripsi Visual & Subjek | Komponen & Halaman | Pedoman Implementasi & AI Prompt Directive |
-| :--- | :---: | :--- | :--- | :--- |
-| `logo-samira-travel.png` | **~4.3:1**<br>300 × 70 px | Logo resmi Samira Travel tulisan hijau tua berpadu kaligrafi emas dengan slogan *"Sahabat Umrah Keluarga Anda"*. | `Navbar.tsx`, `Footer.tsx` | Header utama web publik. Wajib menggunakan atribut `priority` dan `loading="eager"`. |
-| `perlengkapan_umrah_luxury.jpg`<br>*(Alias: `perlengkapan-umrah-samira-travel.webp`)* | **16:9**<br>1376 × 768 px | **Koper & Perlengkapan Umrah Eksklusif**: Koper fiber hijau zamrud beraksen kuningan emas, kain ihram putih halus, syal batik, dan tas paspor. | Halaman Fasilitas & Rincian Paket | Menunjukkan wujud nyata fasilitas koper kabin/bagasi premium yang diterima jemaah. |
+| `fasilitas-koper-dan-perlengkapan-umroh-eksekutif.webp` | **16:9** | `perlengkapan umroh eksekutif koper fiber` | **Fasilitas Koper Fiber Zamrud dan Perlengkapan Umroh Eksekutif Samira Travel** | Rincian Paket & Fasilitas |
+| `peringatan-keamanan-transaksi-rekening-resmi-samira-travel.webp` | **3:4** | `rekening resmi pt samira ali wisata` | **Peringatan Resmi Anti-Penipuan Rekening Perorangan PT Samira Ali Wisata** | Footer & Modal Rekening |
+| `badge-berizin-resmi-ppiu-pihk-kemenag.png` | **1:1** | Izin PPIU & PIHK | Izin Resmi Kemenag PPIU No. 137/2020 & PIHK 2022 | `CertaintyBar.tsx` |
+| `badge-pasti-jadwalnya-booking-seat-hotel.png` | **1:1** | Pasti Berangkat | Jaminan Tiket Charter Flight Pasti Berangkat | `CertaintyBar.tsx` |
+| `badge-pelayanan-terbaik-bintang-lima.png` | **1:1** | Layanan Bintang 5 | Hotel Bintang 5 Dekat Pelataran Masjid | `CertaintyBar.tsx` |
+| `badge-pelayanan-handling-bandara-hotel.png` | **1:1** | Handling Bandara | Layanan Handling Bandara dan Bimbingan Ibadah Paripurna | `CertaintyBar.tsx` |
+| `bank-bsi-syariah-indonesia-rekening-resmi.png` | **~2:1** | Rekening Resmi BSI | Rekening Resmi BSI PT Samira Ali Wisata | Footer & Island Cicilan |
+| `bank-permata-syariah-rekening-resmi.png` | **~2:1** | Rekening Permata Syariah | Rekening Resmi Permata Bank Syariah | Footer & Island Cicilan |
+| `bank-mandiri-rekening-resmi.png` | **~2:1** | Rekening Mandiri | Rekening Resmi Bank Mandiri | Footer & Modal Bank |
+| `bank-muamalat-rekening-resmi.png` | **~2:1** | Rekening Muamalat | Rekening Resmi Bank Muamalat | Footer & Modal Bank |
+| `logo-samira-travel.png` | **~4.3:1** | Brand Authority | Logo Resmi Samira Travel Sahabat Umrah Keluarga Anda | Header (`Navbar.tsx`) & Footer |
 
 ---
 
