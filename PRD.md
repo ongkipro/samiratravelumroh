@@ -119,25 +119,45 @@ Mayoritas calon jemaah haji dan umrah adalah kalangan lanjut usia (lansia), pens
 5. **Direktori 26 Kantor Cabang Fisik**:
    * Menyediakan pencarian cabang per pulau/kota dengan alamat lengkap, Google Maps, dan hotline lokal agar jemaah daerah merasa aman karena dapat berkunjung langsung ke kantor fisik.
 
-### 4.3. Mobile-First: Web App-Like View Experience
-Di perangkat smartphone (akses > 82% pengguna), portal beroperasi layaknya aplikasi native yang taktil, cepat, dan ergonomis:
-1. **Fixed Top App Header (56px)**:
-   * Header ramping mengapung dengan logo Samira Travel tajam, hotline telepon darurat, tombol pencarian cepat `Cmd+K` / Search, dan tombol drawer menu yang mudah dijangkau.
-2. **Mobile Web App Bottom Dock (`MobileAppDock.tsx`)**:
+### 4.3. Mobile-First: Web App-Like View Experience (Travel App Navigation Standard)
+Di perangkat smartphone (akses > 82% pengguna), portal beroperasi layaknya **aplikasi travel native premium (sekelas Traveloka / Saudia App)** yang taktil, cepat, dan ergonomis:
+
+1. **Fixed Top App Bar (56px) dengan Search Capsule**:
+   * Header ramping mengapung (`backdrop-blur-md bg-[#FAF8F5]/90 border-b border-[#E8E3DA]`).
+   * Kiri: Logo resmi Samira Travel tajam (tinggi 30px, `priority`).
+   * Tengah/Kanan: Kapsul pencarian cepat (*Search Capsule*) bertuliskan *"Cari paket, kota, atau artikel..."* yang memicu `GlobalSearchModal` dengan satu ketukan jari.
+   * Kanan: Hotline telepon darurat dan tombol menu drawer.
+2. **Category Quick Selector (Horizontal App Pills)**:
+   * Tepat di bawah hero/header, terdapat deretan pil kategori yang dapat digeser secara horizontal (*smooth momentum scroll*) dengan ikon SVG:
+     `[🕋 Umroh Reguler] [✈️ Umroh Plus] [🏛️ Haji Furoda] [📍 26 Cabang] [💳 Cicilan Syariah]`
+   * Pil aktif memiliki highlight emas/hijau dengan pegas halus Framer Motion (`layoutId="activeFilter"`).
+3. **Travel App Package Card (Kartu Perjalanan Standar Aplikasi)**:
+   * Visual foto 16:9 atau 16:10 tanpa frame kaku.
+   * Lencana mengambang di atas foto: Logo Maskapai (`✈️ Lion Air Direct Charter`) + Status Garansi (`● Pasti Berangkat`).
+   * **The Walking-Distance Metric (Riset Jarak Fisik ke Masjid)**:
+     * Label khusus yang wajib tercantum: `🚶 50m ke Pelataran Ka'bah` & `🚶 100m ke Pintu Utama Nabawi`.
+   * Info segmen penerbangan bergaya boarding pass: `SUB ➔ JED (Surabaya - Jeddah Direct)`.
+   * Indikator sisa kuota: `⚡ Tersisa 6 Kursi`.
+   * **The Zero Hidden Cost Ledger**:
+     * Menampilkan harga acuan All-in Quad (`Rp 38.000.000`) dengan penegasan *"Sudah termasuk koper, visa, handling, & asuransi"*, serta rincian opsi Triple & Double.
+   * Tombol WhatsApp hijau lebar dengan feedback taktil `:active:scale-[0.98]`.
+4. **Mobile Web App Bottom Dock (`MobileAppDock.tsx`)**:
    * Dock navigasi 4-tab yang menempel di bagian bawah layar smartphone dalam jangkauan satu ibu jari (*thumb zone*):
      1. **Beranda** (Ikon Home): Kembali ke hub utama.
      2. **Paket** (Ikon Compass): Akses cepat katalog umroh & haji.
      3. **26 Cabang** (Ikon MapPin): Temukan kantor fisik terdekat di kota jemaah.
      4. **Tanya CS** (Ikon MessageCircle hijau): WhatsApp langsung ke representasi resmi Samira Travel.
-   * **Adaptive Contextual Morphing**:
-     * Pada halaman detail paket (`/paket-umroh/[city]` & `/umroh-plus/[slug]`), saat jemaah menggulir (*scroll*) melewati 380px, dock 4-tab otomatis bermutasi (*smooth spring transition*) menjadi **Sticky Conversion Anchor Bar** yang menampilkan harga acuan terendah (*"Mulai Rp 35 Jt"*) dan tombol hijau WhatsApp lebar penuh (`min-h-[46px]`).
-   * Mendukung penuh `pb-safe` / `env(safe-area-inset-bottom)` agar tidak terpotong indikator gesture home iPhone.
-3. **Boarding Pass Card Transformation (Dual-Mode Table)**:
-   * Menghilangkan jebakan tabel horizontal yang sulit digeser di layar HP (*no horizontal scroll traps*).
-   * Tabel jadwal penerbangan di desktop otomatis bermutasi di mobile menjadi **Kartu Boarding Pass Tiket Pesawat Vertikal** yang memuat jam terbang, nomor maskapai, tanggal masehi/hijriyah, dan sisa seat.
-4. **Bottom Sheet Drawer & Quick Filter Chips**:
-   * Pemilihan 11 kota embarkasi dan kategori paket di mobile disajikan dalam bentuk deretan *horizontal scrolling chips* yang halus atau modal lembar geser bawah (*bottom sheet*) bergaya iOS/Android native.
-5. **Anti-Zoom Trap Invariant**:
+   * **Adaptive Contextual Morphing (Instant Booking Bar)**:
+     * Pada halaman detail paket (`/paket-umroh/[city]` & `/umroh-plus/[slug]`), saat jemaah menggulir (*scroll*) melewati 380px, dock 4-tab otomatis bermutasi (*smooth spring transition*) menjadi **Sticky Conversion Anchor Bar**:
+       - Kiri: Label harga acuan (*"Mulai Rp 35 Jt • Pasti Berangkat"*).
+       - Kanan: Tombol WhatsApp lebar (*"Konsultasi Ketersediaan Seat"*).
+   * Mendukung penuh `pb-safe` / `env(safe-area-inset-bottom)` agar tidak terpotong garis gesture home iPhone.
+5. **Bottom Sheet City Picker dengan Kode Bandara IATA**:
+   * Mengetuk *"Pilih Kota Keberangkatan"* memunculkan lembar geser dari bawah (*native bottom sheet*) dengan pegangan (*grab handle*), menampilkan 11 kota embarkasi lengkap dengan kode bandara:
+     * `Jakarta (CGK)` • `Surabaya (SUB)` • `Medan (KNO)` • `Makassar (UPG)` • `Palembang (PLM)` • `Padang (PDG)` • `Pontianak (PNK)` • `Banda Aceh (BTJ)` • `Denpasar (DPS)` • `Batam (BTH)` • `Pekanbaru (PKU)`.
+6. **In-Article Contextual Lead Engine (400 Artikel)**:
+   * Pada setiap artikel edukasi disematkan callout konversi kontekstual di tengah artikel (setelah paragraf 3) untuk mengubah pembaca SEO menjadi prospek WhatsApp.
+7. **Anti-Zoom Trap Invariant**:
    * Seluruh elemen input pencarian, dropdown, dan form wajib disetel minimal font **`16px` (`text-base`)** pada breakpoint mobile untuk mencegah browser Safari/Chrome melakukan auto-zoom paksa yang merusak layout.
 
 ### 4.4. Anti-Pattern & Legacy UI/UX Rejection Contract (7 Aturan Anti-Trigger UI Lama)

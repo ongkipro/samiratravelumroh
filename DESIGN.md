@@ -138,14 +138,18 @@ Prinsip animasi: **Bersahaja, tenang, 60fps GPU-accelerated, dan zero-layout-shi
 
 ---
 
-## 7. Responsivitas & Standar Ergonomi Mobile
+## 7. Responsivitas & Standar Ergonomi Mobile (Travel App Navigation)
 
-- **Mobile Viewport (< 768px)**:
-  - Header ramping dengan logo tajam dan tombol darurat hotline / menu drawer.
-  - Kartu paket memadatkan metadata penting: durasi, hotel ring-1, harga all-in, dan CTA WhatsApp.
-  - *Mobile Web App Dock (`MobileAppDock.tsx`)*: Dock bawah 4-tab (Beranda, Paket, 26 Cabang, Tanya CS) yang ramah jempol, otomatis bermutasi menjadi sticky price conversion bar saat scrolling di halaman paket.
+- **Mobile Viewport (< 768px — Travel App Native Feel)**:
+  - **Fixed Top App Bar (56px)**: Kapsul pencarian cepat terintegrasi (`SearchCapsule`), logo tajam, dan hotline darurat.
+  - **Category Quick Selector**: Deretan pil kategori horizontal scrolling dengan pegas `layoutId="activeFilter"`.
+  - **Travel App Package Card**: Metadata komprehensif (Walking-distance `50m ke Ka'bah`, segmen penerbangan `SUB ➔ JED`, lencana `● Pasti Berangkat`, sisa kuota, dan harga all-in tanpa hidden fee).
+  - **Bottom Sheet City Selector**: Dialog lembar geser bawah dengan grab-handle memuat 11 kota embarkasi + kode bandara IATA (CGK, SUB, KNO, UPG, dll).
+  - **Mobile Web App Dock (`MobileAppDock.tsx`)**: Dock bawah 4-tab (Beranda, Paket, 26 Cabang, Tanya CS) yang ramah satu jempol, otomatis bermutasi (*contextual morphing*) menjadi Sticky Price & WA Booking Bar saat scroll melebihi 380px pada halaman paket.
+  - **Anti-Zoom Trap Invariant**: Seluruh input pencarian dan dropdown disetel strictly `>= 16px` font size di mobile.
 - **Tablet (768px – 1024px)**:
-  - Grid 2 kolom seimbang dan rapi.
-- **Desktop (≥ 1024px)**:
-  - Whitespace mewah, tipografi proporsional, grid teratur tanpa ada ruang kosong aneh.
+  - Grid 2 kolom editorial seimbang, whitespace bernapas, dan tombol aksi terjangkau.
+- **Desktop (≥ 1024px — The Open Sanctuary Editorial)**:
+  - Glassmorphic header 64px dengan mega-dropdown 11 kota dan pintasan keyboard `Cmd+K`.
+  - Whitespace mewah, layout asimetris split editorial, dan display pameran museum frameless untuk penghargaan rekor dunia.
 

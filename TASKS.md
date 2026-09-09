@@ -94,20 +94,21 @@ Sesuai spesifikasi `development-kit`, seluruh proses pembangunan wajib melalui j
 
 ### Phase 3: Global Shell — Modern Header, Mega-Menu, Cmd+K Search & Mobile App Dock
 - [ ] **Task 3.1**: Bangun komponen `src/components/layout/Navbar.tsx`:
-  - Header ramping 64px glassmorphic (`backdrop-blur-md bg-[#FAF8F5]/90 border-b border-[#E8E3DA]`).
-  - Logo resmi Samira Travel tajam dengan atribut `priority`.
-  - Mega-dropdown navigasi 11 kota embarkasi + 2 featured cards visual.
-  - Tombol trigger pencarian cepat `Cmd+K` / Search.
-  - Hotline telepon darurat dan tombol konsultasi WhatsApp hijau berwibawa.
+  - Desktop: Header 64px glassmorphic (`backdrop-blur-md bg-[#FAF8F5]/90 border-b border-[#E8E3DA]`), logo tajam `priority`, mega-dropdown 11 kota, `Cmd+K` trigger, dan WhatsApp CTA.
+  - Mobile: Fixed Top App Bar 56px dengan `SearchCapsule` pemicu search overlay dan tombol drawer menu.
 - [ ] **Task 3.2**: Bangun komponen `src/components/layout/GlobalSearchModal.tsx`:
-  - Modal dialog interaktif yang dibuka via `Cmd+K` (desktop) atau ikon kaca pembesar (mobile).
+  - Modal dialog interaktif dibuka via `Cmd+K` (desktop) atau tap search capsule (mobile).
   - Pencarian instan untuk paket umroh, 11 kota, haji furoda, 26 cabang, dan topik artikel.
-- [ ] **Task 3.3**: Bangun komponen `src/components/layout/MobileAppDock.tsx`:
+- [ ] **Task 3.3**: Bangun komponen `src/components/layout/CategoryQuickSelector.tsx`:
+  - Deretan pil kategori horizontal momentum scroll standar travel app (`Umroh Reguler`, `Umroh Plus`, `Haji Furoda`, `26 Cabang`, `Cicilan`) dengan animasi pegas `layoutId="activeFilter"`.
+- [ ] **Task 3.4**: Bangun komponen `src/components/layout/BottomSheetCityPicker.tsx`:
+  - Lembar dialog geser dari bawah (*bottom sheet*) dengan grab-handle memuat 11 kota embarkasi + kode bandara IATA (CGK, SUB, KNO, UPG, dll).
+- [ ] **Task 3.5**: Bangun komponen `src/components/layout/MobileAppDock.tsx`:
   - Dock navigasi bawah 4-tab (Beranda, Paket, 26 Cabang, Tanya CS) yang ramah satu jempol (*thumb zone*).
   - Indikator tab aktif yang halus.
   - **Adaptive Contextual Morphing**: Otomatis bertransformasi menjadi Sticky Price & WhatsApp Bar saat pengguna menggulir melewati 380px pada halaman paket.
   - Dukungan penuh `pb-safe` iPhone.
-- [ ] **Task 3.4**: Bangun komponen `src/components/layout/Footer.tsx`:
+- [ ] **Task 3.6**: Bangun komponen `src/components/layout/Footer.tsx`:
   - Layout editorial bernuansa Midnight Rawdah (`#04261E`).
   - Kredensial izin PPIU & PIHK Kemenag RI, pemegang Rekor Guinness & MURI.
   - Peringatan anti-penipuan rekening pribadi dan daftar 4 rekening resmi perusahaan.
@@ -127,8 +128,13 @@ Sesuai spesifikasi `development-kit`, seluruh proses pembangunan wajib melalui j
     3. Rekor Guinness World Records & 3 Rekor MURI
     4. Cicilan Syariah AMITRA / BSI Tanpa Jaminan.
 - [ ] **Task 4.3**: Bangun `src/components/home/PackageFilterSection.tsx` (Client Island):
-  - Kapsul filter kategori paket dengan animasi pegas halus.
-  - Showcase paket umroh terkurasi dengan visual 16:9 tajam, hotel ring-1 Makkah & Madinah, harga all-in tabular, dan tombol WA kontekstual.
+  - Kapsul filter kategori paket dengan animasi pegas halus `layoutId="activeFilter"`.
+  - Showcase kartu paket standar travel app:
+    - Foto 16:9 tajam frameless dengan badge maskapai charter (`✈️ Lion Air Direct`) & status (`● Pasti Berangkat`).
+    - **Walking-Distance Metric**: `🚶 50m ke Pelataran Ka'bah` & `🚶 100m ke Pintu Utama Nabawi`.
+    - Segmen penerbangan boarding pass (`SUB ➔ JED`), durasi hari, dan sisa seat (`⚡ Sisa 6 Kursi`).
+    - **Zero Hidden Cost Ledger**: Harga All-in Quad tertera jelas tanpa biaya tambahan tersembunyi + rincian varian Triple/Double.
+    - Tombol WhatsApp kontekstual dengan feedback sentuh taktil `:active:scale-[0.98]`.
 - [ ] **Task 4.4**: Bangun `src/components/home/SocialProofSection.tsx`:
   - Piagam 3 Rekor MURI frameless membentang luas dalam format foto lanskap asli.
   - Piagam Guinness World Records dan Piala APSI 2026 berdampingan dalam rasio presisi 16:9 yang identik.
