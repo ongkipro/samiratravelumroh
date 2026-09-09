@@ -20,7 +20,8 @@ Dokumen status resmi kondisi terkini (*current snapshot*), kelaikan sistem, dan 
 | **Git Working Tree** | `Clean` | Sinkron penuh dengan branch `main` di `origin`. Tanpa AI trailer. |
 | **SEO & Schema.org** | `100% Valid` | JSON-LD schema organisasi, produk paket, breadcrumb, dan artikel. |
 | **Arsitektur Sitemap** | `AIOSEO Compatible` | Sitemap Index + 5 Sub-Sitemap Kategori + Stylesheet XSLT + Google Image. |
-| **Robots.txt** | `Active` | Mengatur akses bot Googlebot, Googlebot-Image, Bingbot, dan sitemap index. |
+| **Robots.txt & AI Bots** | `Active & Optimized` | Mengatur akses Googlebot, Bingbot, serta 15 AI answer engine bots (`GPTBot`, `ClaudeBot`, `PerplexityBot`, dll). |
+| **AI LLM Index (llms.txt)** | `Active` | File standar `public/llms.txt` aktif untuk sitasi AI search engine dan LLM grounding. |
 | **Favicon & PWA Suite** | `Active` | Multi-size PNG transparan, ICO, dan Apple Touch Icon terpasang. |
 
 ---
@@ -51,6 +52,7 @@ Dokumen status resmi kondisi terkini (*current snapshot*), kelaikan sistem, dan 
 | `/post-sitemap.xml` | Static XML | **HTTP 200** |
 | `/sitemap.xsl` | Static XSL | **HTTP 200** |
 | `/robots.txt` | Static Text | **HTTP 200** |
+| `/llms.txt` | Static Text / LLM Context | **HTTP 200** |
 | `/halaman-tidak-ada` | Custom 404 | **HTTP 404** |
 
 ---
