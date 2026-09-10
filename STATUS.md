@@ -16,7 +16,7 @@ Dokumen status resmi kondisi terkini (*current snapshot*), kelaikan sistem, dan 
 | :--- | :--- | :--- |
 | **TypeScript Typecheck** | `PASSED (0 Errors)` | `npx tsc --noEmit` bersih tanpa warning atau tipe rusak. |
 | **Turbopack Production Build** | `PASSED` | `next build` mengompilasi **467 rute statis (SSG)** dalam 4.2 detik. |
-| **Vercel Production Deployment** | `● Ready` | Siap deploy sinkron dengan branch `main` di GitHub. |
+| **Vercel Production Deployment** | `● Ready` | Deployment ID `dpl_5pCPqU5mZLMAMrhYamm5PDYGAWM4` aktif di CDN global. |
 | **Git Working Tree** | `Clean` | Sinkron penuh dengan branch `main` di `origin`. Tanpa AI trailer. |
 | **SEO & Schema.org** | `100% Valid` | JSON-LD schema organisasi, produk paket, breadcrumb, dan artikel. |
 | **Arsitektur Sitemap** | `AIOSEO Compatible` | Sitemap Index + 5 Sub-Sitemap Kategori + Stylesheet XSLT + Google Image. |
