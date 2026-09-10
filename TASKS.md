@@ -41,6 +41,7 @@ Sesuai spesifikasi `development-kit`, seluruh proses pembangunan wajib melalui j
 - [x] **Milestone 12**: Production Deployment, Brand Favicon Suite & Edge Performance (Phase 12)
 - [x] **Milestone 13**: All in One SEO XML Sitemap Architecture & Multi-Category Sitemaps (Phase 13)
 - [x] **Milestone 14**: AI Search Engine Readiness & LLM Answer Grounding (llms.txt + AI Bot Rules) (Phase 14)
+- [x] **Milestone 15**: Progressive Web App (PWA) Manifest & Advanced Dynamic Catalog Filter (Phase 15)
 
 ---
 
@@ -233,4 +234,13 @@ Sesuai spesifikasi `development-kit`, seluruh proses pembangunan wajib melalui j
 - [x] **Task 14.2**: Optimasi `src/app/robots.ts` dengan menyertakan aturan akses terperinci untuk 15 bot AI/LLM (`GPTBot`, `OAI-SearchBot`, `ChatGPT-User`, `ClaudeBot`, `Claude-SearchBot`, `Claude-User`, `PerplexityBot`, `Perplexity-User`, `Applebot`, `Applebot-Extended`, `Google-Extended`, `cohere-ai`, `Meta-ExternalAgent`, `FacebookBot`, `Bytespider`).
 - [x] **Task 14.3**: Pengujian dan verifikasi HTTP 200 live di edge network Vercel untuk `/llms.txt` dan `/robots.txt`.
 - [x] **Task 14.4**: Pembersihan dan penonaktifan service localhost dev server (port 3000 idle/bersih).
+
+### Phase 15: Progressive Web App (PWA) Manifest & Advanced Dynamic Catalog Filter
+- [x] **Task 15.1**: Pembuatan metadata route Next.js 16 `src/app/manifest.ts` yang memproduksi `/manifest.webmanifest` secara statis dengan nama resmi, deskripsi brand, tema Madina Green (`#084234`), background (`#FAF8F5`), mode `standalone`, dan konfigurasi ikon multi-size (192px maskable, 512px, apple-touch-icon, favicon.ico).
+- [x] **Task 15.2**: Pembaruan metadata `manifest: "/manifest.webmanifest"` pada `src/app/layout.tsx` untuk deteksi otomatis oleh browser mobile Android, iOS Safari, dan PWA installer.
+- [x] **Task 15.3**: Penambahan filter dinamis rentang harga (`< Rp 30 Juta`, `Rp 30 Jt – 35 Jt`, `Rp 35 Jt – 40 Jt`, `> Rp 40 Jt / Haji`) pada komponen `src/components/packages/PackageCatalogClient.tsx`.
+- [x] **Task 15.4**: Penambahan filter dinamis jadwal keberangkatan (`Musim 1448 H / Juli–Agustus`, `Wisata Halal / Sejuk`, `Musim Haji 1447H/1448H`) pada `PackageCatalogClient.tsx`.
+- [x] **Task 15.5**: Pembuatan active filter tags bar interaktif dengan badge chip yang dapat dihapus secara individual (per-kriteria) serta tombol global `Reset Semua Filter`.
+- [x] **Task 15.6**: Verifikasi kompilasi TypeScript (`npx tsc --noEmit` = 0 errors) dan kompilasi Turbopack SSG 467 halaman statis tuntas dalam 4.2 detik.
+
 

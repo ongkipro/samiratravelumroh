@@ -70,6 +70,7 @@ export const metadata: Metadata = {
     ],
     shortcut: "/favicon.ico",
   },
+  manifest: "/manifest.webmanifest",
   openGraph: {
     title: "Samira Travel - Biro Umroh & Haji Khusus Resmi Kemenag RI",
     description:

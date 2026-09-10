@@ -2,11 +2,11 @@
 
 Dokumen status resmi kondisi terkini (*current snapshot*), kelaikan sistem, dan panduan kelanjutan pekerjaan untuk sesi mendatang.
 
-**Tanggal Pembaruan**: 9 September 2026, 18:50 WIB  
+**Tanggal Pembaruan**: 10 September 2026, 15:50 WIB  
 **Status Keseluruhan**: **100% HEALTHY / PRODUCTION READY (VERCEL GREEN)**  
 **Target Domain Utama**: `https://samiratravelumrohhaji.com`  
 **Live Edge Production**: `https://samiratravelumroh.vercel.app`  
-**Repositori GitHub**: `https://github.com/ongkipro/samiratravelumroh` (Public)
+**Repositori GitHub**: `https://github.com/ongki/samiratravelumroh` (Public)
 
 ---
 
@@ -15,14 +15,15 @@ Dokumen status resmi kondisi terkini (*current snapshot*), kelaikan sistem, dan 
 | Komponen | Status | Keterangan |
 | :--- | :--- | :--- |
 | **TypeScript Typecheck** | `PASSED (0 Errors)` | `npx tsc --noEmit` bersih tanpa warning atau tipe rusak. |
-| **Turbopack Production Build** | `PASSED` | `next build` mengompilasi **466 rute statis (SSG)** dalam 12.9 detik. |
-| **Vercel Production Deployment** | `● Ready` | Deployment ID `dpl_2srskJz7NaytQ4yoNGJFxVAg1qbU` aktif di CDN global. |
+| **Turbopack Production Build** | `PASSED` | `next build` mengompilasi **467 rute statis (SSG)** dalam 4.2 detik. |
+| **Vercel Production Deployment** | `● Ready` | Siap deploy sinkron dengan branch `main` di GitHub. |
 | **Git Working Tree** | `Clean` | Sinkron penuh dengan branch `main` di `origin`. Tanpa AI trailer. |
 | **SEO & Schema.org** | `100% Valid` | JSON-LD schema organisasi, produk paket, breadcrumb, dan artikel. |
 | **Arsitektur Sitemap** | `AIOSEO Compatible` | Sitemap Index + 5 Sub-Sitemap Kategori + Stylesheet XSLT + Google Image. |
 | **Robots.txt & AI Bots** | `Active & Optimized` | Mengatur akses Googlebot, Bingbot, serta 15 AI answer engine bots (`GPTBot`, `ClaudeBot`, `PerplexityBot`, dll). |
 | **AI LLM Index (llms.txt)** | `Active` | File standar `public/llms.txt` aktif untuk sitasi AI search engine dan LLM grounding. |
-| **Favicon & PWA Suite** | `Active` | Multi-size PNG transparan, ICO, dan Apple Touch Icon terpasang. |
+| **PWA Web App Manifest** | `Active & Verified` | `/manifest.webmanifest` via `src/app/manifest.ts` aktif dengan mode standalone dan icon suite. |
+| **Katalog Filter Dinamis** | `Active & Multi-Filter` | Filter kategori, 11 kota, 4 rentang biaya, 3 periode jadwal, active tags chip, & instant search. |
 
 ---
 
@@ -53,6 +54,7 @@ Dokumen status resmi kondisi terkini (*current snapshot*), kelaikan sistem, dan 
 | `/sitemap.xsl` | Static XSL | **HTTP 200** |
 | `/robots.txt` | Static Text | **HTTP 200** |
 | `/llms.txt` | Static Text / LLM Context | **HTTP 200** |
+| `/manifest.webmanifest` | Static JSON / PWA Manifest | **HTTP 200** |
 | `/halaman-tidak-ada` | Custom 404 | **HTTP 404** |
 
 ---
@@ -72,12 +74,11 @@ Untuk menyelesaikan koneksi domain agar seluruh dunia langsung mengakses domain 
 
 ## 4. Agenda Sesi Mendatang (To-Do List Lanjutan)
 
-Ketika kita melanjutkan nanti, item-item yang siap dikerjakan atau dioptimalkan lebih lanjut meliputi:
+Item-item yang siap dikerjakan atau diintegrasikan lebih lanjut meliputi:
 1. **Google Search Console & Bing Webmaster Tools Submission**:
    - Daftarkan `https://samiratravelumrohhaji.com/sitemap.xml` ke GSC begitu DNS Cloudflare diarahkan.
-2. **Katalog Filter Lanjutan**:
-   - Penambahan filter dinamis berdasarkan bulan keberangkatan dan rentang harga paket di halaman `/paket-umroh`.
-3. **PWA Manifest (`manifest.json`)**:
-   - Pembuatan file web app manifest untuk mendukung instalasi shortcut di layar utama Android & iOS.
-4. **Analitik & Tracking**:
+2. **Analitik & Tracking**:
    - Integrasi Google Analytics 4 (GA4) / Meta Pixel dengan persetujuan cookie syariah jika diminta.
+3. **PWA Service Worker / Offline Caching**:
+   - PWA caching offline jika ingin mendukung browsing katalog tanpa internet.
+

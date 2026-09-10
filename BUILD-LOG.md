@@ -4,6 +4,22 @@ Catatan eksekusi teknis, riwayat build, perbaikan bug, dan deployment produksi k
 
 ---
 
+## [2026-09-10 15:50:00 +07:00] — PWA Web App Manifest & Advanced Dynamic Catalog Filter (Phase 15)
+
+- **Tujuan**: Memenuhi agenda lanjutan pada `STATUS.md`: menyediakan Web App Manifest PWA untuk instalasi shortcut mobile OS dan menambahkan filter dinamis multi-kriteria (rentang harga dan periode keberangkatan) pada katalog paket umroh.
+- **Implementasi**:
+  1. `src/app/manifest.ts`: Metadata route standar Next.js 16 App Router yang menghasilkan `/manifest.webmanifest` statis. Mendeklarasikan identitas resmi, warna tema *Madina Green* (`#084234`), canvas background (`#FAF8F5`), mode `standalone`, dan icon suite (`icon-192.png` maskable, `icon-512.png`, `apple-touch-icon.png`, `favicon.ico`).
+  2. `src/app/layout.tsx`: Penambahan atribut `manifest: "/manifest.webmanifest"` pada metadata root layout.
+  3. `src/components/packages/PackageCatalogClient.tsx`:
+     - Menambahkan filter dinamis rentang harga: `< Rp 30 Juta (Hemat)`, `Rp 30 Jt – 35 Jt`, `Rp 35 Jt – 40 Jt`, dan `> Rp 40 Jt / Haji`.
+     - Menambahkan filter dinamis periode keberangkatan: `Musim 1448 H (Juli–Ags)`, `Wisata Halal / Sejuk`, dan `Musim Haji 1447H/1448H`.
+     - Menambahkan bar *Active Filter Tags* dengan chip interaktif yang dapat dihapus satu per satu beserta tombol `Reset Semua Filter`.
+     - Mengoptimalkan responsivitas layout filter controls menjadi 12-kolom adaptif di desktop dan full-width touch-friendly di mobile dengan font-size anti-zoom.
+- **Verifikasi**:
+  - `npx tsc --noEmit`: **PASSED (0 Errors)**.
+  - `npm run build`: **PASSED**, 467 static pages ter-generate dalam **4.2 detik** termasuk rute `/manifest.webmanifest`.
+
+
 ## [2026-09-09 16:00:00 +07:00] — All in One SEO XML Sitemap Architecture & Multi-Category Sitemaps
 
 - **Commit**: `57479d9` (`perf(image): add sharp dependency and configure next image cache ttl`) & `d4aca2d` (`feat(ui,hotel,seo): revamp mobile menu and search, integrate official hotel tiers with video proofs, and optimize webp assets`)

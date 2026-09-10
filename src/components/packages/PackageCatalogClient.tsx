@@ -26,13 +26,34 @@ interface PackageCatalogClientProps {
 }
 
 type CategoryFilter = "all" | "reguler" | "plus" | "haji";
+type PriceRange = "all" | "under-30" | "30-35" | "35-40" | "above-40";
+type PeriodFilter = "all" | "1448-reguler" | "wisata-halal" | "haji-furoda";
 type SortOption = "default" | "price-asc" | "price-desc" | "duration";
 
 export function PackageCatalogClient({ tours }: PackageCatalogClientProps) {
   const [activeCategory, setActiveCategory] = useState<CategoryFilter>("all");
   const [selectedCity, setSelectedCity] = useState<string>("all");
+  const [priceRange, setPriceRange] = useState<PriceRange>("all");
+  const [selectedPeriod, setSelectedPeriod] = useState<PeriodFilter>("all");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [sortBy, setSortBy] = useState<SortOption>("default");
+
+  const resetAllFilters = () => {
+    setActiveCategory("all");
+    setSelectedCity("all");
+    setPriceRange("all");
+    setSelectedPeriod("all");
+    setSearchQuery("");
+    setSortBy("default");
+  };
+
+  const hasActiveFilters =
+    activeCategory !== "all" ||
+    selectedCity !== "all" ||
+    priceRange !== "all" ||
+    selectedPeriod !== "all" ||
+    searchQuery.trim() !== "" ||
+    sortBy !== "default";
 
   // Distinct cities from reguler tours
   const cities = useMemo(() => {
@@ -62,15 +83,45 @@ export function PackageCatalogClient({ tours }: PackageCatalogClientProps) {
         selectedCity === "all" ||
         (tour.city && tour.city.toLowerCase() === selectedCity.toLowerCase());
 
+      const matchesPrice = (() => {
+        if (priceRange === "under-30") return tour.priceIDR < 30000000;
+        if (priceRange === "30-35") return tour.priceIDR >= 30000000 && tour.priceIDR <= 35000000;
+        if (priceRange === "35-40") return tour.priceIDR > 35000000 && tour.priceIDR <= 40000000;
+        if (priceRange === "above-40") return tour.priceIDR > 40000000;
+        return true;
+      })();
+
+      const matchesPeriod = (() => {
+        if (selectedPeriod === "1448-reguler") {
+          return tour.departurePeriod.includes("1448 H") && tour.category === "reguler";
+        }
+        if (selectedPeriod === "wisata-halal") {
+          return tour.category === "plus";
+        }
+        if (selectedPeriod === "haji-furoda") {
+          return tour.category === "haji";
+        }
+        return true;
+      })();
+
       const query = searchQuery.trim().toLowerCase();
       const matchesSearch =
         query === "" ||
         tour.title.toLowerCase().includes(query) ||
         tour.city.toLowerCase().includes(query) ||
         tour.description.toLowerCase().includes(query) ||
-        tour.airline.toLowerCase().includes(query);
+        tour.airline.toLowerCase().includes(query) ||
+        tour.hotelMakkah.name.toLowerCase().includes(query) ||
+        tour.hotelMadinah.name.toLowerCase().includes(query) ||
+        tour.departurePeriod.toLowerCase().includes(query);
 
-      return matchesCategory && matchesCity && matchesSearch;
+      return (
+        matchesCategory &&
+        matchesCity &&
+        matchesPrice &&
+        matchesPeriod &&
+        matchesSearch
+      );
     });
 
     if (sortBy === "price-asc") {
@@ -82,7 +133,7 @@ export function PackageCatalogClient({ tours }: PackageCatalogClientProps) {
     }
 
     return result;
-  }, [tours, activeCategory, selectedCity, searchQuery, sortBy]);
+  }, [tours, activeCategory, selectedCity, priceRange, selectedPeriod, searchQuery, sortBy]);
 
   const getPackageUrl = (tour: TourPackage) => {
     if (tour.category === "haji") return "/haji-khusus-furoda";
@@ -181,37 +232,39 @@ export function PackageCatalogClient({ tours }: PackageCatalogClientProps) {
           </button>
         </div>
 
-        {/* Filter Controls Row: Search, City Filter & Sort */}
-        <div className="grid grid-cols-1 sm:grid-cols-12 gap-3 pt-2 border-t border-slate-100">
-          {/* Search Box */}
-          <div className="sm:col-span-6 relative">
+        {/* Filter Controls Row: Search, City Filter, Price Range, Period & Sort */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 pt-4 border-t border-slate-100">
+          {/* Search Box - 4 cols on desktop */}
+          <div className="sm:col-span-2 lg:col-span-4 relative">
             <Search className="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Cari paket (nama kota, maskapai, durasi)..."
-              className="w-full h-11 pl-10 pr-9 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA] text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#084234] focus:border-transparent transition-all"
+              placeholder="Cari paket, kota, maskapai, hotel..."
+              className="w-full h-11 pl-10 pr-9 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA] text-base sm:text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#084234] focus:border-transparent transition-all"
             />
             {searchQuery && (
               <button
                 type="button"
                 onClick={() => setSearchQuery("")}
-                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-600"
+                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-slate-400 hover:text-slate-600 cursor-pointer"
+                title="Hapus pencarian"
               >
                 <X className="w-3.5 h-3.5" />
               </button>
             )}
           </div>
 
-          {/* City Filter */}
-          <div className="sm:col-span-3">
+          {/* City Filter - 2 cols on desktop */}
+          <div className="lg:col-span-2">
             <select
               value={selectedCity}
               onChange={(e) => setSelectedCity(e.target.value)}
-              className="w-full h-11 px-3.5 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA] text-xs font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#084234] transition-all cursor-pointer"
+              className="w-full h-11 px-3 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA] text-base sm:text-xs font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#084234] transition-all cursor-pointer truncate"
+              title="Filter Kota Embarkasi"
             >
-              <option value="all">Semua Kota Embarkasi</option>
+              <option value="all">Semua Embarkasi</option>
               {cities.map((c) => (
                 <option key={c} value={c}>
                   Embarkasi {c}
@@ -220,20 +273,175 @@ export function PackageCatalogClient({ tours }: PackageCatalogClientProps) {
             </select>
           </div>
 
-          {/* Sort By */}
-          <div className="sm:col-span-3">
+          {/* Price Range Filter - 2 cols on desktop */}
+          <div className="lg:col-span-2">
+            <select
+              value={priceRange}
+              onChange={(e) => setPriceRange(e.target.value as PriceRange)}
+              className="w-full h-11 px-3 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA] text-base sm:text-xs font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#084234] transition-all cursor-pointer truncate"
+              title="Filter Rentang Biaya"
+            >
+              <option value="all">Semua Biaya</option>
+              <option value="under-30">&lt; Rp 30 Juta (Hemat)</option>
+              <option value="30-35">Rp 30 Jt – 35 Jt</option>
+              <option value="35-40">Rp 35 Jt – 40 Jt</option>
+              <option value="above-40">&gt; Rp 40 Jt / Haji</option>
+            </select>
+          </div>
+
+          {/* Departure Period Filter - 2 cols on desktop */}
+          <div className="lg:col-span-2">
+            <select
+              value={selectedPeriod}
+              onChange={(e) => setSelectedPeriod(e.target.value as PeriodFilter)}
+              className="w-full h-11 px-3 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA] text-base sm:text-xs font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#084234] transition-all cursor-pointer truncate"
+              title="Filter Periode Keberangkatan"
+            >
+              <option value="all">Semua Jadwal</option>
+              <option value="1448-reguler">Musim 1448 H (Juli–Ags)</option>
+              <option value="wisata-halal">Wisata Halal / Sejuk</option>
+              <option value="haji-furoda">Musim Haji 1447H/1448H</option>
+            </select>
+          </div>
+
+          {/* Sort By - 2 cols on desktop */}
+          <div className="lg:col-span-2">
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as SortOption)}
-              className="w-full h-11 px-3.5 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA] text-xs font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#084234] transition-all cursor-pointer"
+              className="w-full h-11 px-3 rounded-xl bg-[#FAF8F5] border border-[#E8E3DA] text-base sm:text-xs font-semibold text-slate-700 focus:outline-none focus:ring-2 focus:ring-[#084234] transition-all cursor-pointer truncate"
+              title="Urutan Tampilan"
             >
-              <option value="default">Urutkan: Rekomendasi</option>
+              <option value="default">Urut: Rekomendasi</option>
               <option value="price-asc">Biaya Terendah</option>
               <option value="price-desc">Biaya Tertinggi</option>
               <option value="duration">Durasi Hari</option>
             </select>
           </div>
         </div>
+
+        {/* Active Filter Tags */}
+        {hasActiveFilters && (
+          <div className="flex flex-wrap items-center gap-2 pt-3 border-t border-slate-100 text-xs">
+            <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">
+              Filter Aktif:
+            </span>
+            {activeCategory !== "all" && (
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 border border-emerald-200 text-xs font-medium">
+                <span>
+                  {activeCategory === "reguler"
+                    ? "Umroh Reguler"
+                    : activeCategory === "plus"
+                    ? "Umroh Plus"
+                    : "Haji Khusus"}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setActiveCategory("all")}
+                  className="hover:text-emerald-950 cursor-pointer"
+                  title="Hapus filter kategori"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              </span>
+            )}
+            {selectedCity !== "all" && (
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-50 text-amber-900 border border-amber-200 text-xs font-medium">
+                <span>Kota: {selectedCity}</span>
+                <button
+                  type="button"
+                  onClick={() => setSelectedCity("all")}
+                  className="hover:text-amber-950 cursor-pointer"
+                  title="Hapus filter kota"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              </span>
+            )}
+            {priceRange !== "all" && (
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-blue-50 text-blue-800 border border-blue-200 text-xs font-medium">
+                <span>
+                  Biaya:{" "}
+                  {priceRange === "under-30"
+                    ? "< Rp 30 Juta"
+                    : priceRange === "30-35"
+                    ? "Rp 30 Jt – 35 Jt"
+                    : priceRange === "35-40"
+                    ? "Rp 35 Jt – 40 Jt"
+                    : "> Rp 40 Jt / Haji"}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setPriceRange("all")}
+                  className="hover:text-blue-950 cursor-pointer"
+                  title="Hapus filter biaya"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              </span>
+            )}
+            {selectedPeriod !== "all" && (
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-purple-50 text-purple-800 border border-purple-200 text-xs font-medium">
+                <span>
+                  Jadwal:{" "}
+                  {selectedPeriod === "1448-reguler"
+                    ? "Musim 1448 H"
+                    : selectedPeriod === "wisata-halal"
+                    ? "Wisata Halal"
+                    : "Haji Furoda"}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setSelectedPeriod("all")}
+                  className="hover:text-purple-950 cursor-pointer"
+                  title="Hapus filter jadwal"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              </span>
+            )}
+            {searchQuery && (
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 text-slate-800 border border-slate-200 text-xs font-medium">
+                <span>Cari: &ldquo;{searchQuery}&rdquo;</span>
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery("")}
+                  className="hover:text-slate-950 cursor-pointer"
+                  title="Hapus kata kunci"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              </span>
+            )}
+            {sortBy !== "default" && (
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-stone-100 text-stone-800 border border-stone-200 text-xs font-medium">
+                <span>
+                  Urut:{" "}
+                  {sortBy === "price-asc"
+                    ? "Biaya Terendah"
+                    : sortBy === "price-desc"
+                    ? "Biaya Tertinggi"
+                    : "Durasi Hari"}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setSortBy("default")}
+                  className="hover:text-stone-950 cursor-pointer"
+                  title="Reset urutan"
+                >
+                  <X className="w-3 h-3" />
+                </button>
+              </span>
+            )}
+            <button
+              type="button"
+              onClick={resetAllFilters}
+              className="text-[11px] font-bold text-[#084234] hover:underline cursor-pointer ml-auto"
+            >
+              Reset Semua Filter
+            </button>
+          </div>
+        )}
       </div>
 
       {/* Results Indicator Bar */}
@@ -398,13 +606,8 @@ export function PackageCatalogClient({ tours }: PackageCatalogClientProps) {
           </div>
           <button
             type="button"
-            onClick={() => {
-              setActiveCategory("all");
-              setSelectedCity("all");
-              setSearchQuery("");
-              setSortBy("default");
-            }}
-            className="px-5 py-2.5 rounded-xl bg-[#084234] text-white text-xs font-bold hover:bg-[#04261E] transition-colors"
+            onClick={resetAllFilters}
+            className="px-5 py-2.5 rounded-xl bg-[#084234] text-white text-xs font-bold hover:bg-[#04261E] transition-colors cursor-pointer"
           >
             Tampilkan Semua Paket
           </button>
